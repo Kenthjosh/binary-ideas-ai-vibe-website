@@ -130,6 +130,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 97px; /* Account for fixed header height */
+}
+
 html,
 body {
   margin: 0px;

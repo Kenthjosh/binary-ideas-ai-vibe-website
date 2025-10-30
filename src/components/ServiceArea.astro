@@ -34,7 +34,12 @@ const {
 } = Astro.props;
 ---
 
-<section class="relative w-full px-4 md:px-8 lg:px-20 py-16 md:py-24 flex flex-col items-center">
+<section id="service-area" class="relative w-full px-4 md:px-8 lg:px-20 py-16 md:py-24 flex flex-col items-center">
+  <h2 class="text-3xl md:text-4xl lg:text-5xl font-normal text-center mb-8 [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
+    <span class="text-white">Our </span>
+    <span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Service Area</span>
+  </h2>
+
   <p class="max-w-3xl [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#99a1ae] text-base md:text-lg text-center tracking-[0] leading-7 mb-12" set:html={introText.split('\n').join('<br />')} />
 
   <div
@@ -48,15 +53,16 @@ const {
         const fontSize = city.fontSize || "text-sm";
 
         return (
-          <div
-            class="h-[50px] flex items-center justify-center bg-[#2b7fff0d] rounded-[10px] border-[#2b7fff33] border border-solid backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)] px-4"
+          <button
+            class="h-[50px] flex items-center justify-center bg-[#2b7fff0d] rounded-[10px] border-[#2b7fff33] border border-solid backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)] px-4 hover:bg-[#2b7fff1a] hover:border-[#2b7fff66] transition-all duration-300 cursor-pointer"
+            type="button"
           >
-            <div
+            <span
               class={`${fontSize} text-center leading-5 [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white tracking-[0] whitespace-nowrap`}
             >
               {city.name}
-            </div>
-          </div>
+            </span>
+          </button>
         );
       })}
     </div>
@@ -67,15 +73,16 @@ const {
         const fontSize = city.fontSize || "text-sm";
 
         return (
-          <div
-            class="h-[50px] flex items-center justify-center bg-[#2b7fff0d] rounded-[10px] border-[#2b7fff33] border border-solid backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)] px-4"
+          <button
+            class="h-[50px] flex items-center justify-center bg-[#2b7fff0d] rounded-[10px] border-[#2b7fff33] border border-solid backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)] px-4 hover:bg-[#2b7fff1a] hover:border-[#2b7fff66] transition-all duration-300 cursor-pointer"
+            type="button"
           >
-            <div
+            <span
               class={`${fontSize} text-center leading-5 [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white tracking-[0] whitespace-nowrap`}
             >
               {city.name}
-            </div>
-          </div>
+            </span>
+          </button>
         );
       })}
     </div>

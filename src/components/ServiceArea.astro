@@ -32,58 +32,56 @@ const {
     { name: "Herndon", fontSize: "text-[13.8px]", width: "w-[53.9px]" },
   ]
 } = Astro.props;
-
-const cityPositions = [0, 173, 347, 520, 693, 867];
 ---
 
-<section class="absolute w-[calc(100%_-_640px)] top-[5490px] left-80 h-[368px] flex flex-col">
-  <p class="flex items-center justify-center ml-[0.2px] h-[46px] w-[755.12px] self-center mt-[77px] [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#99a1ae] text-lg text-center tracking-[0] leading-7" set:html={introText.split('\n').join('<br />')} />
+<section class="relative w-full px-4 md:px-8 lg:px-20 py-16 md:py-24 flex flex-col items-center">
+  <p class="max-w-3xl [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#99a1ae] text-base md:text-lg text-center tracking-[0] leading-7 mb-12" set:html={introText.split('\n').join('<br />')} />
 
   <div
-    class="ml-32 mr-32 flex-1 max-h-[116px] relative mt-[53px]"
+    class="w-full max-w-5xl"
     role="list"
     aria-label="Cities served"
   >
-    {citiesRow1.map((city, index) => {
-      const fontSize = city.fontSize || "text-sm";
-      const width = city.width || "w-auto";
-      const leftPosition = cityPositions[index];
+    <!-- Row 1 -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 mb-4">
+      {citiesRow1.map((city) => {
+        const fontSize = city.fontSize || "text-sm";
 
-      return (
-        <div
-          class="w-[calc(100%_-_867px)] h-[50px] flex justify-center bg-[#2b7fff0d] rounded-[10px] border-[#2b7fff33] absolute border border-solid backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)]"
-          style={`top: 0px; left: ${leftPosition}px`}
-        >
+        return (
           <div
-            class={`mt-[19px] ${width} h-3.5 ml-[0.2px] ${fontSize} text-center leading-5 flex items-center justify-center [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white tracking-[0] whitespace-nowrap`}
+            class="h-[50px] flex items-center justify-center bg-[#2b7fff0d] rounded-[10px] border-[#2b7fff33] border border-solid backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)] px-4"
           >
-            {city.name}
+            <div
+              class={`${fontSize} text-center leading-5 [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white tracking-[0] whitespace-nowrap`}
+            >
+              {city.name}
+            </div>
           </div>
-        </div>
-      );
-    })}
+        );
+      })}
+    </div>
 
-    {citiesRow2.map((city, index) => {
-      const fontSize = city.fontSize || "text-sm";
-      const width = city.width || "w-auto";
-      const leftPosition = cityPositions[index];
+    <!-- Row 2 -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+      {citiesRow2.map((city) => {
+        const fontSize = city.fontSize || "text-sm";
 
-      return (
-        <div
-          class="w-[calc(100%_-_867px)] h-[50px] flex justify-center bg-[#2b7fff0d] rounded-[10px] border-[#2b7fff33] absolute border border-solid backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)]"
-          style={`top: 66px; left: ${leftPosition}px`}
-        >
+        return (
           <div
-            class={`mt-[19px] ${width} h-3.5 ml-[0.2px] ${fontSize} text-center leading-5 flex items-center justify-center [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white tracking-[0] whitespace-nowrap`}
+            class="h-[50px] flex items-center justify-center bg-[#2b7fff0d] rounded-[10px] border-[#2b7fff33] border border-solid backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)] px-4"
           >
-            {city.name}
+            <div
+              class={`${fontSize} text-center leading-5 [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white tracking-[0] whitespace-nowrap`}
+            >
+              {city.name}
+            </div>
           </div>
-        </div>
-      );
-    })}
+        );
+      })}
+    </div>
   </div>
 
-  <p class="flex items-center justify-center ml-[0.2px] h-7 w-[910.36px] self-center mt-12 [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#50a2ff] text-[17.9px] text-center tracking-[0] leading-7 whitespace-nowrap">
+  <p class="max-w-4xl [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#50a2ff] text-base md:text-lg text-center tracking-[0] leading-7 mt-12">
     {footerText}
   </p>
 </section>

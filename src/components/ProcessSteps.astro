@@ -45,49 +45,34 @@ const {
 } = Astro.props;
 ---
 
-<section class="absolute w-[calc(100%_-_640px)] top-[4058px] left-80 h-[501px]">
-  {steps.map((step, index) => (
-    <article
-      class={`w-[calc(100%_-_984px)] h-[calc(100%_-_140px)] top-[140px] flex flex-col items-center ${step.gap || ""} bg-[#fffefe0d] rounded-2xl border-[#fffefe1a] absolute border border-solid backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)]`}
-      style={`left: ${index * 328}px`}
-    >
-      <div class="h-12 w-12 mt-[33px] flex items-center justify-center rounded-[33554400px] overflow-hidden shadow-[0px_4px_6px_-4px_#0000001a,0px_10px_15px_-3px_#0000001a] bg-[linear-gradient(145deg,rgba(43,127,255,1)_0%,rgba(152,16,250,1)_100%)]">
-        <div class="flex items-center justify-center h-5 ml-[0.2px] w-[11.33px] [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white text-xl text-center tracking-[0] leading-7 whitespace-nowrap">
-          {step.id}
+<section class="relative w-full px-4 md:px-8 lg:px-20 py-16 md:py-24">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+    {steps.map((step, index) => (
+      <article
+        class="flex flex-col items-center text-center gap-4 bg-[#fffefe0d] rounded-2xl border-[#fffefe1a] border border-solid backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)] p-8"
+      >
+        <div class="w-12 h-12 flex items-center justify-center rounded-full overflow-hidden shadow-[0px_4px_6px_-4px_#0000001a,0px_10px_15px_-3px_#0000001a] bg-[linear-gradient(145deg,rgba(43,127,255,1)_0%,rgba(152,16,250,1)_100%)]">
+          <div class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white text-xl text-center tracking-[0] leading-7">
+            {step.id}
+          </div>
         </div>
-      </div>
 
-      <img
-        class={`h-14 w-14 ${step.id === 3 ? "mt-4" : ""}`}
-        alt={`Step ${step.id} icon`}
-        src={step.icon}
-      />
+        <img
+          class="w-14 h-14"
+          alt={`Step ${step.id} icon`}
+          src={step.icon}
+        />
 
-      <h3
-        class={`flex items-center justify-center ml-[0.2px] ${
-          step.id === 3
-            ? "h-12 w-[155.48px] mt-5 text-[19.2px]"
-            : step.id === 1
-              ? "h-7 w-[156.73px] text-xl"
-              : step.id === 2
-                ? "h-7 w-[214.15px] text-xl"
-                : "h-7 w-[151.93px] text-[19.5px]"
-        } [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white text-center tracking-[0] leading-7 ${step.id === 3 ? "" : "whitespace-nowrap"}`}
-        set:html={step.title.split('\n').join('<br />')}
-      />
+        <h3
+          class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white text-lg md:text-xl text-center tracking-[0] leading-7"
+          set:html={step.title.split('\n').join('<br />')}
+        />
 
-      <p
-        class={`flex items-center justify-center ml-[0.2px] ${
-          step.id === 1
-            ? "h-[82.25px] w-[228.98px] text-[13.6px]"
-            : step.id === 2
-              ? "h-[59.5px] w-[229.59px] text-[13.9px]"
-              : step.id === 3
-                ? "h-[82.25px] w-[228.08px] mt-5 text-[13.9px]"
-                : "h-[82.25px] w-[226.36px] text-[13.8px]"
-        } [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#99a1ae] text-center tracking-[0] leading-[22.8px]`}
-        set:html={step.description.split('\n').join('<br />')}
-      />
-    </article>
-  ))}
+        <p
+          class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#99a1ae] text-sm text-center tracking-[0] leading-relaxed"
+          set:html={step.description.split('\n').join('<br />')}
+        />
+      </article>
+    ))}
+  </div>
 </section>

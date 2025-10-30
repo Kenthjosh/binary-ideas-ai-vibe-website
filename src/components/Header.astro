@@ -26,34 +26,38 @@ const {
 } = Astro.props;
 ---
 
-<header class="fixed top-0 left-0 w-[1920px] h-[97px] z-[2] flex gap-[542.1px] bg-[#0a0a0fcc] [border-top-style:none] [border-right-style:none] border-b [border-bottom-style:solid] [border-left-style:none] border-[#fffefe1a] backdrop-blur-md backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(12px)_brightness(100%)]">
-  <img
-    class="mt-[22px] w-[216px] h-[53px] ml-[344px] aspect-[4.06] object-cover"
-    alt={logoAlt}
-    src={logoSrc}
-  />
-
-  <nav
-    class="-mt-px w-[473.94px] self-center flex gap-[31.8px]"
-    role="navigation"
-    aria-label="Main navigation"
-  >
-    {navItems.map((item) => (
-      <a
-        href={item.href}
-        class={`flex items-center justify-center mt-2 h-6 [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#d0d5db] ${item.fontSize || "text-base"} tracking-[0] leading-6 whitespace-nowrap hover:text-white transition-colors duration-200`}
-      >
-        {item.label}
-      </a>
-    ))}
-
-    <a
-      href={ctaLink}
-      class="h-10 w-[129.8px] self-center flex rounded-[10px] bg-[linear-gradient(90deg,rgba(43,127,255,1)_0%,rgba(152,16,250,1)_100%)] hover:opacity-90 transition-opacity duration-200"
-    >
-      <span class="flex items-center justify-center mt-3 w-[82px] h-4 ml-6 [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white text-base tracking-[0] leading-6 whitespace-nowrap">
-        {ctaText}
-      </span>
+<header class="fixed top-0 left-0 w-full h-auto md:h-[97px] z-[2] bg-[#0a0a0fcc] border-b border-solid border-[#fffefe1a] backdrop-blur-md backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(12px)_brightness(100%)]">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-0 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-8">
+    <a href="/" class="flex-shrink-0">
+      <img
+        class="w-[180px] md:w-[216px] h-auto aspect-[4.06] object-cover"
+        alt={logoAlt}
+        src={logoSrc}
+      />
     </a>
-  </nav>
+
+    <nav
+      class="flex flex-col md:flex-row items-center gap-4 md:gap-8"
+      role="navigation"
+      aria-label="Main navigation"
+    >
+      {navItems.map((item) => (
+        <a
+          href={item.href}
+          class={`[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#d0d5db] ${item.fontSize || "text-base"} tracking-[0] leading-6 whitespace-nowrap hover:text-white transition-colors duration-200`}
+        >
+          {item.label}
+        </a>
+      ))}
+
+      <a
+        href={ctaLink}
+        class="px-6 py-2 rounded-[10px] bg-[linear-gradient(90deg,rgba(43,127,255,1)_0%,rgba(152,16,250,1)_100%)] hover:opacity-90 transition-opacity duration-200"
+      >
+        <span class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white text-base tracking-[0] leading-6 whitespace-nowrap">
+          {ctaText}
+        </span>
+      </a>
+    </nav>
+  </div>
 </header>

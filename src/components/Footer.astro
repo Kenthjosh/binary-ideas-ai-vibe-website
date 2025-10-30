@@ -10,13 +10,12 @@ const {
 } = Astro.props;
 ---
 
-<footer class="absolute w-full top-[6662px] left-0 h-[149px] flex bg-transparent border-t [border-top-style:solid] [border-right-style:none] [border-bottom-style:none] [border-left-style:none] border-[#fffefe1a]">
-  <div class="mt-[49px] h-[52px] ml-80 mr-80 flex-1 flex flex-col items-center gap-2">
-    <p class="flex items-center justify-center ml-[0.2px] h-6 w-[476.58px] [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#697282] text-base text-center tracking-[0] leading-6 whitespace-nowrap">
+<footer class="relative w-full px-4 md:px-8 py-12 bg-transparent border-t border-solid border-[#fffefe1a]">
+  <div class="max-w-7xl mx-auto flex flex-col items-center gap-2 text-center">
+    <p class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#697282] text-base tracking-[0] leading-6">
       {mainText}
     </p>
-
-    <p class="flex items-center justify-center ml-[0.2px] h-5 w-[319.09px] [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#697282] text-[13.8px] text-center tracking-[0] leading-5 whitespace-nowrap">
+    <p class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#697282] text-sm tracking-[0] leading-5">
       {subText}
     </p>
   </div>

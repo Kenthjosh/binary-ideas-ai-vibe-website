@@ -32,66 +32,72 @@ const {
 ---
 
 <section
-  class="absolute w-[calc(100%_-_640px)] top-[3288px] left-80 h-[562px]"
+  class="relative w-full px-4 md:px-8 lg:px-20 py-16 md:py-24"
   aria-labelledby="features-heading"
 >
-  <div
-    class="absolute w-[calc(100%_-_632px)] h-[calc(100%_-_64px)] top-20 -left-4 rounded-3xl blur-[20px] bg-[linear-gradient(154deg,rgba(43,127,255,0.2)_0%,rgba(173,70,255,0.2)_100%)]"
-    aria-hidden="true"
-  />
-
-  <div class="absolute w-[calc(100%_-_664px)] top-24 left-0 h-[466px] flex rounded-2xl overflow-hidden border border-solid border-[#fffefe1a] backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)] bg-[linear-gradient(155deg,rgba(255,255,255,0.05)_0%,rgba(255,255,255,0.02)_100%)]">
-    <div class={`mt-[9px] h-[448.5px] ml-[9px] mr-[9px] flex-1 flex rounded-[14px] overflow-hidden bg-[url(${imageSrc})] bg-cover bg-[50%_50%]`}>
-      <div
-        class="flex-1 w-[598px] bg-[linear-gradient(25deg,rgba(43,127,255,0.2)_0%,rgba(43,127,255,0)_50%,rgba(173,70,255,0.2)_100%)]"
-        aria-hidden="true"
-      />
-    </div>
-  </div>
-
-  <div
-    class="absolute right-[648px] -bottom-4 w-[143px] h-[94px] flex flex-col rounded-[14px] border border-solid border-[#fffefe33] shadow-[0px_0px_30px_#3b82f666] backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)] bg-[linear-gradient(159deg,rgba(43,127,255,1)_0%,rgba(152,16,250,1)_100%)]"
-    role="figure"
-    aria-label={`${statLabel} over ${statValue} ${statSubtext.toLowerCase()}`}
-  >
-    <div class="flex items-center justify-center ml-[25px] w-[48.01px] h-5 mt-[13px] [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#fffefecc] text-sm tracking-[0] leading-5 whitespace-nowrap">
-      {statLabel}
-    </div>
-
-    <div class="flex items-center justify-center ml-[25px] w-[54.26px] h-8 [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white text-[23.4px] tracking-[0] leading-8 whitespace-nowrap">
-      {statValue}
-    </div>
-
-    <div class="flex items-center justify-center ml-[25px] w-[93.47px] h-4 [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#fffefeb2] text-xs tracking-[0] leading-4 whitespace-nowrap">
-      {statSubtext}
-    </div>
-  </div>
-
-  <article class="w-[calc(100%_-_664px)] top-[138px] left-[664px] h-[383px] bg-[#fffefe0d] rounded-2xl border-[#fffefe1a] absolute border border-solid backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)]">
-    <div
-      class="absolute w-[calc(100%_-_2px)] h-[calc(100%_-_2px)] top-px left-px rounded-2xl bg-[linear-gradient(160deg,rgba(43,127,255,0.05)_0%,rgba(173,70,255,0.05)_100%)]"
-      aria-hidden="true"
-    />
-
-    <p class="absolute top-[38px] left-[33px] w-[550px] h-[252px] flex items-center justify-center [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#d0d5db] text-lg tracking-[0] leading-[29.2px]" set:html={description.split('\n').join('<br />')} />
-
-    <div
-      class="absolute top-80 left-[33px] flex gap-[8px]"
-      role="list"
-      aria-label="Industries served"
-    >
-      {industries.map((tag) => (
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <!-- Image Side -->
+      <div class="relative">
         <div
-          class={`h-[calc(100%_-_353px)] ${tag.width} flex rounded-[33554400px] border-[#2b7fff4c] bg-[linear-gradient(90deg,rgba(43,127,255,0.2)_0%,rgba(173,70,255,0.2)_100%)] border border-solid backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)]`}
-          role="listitem"
-        >
-          <span
-            class={`flex items-center justify-center mt-[9px] ${tag.textWidth} h-3 ml-[13px] [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#8dc5ff] text-xs tracking-[0] leading-4 whitespace-nowrap`}
-          >
-            {tag.label}
-          </span>
+          class="absolute inset-0 rounded-3xl blur-[20px] bg-[linear-gradient(154deg,rgba(43,127,255,0.2)_0%,rgba(173,70,255,0.2)_100%)]"
+          aria-hidden="true"
+        />
+
+        <div class="relative rounded-2xl overflow-hidden border border-solid border-[#fffefe1a] backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)] bg-[linear-gradient(155deg,rgba(255,255,255,0.05)_0%,rgba(255,255,255,0.02)_100%)] p-2">
+          <div class={`rounded-[14px] overflow-hidden bg-[url(${imageSrc})] bg-cover bg-center aspect-[4/3]`}>
+            <div
+              class="w-full h-full bg-[linear-gradient(25deg,rgba(43,127,255,0.2)_0%,rgba(43,127,255,0)_50%,rgba(173,70,255,0.2)_100%)]"
+              aria-hidden="true"
+            />
+          </div>
         </div>
-      ))}
+
+        <div
+          class="absolute -bottom-4 -right-4 md:right-4 px-6 py-3 flex flex-col rounded-[14px] border border-solid border-[#fffefe33] shadow-[0px_0px_30px_#3b82f666] backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)] bg-[linear-gradient(159deg,rgba(43,127,255,1)_0%,rgba(152,16,250,1)_100%)]"
+          role="figure"
+          aria-label={`${statLabel} over ${statValue} ${statSubtext.toLowerCase()}`}
+        >
+          <div class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#fffefecc] text-sm tracking-[0] leading-5">
+            {statLabel}
+          </div>
+          <div class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white text-2xl tracking-[0] leading-8">
+            {statValue}
+          </div>
+          <div class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#fffefeb2] text-xs tracking-[0] leading-4">
+            {statSubtext}
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Side -->
+      <div class="relative bg-[#fffefe0d] rounded-2xl border-[#fffefe1a] border border-solid backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)] p-8">
+        <div
+          class="absolute inset-0 rounded-2xl bg-[linear-gradient(160deg,rgba(43,127,255,0.05)_0%,rgba(173,70,255,0.05)_100%)] pointer-events-none"
+          aria-hidden="true"
+        />
+
+        <p class="relative [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#d0d5db] text-base md:text-lg tracking-[0] leading-relaxed mb-8" set:html={description.split('\n').join('<br />')} />
+
+        <div
+          class="relative flex flex-wrap gap-2"
+          role="list"
+          aria-label="Industries served"
+        >
+          {industries.map((tag) => (
+            <div
+              class="px-4 py-2 flex items-center justify-center rounded-full border-[#2b7fff4c] bg-[linear-gradient(90deg,rgba(43,127,255,0.2)_0%,rgba(173,70,255,0.2)_100%)] border border-solid backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)]"
+              role="listitem"
+            >
+              <span
+                class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#8dc5ff] text-xs tracking-[0] leading-4 whitespace-nowrap"
+              >
+                {tag.label}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
-  </article>
+  </div>
 </section>

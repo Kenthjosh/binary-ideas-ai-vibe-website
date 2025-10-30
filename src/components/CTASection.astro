@@ -27,70 +27,66 @@ const {
 } = Astro.props;
 ---
 
-<section class="absolute w-full top-[5938px] left-0 h-[724px] bg-[linear-gradient(90deg,rgba(43,127,255,0.1)_0%,rgba(173,70,255,0.1)_50%,rgba(246,51,154,0.1)_100%)]">
-  <p class="absolute top-[316px] left-[calc(50.00%_-_373px)] w-[746px] h-[85px] flex items-center justify-center [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#99a1ae] text-xl text-center tracking-[0] leading-[32.5px]" set:html={introText.split('\n').join('<br />')} />
+<section class="relative w-full px-4 md:px-8 py-20 md:py-32 bg-[linear-gradient(90deg,rgba(43,127,255,0.1)_0%,rgba(173,70,255,0.1)_50%,rgba(246,51,154,0.1)_100%)]">
+  <div class="max-w-4xl mx-auto flex flex-col items-center text-center">
+    <p class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#99a1ae] text-lg md:text-xl text-center tracking-[0] leading-relaxed mb-12" set:html={introText.split('\n').join('<br />')} />
 
-  <a
-    href={ctaLink}
-    class="absolute h-[calc(100%_-_652px)] top-[456px] left-[calc(50.00%_-_285px)] w-[283px] rounded-[10px] overflow-hidden bg-[linear-gradient(90deg,rgba(43,127,255,1)_0%,rgba(152,16,250,1)_100%)] cursor-pointer hover:opacity-90 transition-opacity"
-    aria-label={ctaText}
-  >
-    <span class="absolute top-[calc(50.00%_-_16px)] left-[calc(50.00%_-_101px)] w-[175px] h-7 flex items-center justify-center [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white text-lg text-center tracking-[0] leading-7 whitespace-nowrap">
-      {ctaText}
-    </span>
-
-    <div
-      class="absolute top-[calc(50.00%_-_12px)] left-[223px] w-5 h-5"
-      aria-hidden="true"
-    >
-      <img
-        class="absolute w-[58.33%] h-0 top-[50.00%] left-[20.83%]"
-        alt=""
-        src="/img/vector-19.svg"
-      />
-      <img
-        class="absolute w-[29.17%] h-[58.33%] top-[20.83%] left-[50.00%]"
-        alt=""
-        src="/img/vector-20.svg"
-      />
-    </div>
-  </a>
-
-  <a
-    href={`tel:${phoneNumber}`}
-    class="absolute h-[calc(100%_-_652px)] top-[456px] left-[calc(50.00%_+_14px)] w-[271px] rounded-[10px] border-2 border-solid border-[#2b7fff80] backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)] cursor-pointer hover:bg-[rgba(43,127,255,0.1)] transition-colors"
-    aria-label={phoneText}
-  >
-    <div
-      class="absolute top-[calc(50.00%_-_10px)] left-[42px] w-5 h-5"
-      aria-hidden="true"
-    >
-      <img
-        class="absolute w-[83.33%] h-[83.33%] top-[8.33%] left-[8.33%]"
-        alt=""
-        src="/img/vector-21.svg"
-      />
-    </div>
-
-    <span class="absolute top-[calc(50.00%_-_9px)] left-[calc(50.00%_-_65px)] w-[159px] h-[18px] flex items-center justify-center [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white text-lg text-center tracking-[0] leading-7 whitespace-nowrap">
-      {phoneText}
-    </span>
-  </a>
-
-  <ul class="absolute top-[calc(50.00%_+_214px)] left-[calc(50.00%_-_216px)] w-[456px] h-5 flex items-center justify-between list-none m-0 p-0">
-    {benefits.map((benefit) => (
-      <li class="flex items-center gap-2">
-        <div class="w-4 h-4 flex-shrink-0" aria-hidden="true">
+    <div class="flex flex-col sm:flex-row items-center gap-4 mb-12">
+      <a
+        href={ctaLink}
+        class="w-full sm:w-auto px-10 py-5 rounded-[10px] overflow-hidden bg-[linear-gradient(90deg,rgba(43,127,255,1)_0%,rgba(152,16,250,1)_100%)] cursor-pointer hover:opacity-90 transition-opacity flex items-center justify-center gap-3"
+        aria-label={ctaText}
+      >
+        <span class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white text-lg text-center tracking-[0] leading-7 whitespace-nowrap">
+          {ctaText}
+        </span>
+        <div class="w-5 h-5 relative">
           <img
-            class="absolute w-[66.67%] h-[45.83%] top-[25.00%] left-[16.67%]"
+            class="absolute w-[58.33%] h-0 top-[50.00%] left-[20.83%]"
             alt=""
-            src={benefit.icon}
+            src="/img/vector-19.svg"
+          />
+          <img
+            class="absolute w-[29.17%] h-[58.33%] top-[20.83%] left-[50.00%]"
+            alt=""
+            src="/img/vector-20.svg"
           />
         </div>
-        <span class="flex items-center justify-center [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#697282] text-sm text-center tracking-[0] leading-5 whitespace-nowrap">
-          {benefit.text}
+      </a>
+
+      <a
+        href={`tel:${phoneNumber}`}
+        class="w-full sm:w-auto px-10 py-5 rounded-[10px] border-2 border-solid border-[#2b7fff80] backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)] cursor-pointer hover:bg-[rgba(43,127,255,0.1)] transition-colors flex items-center justify-center gap-3"
+        aria-label={phoneText}
+      >
+        <div class="w-5 h-5 relative">
+          <img
+            class="absolute w-[83.33%] h-[83.33%] top-[8.33%] left-[8.33%]"
+            alt=""
+            src="/img/vector-21.svg"
+          />
+        </div>
+        <span class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white text-lg text-center tracking-[0] leading-7 whitespace-nowrap">
+          {phoneText}
         </span>
-      </li>
-    ))}
-  </ul>
+      </a>
+    </div>
+
+    <ul class="flex flex-col sm:flex-row items-center justify-center gap-6 list-none m-0 p-0">
+      {benefits.map((benefit) => (
+        <li class="flex items-center gap-2">
+          <div class="w-4 h-4 flex-shrink-0 relative" aria-hidden="true">
+            <img
+              class="absolute w-[66.67%] h-[45.83%] top-[25.00%] left-[16.67%]"
+              alt=""
+              src={benefit.icon}
+            />
+          </div>
+          <span class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#697282] text-sm text-center tracking-[0] leading-5 whitespace-nowrap">
+            {benefit.text}
+          </span>
+        </li>
+      ))}
+    </ul>
+  </div>
 </section>

@@ -46,7 +46,7 @@ const {
       gradientBorder: "border-[#ac46ff33]",
       gradientBg: "bg-[linear-gradient(155deg,rgba(173,70,255,0.1)_0%,rgba(173,70,255,0)_100%)]",
       gradientOverlay: "bg-[linear-gradient(155deg,rgba(173,70,255,0)_0%,rgba(173,70,255,0.05)_100%)]",
-      iconBg: "",
+      iconBg: "bg-[linear-gradient(145deg,rgba(173,70,255,1)_0%,rgba(251,100,182,1)_100%)]",
       statisticGradient: "bg-[linear-gradient(90deg,rgba(194,122,255,1)_0%,rgba(251,100,182,1)_100%)]",
       leftPosition: "left-[435px]",
     },
@@ -60,7 +60,7 @@ const {
       gradientBorder: "border-[#f6329a33]",
       gradientBg: "bg-[linear-gradient(155deg,rgba(246,51,154,0.1)_0%,rgba(246,51,154,0)_100%)]",
       gradientOverlay: "bg-[linear-gradient(155deg,rgba(246,51,154,0)_0%,rgba(246,51,154,0.05)_100%)]",
-      iconBg: "",
+      iconBg: "bg-[linear-gradient(145deg,rgba(246,51,154,1)_0%,rgba(255,32,86,1)_100%)]",
       statisticGradient: "bg-[linear-gradient(90deg,rgba(251,100,182,1)_0%,rgba(255,99,126,1)_100%)]",
       leftPosition: "left-[869px]",
     },
@@ -69,7 +69,12 @@ const {
 ---
 
 <section class="relative w-full px-4 md:px-8 lg:px-20 py-16 md:py-24">
-  <p class="max-w-3xl mx-auto [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#99a1ae] text-lg md:text-xl text-center tracking-[0] leading-7 mb-12" set:html={introText.split('\n').join('<br />')} />
+  <h2 class="text-3xl md:text-4xl lg:text-5xl font-normal text-center mb-8 [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
+    <span class="text-white">Why Northern Virginia Businesses Choose </span>
+    <span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">AI Automation</span>
+  </h2>
+
+  <p class="max-w-4xl mx-auto [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#99a1ae] text-base md:text-lg text-center tracking-[0] leading-7 mb-12" set:html={introText.split('\n').join('<br />')} />
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
   {cards.map((card) => (
@@ -78,25 +83,15 @@ const {
     >
       <div class={`absolute inset-0 ${card.gradientOverlay} pointer-events-none`} />
 
-      {card.id === "save-time" ? (
-        <div
-          class={`relative w-16 h-16 flex items-center justify-center rounded-[14px] overflow-hidden shadow-[0px_4px_6px_-4px_#0000001a,0px_10px_15px_-3px_#0000001a] ${card.iconBg} mb-4`}
-        >
-          <div class="h-8 w-8 relative">
-            <img
-              class="absolute w-[75.03%] h-[83.36%] top-[8.32%] left-[12.49%]"
-              alt={card.title}
-              src={card.icon}
-            />
-          </div>
-        </div>
-      ) : (
+      <div
+        class={`relative w-16 h-16 flex items-center justify-center rounded-[14px] overflow-hidden shadow-[0px_4px_6px_-4px_#0000001a,0px_10px_15px_-3px_#0000001a] mb-4 ${card.iconBg || 'bg-gradient-to-br from-purple-500 to-pink-500'}`}
+      >
         <img
-          class="relative w-16 h-16 mb-4"
+          class="w-8 h-8 object-contain"
           alt={card.title}
           src={card.icon}
         />
-      )}
+      </div>
 
       <h3 class="relative [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white text-2xl tracking-[0] leading-8 mb-4">
         {card.title}

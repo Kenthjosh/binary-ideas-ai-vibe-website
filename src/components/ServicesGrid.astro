@@ -126,7 +126,12 @@ const bottomRowServices = services.slice(3, 6);
 ---
 
 <section class="relative w-full px-4 md:px-8 lg:px-20 py-16 md:py-24">
-  <p class="max-w-3xl mx-auto [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#99a1ae] text-lg md:text-xl text-center tracking-[0] leading-7 mb-12">
+  <h2 class="text-3xl md:text-4xl lg:text-5xl font-normal text-center mb-6 [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
+    <span class="text-white">Our </span>
+    <span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">AI Services</span>
+  </h2>
+
+  <p class="max-w-3xl mx-auto [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#99a1ae] text-base md:text-lg text-center tracking-[0] leading-7 mb-12">
     {subtitle}
   </p>
 
@@ -166,23 +171,18 @@ const bottomRowServices = services.slice(3, 6);
 
       <a
         href={service.link || "#"}
-        class="flex items-center gap-2 mt-auto"
+        class="flex items-center gap-2 mt-auto group"
         aria-label={`Learn more about ${service.title}`}
       >
         <span
-          class="[-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-transparent text-sm tracking-[0] leading-5"
-          style={`background: ${service.learnMoreGradient}`}
+          class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-sm tracking-[0] leading-5 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent group-hover:opacity-80 transition-opacity"
         >
           Learn More
         </span>
 
-        <div class="h-4 w-4 relative">
-          <img
-            class="absolute w-[25.00%] h-[50.00%] top-[25.00%] left-[37.50%]"
-            alt="Arrow"
-            src="/img/vector-18.svg"
-          />
-        </div>
+        <svg class="w-4 h-4 text-blue-400 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
       </a>
     </article>
   ))}
@@ -222,23 +222,18 @@ const bottomRowServices = services.slice(3, 6);
 
       <a
         href={service.link || "#"}
-        class="flex items-center gap-2 mt-auto"
+        class="flex items-center gap-2 mt-auto group"
         aria-label={`Learn more about ${service.title}`}
       >
         <span
-          class="[-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-transparent text-sm tracking-[0] leading-5"
-          style={`background: ${service.learnMoreGradient}`}
+          class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-sm tracking-[0] leading-5 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent group-hover:opacity-80 transition-opacity"
         >
           Learn More
         </span>
 
-        <div class="h-4 w-4 relative">
-          <img
-            class="absolute w-[25.00%] h-[50.00%] top-[25.00%] left-[37.50%]"
-            alt="Arrow"
-            src="/img/vector-18.svg"
-          />
-        </div>
+        <svg class="w-4 h-4 text-blue-400 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
       </a>
     </article>
   ))}

@@ -35,6 +35,11 @@ const {
   class="relative w-full px-4 md:px-8 lg:px-20 py-16 md:py-24"
   aria-labelledby="features-heading"
 >
+  <h2 id="features-heading" class="text-3xl md:text-4xl lg:text-5xl font-normal text-center mb-12 [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
+    <span class="text-white">Who We </span>
+    <span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Serve</span>
+  </h2>
+
   <div class="max-w-7xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
       <!-- Image Side -->
@@ -45,9 +50,14 @@ const {
         />
 
         <div class="relative rounded-2xl overflow-hidden border border-solid border-[#fffefe1a] backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)] bg-[linear-gradient(155deg,rgba(255,255,255,0.05)_0%,rgba(255,255,255,0.02)_100%)] p-2">
-          <div class={`rounded-[14px] overflow-hidden bg-[url(${imageSrc})] bg-cover bg-center aspect-[4/3]`}>
+          <div class="rounded-[14px] overflow-hidden aspect-[4/3] relative group cursor-pointer">
+            <img
+              src={imageSrc}
+              alt="Northern Virginia storefront"
+              class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+            />
             <div
-              class="w-full h-full bg-[linear-gradient(25deg,rgba(43,127,255,0.2)_0%,rgba(43,127,255,0)_50%,rgba(173,70,255,0.2)_100%)]"
+              class="absolute inset-0 bg-[linear-gradient(25deg,rgba(43,127,255,0.2)_0%,rgba(43,127,255,0)_50%,rgba(173,70,255,0.2)_100%)] pointer-events-none"
               aria-hidden="true"
             />
           </div>

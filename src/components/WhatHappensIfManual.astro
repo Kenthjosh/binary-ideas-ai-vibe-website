@@ -1,0 +1,67 @@
+---
+interface RiskItem {
+  id: number;
+  text: string;
+}
+
+const riskItems: RiskItem[] = [
+  {
+    id: 1,
+    text: "You'll lose more ground to competitors who are capturing 3x more leads with automated systems while you're still playing phone tag",
+  },
+  {
+    id: 2,
+    text: "Your best employees will leave because they're tired of repetitive grunt work instead of meaningful projects",
+  },
+  {
+    id: 3,
+    text: "You'll keep working 60+ hour weeks while missing family time, vacation, and the life you started a business to have",
+  },
+  {
+    id: 4,
+    text: "You'll watch $100,000+ slip away over the next 12 months to missed leads, wasted time, and operational inefficiency",
+  },
+];
+---
+
+<section class="relative w-full px-4 md:px-8 lg:px-20 py-16 md:py-24">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-normal text-center [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
+      <span class="text-white block mb-2">What Happens If You Keep Doing</span>
+      <span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+        Everything Manually?
+      </span>
+    </h2>
+
+    <div class="mt-10 flex flex-col gap-5">
+      {riskItems.map((item) => (
+        <article class="flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-[#fffefe0d] rounded-2xl border border-[#ffffff1f] shadow-[0_10px_30px_rgba(10,10,15,0.3)] backdrop-blur-sm px-6 py-5">
+          <div class="flex items-center justify-center w-14 h-14 rounded-[12px] [font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-white text-2xl bg-[linear-gradient(145deg,rgba(43,127,255,1)_0%,rgba(152,16,250,1)_100%)] shadow-[0_10px_20px_rgba(43,127,255,0.35)] flex-shrink-0">
+            {item.id}
+          </div>
+          <p class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#d5dae5] text-base md:text-lg leading-relaxed">
+            {item.text}
+          </p>
+        </article>
+      ))}
+    </div>
+
+    <p class="mt-10 text-center [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-base md:text-lg leading-relaxed text-white">
+      But it doesn't have to be this way... Let's Find a Better Way
+    </p>
+    <div class="flex justify-center mt-6">
+      <a
+        href="https://api.3sixtycrm.com/widget/bookings/robert-sandiego"
+        class="w-full sm:w-auto px-8 py-4 rounded-[10px] overflow-hidden bg-[linear-gradient(90deg,rgba(43,127,255,1)_0%,rgba(152,16,250,1)_100%)] cursor-pointer transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-[#2b7fff] focus:ring-offset-2 focus:ring-offset-[#000000] flex items-center justify-center gap-2"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-white text-base text-center tracking-[0] leading-6 whitespace-nowrap">
+          Book Free Consultation
+        </span>
+        <img class="w-5 h-5" alt="" src="/img/vector-4.svg" aria-hidden="true" />
+      </a>
+    </div>
+  </div>
+</section>
+

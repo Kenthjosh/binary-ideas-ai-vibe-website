@@ -17,19 +17,23 @@ interface BenefitCard {
 interface Props {
   introText?: string;
   cards?: BenefitCard[];
+  headingPrimary?: string;
+  headingAccent?: string;
 }
 
 const {
-  introText = "Every day you delay automation, you're bleeding money. Here's what it's really costing your Northern Virginia business:",
+  headingPrimary = "Imagine Your Business",
+  headingAccent = "Running on Autopilot",
+  introText = "What if every lead got an instant response? What if your calendar filled itself? What if your team could focus on actual growth instead of busywork? That's what AI automation does for Northern Virginia businesses — and we build it custom for you.",
   cards = [
     {
-      id: "save-time",
+      id: "reclaim-time",
       icon: "/img/vector-6.svg",
-      title: "Lost Revenue",
+      title: "Reclaim 40+ Hours Weekly",
       description:
-        "You're losing 30-50% of inbound leads because you can't respond fast enough. That's $5,000-$15,000 walking out the door every single month to competitors who reply in 60 seconds.",
-      statistic: "-$10k+",
-      statisticLabel: "monthly loss",
+        "Stop wasting time on data entry, follow-ups, and repetitive tasks. AI handles the grunt work 24/7 while your team focuses on growth, strategy, and actually serving customers.",
+      statistic: "40%",
+      statisticLabel: "more efficient",
       gradientBorder: "border-[#2b7fff33]",
       gradientBg: "bg-[linear-gradient(155deg,rgba(43,127,255,0.1)_0%,rgba(43,127,255,0)_100%)]",
       gradientOverlay: "bg-[linear-gradient(155deg,rgba(43,127,255,0)_0%,rgba(43,127,255,0.05)_100%)]",
@@ -38,13 +42,13 @@ const {
       leftPosition: "left-0",
     },
     {
-      id: "cut-costs",
+      id: "slash-costs",
       icon: "/img/background-shadow.svg",
-      title: "Wasted Time",
+      title: "Slash Operating Costs",
       description:
-        "Your team spends 40+ hours weekly on repetitive tasks: data entry, scheduling, email responses, follow-ups. That's $2,000-$4,000 in labor costs for work a $200/month AI could handle.",
-      statistic: "40+ hrs",
-      statisticLabel: "wasted weekly",
+        "Replace $4,000/month in labor costs with $200/month AI that never takes breaks, never calls in sick, and works 24/7/365. Most clients save $30,000+ annually in operational expenses alone.",
+      statistic: "30%",
+      statisticLabel: "cost reduction",
       gradientBorder: "border-[#ac46ff33]",
       gradientBg: "bg-[linear-gradient(155deg,rgba(173,70,255,0.1)_0%,rgba(173,70,255,0)_100%)]",
       gradientOverlay: "bg-[linear-gradient(155deg,rgba(173,70,255,0)_0%,rgba(173,70,255,0.05)_100%)]",
@@ -53,13 +57,13 @@ const {
       leftPosition: "left-[435px]",
     },
     {
-      id: "boost-revenue",
+      id: "capture-leads",
       icon: "/img/background-shadow-1.svg",
-      title: "Team Burnout",
+      title: "Capture 3x More Leads",
       description:
-        "Your best employees are exhausted from doing the same tasks over and over. They're not focused on growth because they're stuck in survival mode. This is costing you talent and morale.",
-      statistic: "70%",
-      statisticLabel: "report fatigue",
+        "Stop losing prospects because you couldn't respond fast enough. AI replies in under 60 seconds, qualifies leads automatically, and fills your calendar with customers who are ready to buy.",
+      statistic: "3x",
+      statisticLabel: "lead volume",
       gradientBorder: "border-[#f6329a33]",
       gradientBg: "bg-[linear-gradient(155deg,rgba(246,51,154,0.1)_0%,rgba(246,51,154,0)_100%)]",
       gradientOverlay: "bg-[linear-gradient(155deg,rgba(246,51,154,0)_0%,rgba(246,51,154,0.05)_100%)]",
@@ -67,14 +71,16 @@ const {
       statisticGradient: "bg-[linear-gradient(90deg,rgba(251,100,182,1)_0%,rgba(255,99,126,1)_100%)]",
       leftPosition: "left-[869px]",
     },
-  ]
+  ],
 } = Astro.props;
 ---
 
 <section class="relative w-full px-4 md:px-8 lg:px-20 py-16 md:py-24">
   <h2 class="text-3xl md:text-4xl lg:text-5xl font-normal text-center mb-8 [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
-    <span class="text-white">The Real Cost of </span>
-    <span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Manual Work in 2025</span>
+    <span class="text-white">{headingPrimary} </span>
+    <span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+      {headingAccent}
+    </span>
   </h2>
 
   <p class="max-w-4xl mx-auto [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#99a1ae] text-base md:text-lg text-center tracking-[0] leading-7 mb-12" set:html={introText.split('\n').join('<br />')} />
@@ -121,7 +127,5 @@ const {
     </article>
   ))}
   </div>
-  <p class="mt-12 max-w-4xl mx-auto px-8 py-6 rounded-2xl bg-[linear-gradient(120deg,rgba(43,127,255,0.2),rgba(173,70,255,0.2))] border border-[#ffffff1a] text-center text-base md:text-lg text-white leading-7 [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
-    <strong>It's not fair</strong>. You're working twice as hard as your competitors but making half the money — simply because they automated first. You're better at serving customers. You just need the right systems.
-  </p>
 </section>
+

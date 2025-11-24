@@ -12,6 +12,7 @@ interface Service {
   description: string;
   learnMoreGradient: string;
   link?: string;
+  linkText?: string;
 }
 
 interface Props {
@@ -20,7 +21,7 @@ interface Props {
 }
 
 const {
-  subtitle = "Each service is designed to deliver measurable results and ROI for your business",
+  subtitle = "Every AI solution we build is designed to solve a specific, expensive problem in your business",
   services = [
     {
       icon: {
@@ -45,9 +46,11 @@ const {
         ],
       },
       title: "Voice AI Agents",
-      description: "Never miss another call with AI that sounds\nhuman. Handle appointment scheduling,\ncustomer inquiries, and lead qualification 24/7.\nReduce staffing costs by 60% while improving\ncustomer satisfaction.",
+      description:
+        "<strong>THE PROBLEM:</strong> Missing 20+ calls daily costs you $3,000-$7,000 monthly\n\nYour AI receptionist answers every call instantly, schedules appointments, qualifies leads, and handles customer inquiries 24/7 — in a voice that sounds completely human. Never miss revenue again.",
       learnMoreGradient: "linear-gradient(90deg,rgba(43,127,255,1)_0%,rgba(0,184,219,1)_100%)",
-      link: "/services/voice-ai-agents"
+      link: "/services/voice-ai-agents",
+      linkText: "See How It Stops Missed Calls",
     },
     {
       icon: {
@@ -55,9 +58,11 @@ const {
         imageSrc: "/img/background-shadow-2.svg",
       },
       title: "Lead Generation AI",
-      description: "Turn your website into a lead magnet. Our AI\nidentifies, captures, and qualifies prospects\nautomatically, increasing lead volume by 300%\nwhile improving quality and reducing cost per\nlead.",
+      description:
+        "<strong>THE PROBLEM:</strong> 70% of website visitors leave without converting\n\nTurn your website into a lead-capturing machine. Our AI identifies high-intent visitors, engages them instantly, and automatically qualifies and routes prospects — increasing conversions by 300%.",
       learnMoreGradient: "linear-gradient(90deg,rgba(173,70,255,1)_0%,rgba(246,51,154,1)_100%)",
-      link: "/services/lead-generation-ai"
+      link: "/services/lead-generation-ai",
+      linkText: "Stop Losing Website Visitors",
     },
     {
       icon: {
@@ -77,9 +82,11 @@ const {
         ],
       },
       title: "Email Marketing AI",
-      description: "Personalized campaigns that actually get\nopened. Our AI optimizes send times,\npersonalizes content, and increases open rates\nby 40% while saving you 10+ hours per week.",
+      description:
+        "<strong>THE PROBLEM:</strong> 10+ hours weekly on email, 18% open rates\n\nStop spending your weekends writing emails nobody opens. AI creates personalized campaigns, optimizes send times, and increases open rates by 40% while giving you back 10+ hours weekly.",
       learnMoreGradient: "linear-gradient(90deg,rgba(246,51,154,1)_0%,rgba(255,32,86,1)_100%)",
-      link: "/services/email-marketing-ai"
+      link: "/services/email-marketing-ai",
+      linkText: "Automate Your Email Marketing",
     },
     {
       icon: {
@@ -94,9 +101,11 @@ const {
         ],
       },
       title: "Chatbot AI",
-      description: "Instant customer support that never sleeps.\nReduce support tickets by 70% with AI that\nprovides instant responses, answers FAQs, and\nescalates complex issues to your team.",
+      description:
+        "<strong>THE PROBLEM:</strong> Support tickets pile up, customers wait hours\n\nGive customers instant answers 24/7. AI chatbots reduce support tickets by 70%, answer FAQs immediately, and escalate only complex issues — freeing your team to focus on high-value work.",
       learnMoreGradient: "linear-gradient(90deg,rgba(0,184,219,1)_0%,rgba(43,127,255,1)_100%)",
-      link: "/services/chatbot-ai"
+      link: "/services/chatbot-ai",
+      linkText: "Eliminate Support Backlogs",
     },
     {
       icon: {
@@ -104,19 +113,23 @@ const {
         imageSrc: "/img/background-shadow-3.svg",
       },
       title: "Social Media AI",
-      description: "Consistent, engaging content across all\nplatforms. Save 15+ hours per week with AI that\ncreates, schedules, and optimizes posts,\nincreasing engagement by 50%.",
+      description:
+        "<strong>THE PROBLEM:</strong> 15+ weekly hours creating content, inconsistent posting\n\nMaintain a consistent social presence without the time drain. AI creates, schedules, and optimizes posts across all platforms, increasing engagement by 50% while saving 15+ hours weekly.",
       learnMoreGradient: "linear-gradient(90deg,rgba(142,81,255,1)_0%,rgba(173,70,255,1)_100%)",
-      link: "/services/social-media-ai"
+      link: "/services/social-media-ai",
+      linkText: "Automate Social Media",
     },
     {
       icon: {
         type: "image",
         imageSrc: "/img/background-shadow-4.svg",
       },
-      title: "Training Agents",
-      description: "Custom AI solutions for your unique workflows.\nWe build and train AI agents specifically for your\nbusiness processes, giving you a competitive\nadvantage in your industry.",
+      title: "Custom Training Agents",
+      description:
+        "<strong>THE PROBLEM:</strong> Your workflows are unique, generic AI won't cut it\n\nHave a unique process that needs automation? We build and train custom AI agents specifically for your workflows, giving you a competitive advantage no off-the-shelf solution can match.",
       learnMoreGradient: "linear-gradient(90deg,rgba(225,42,251,1)_0%,rgba(246,51,154,1)_100%)",
-      link: "/services/training-agents"
+      link: "/services/training-agents",
+      linkText: "Get Custom Automation",
     },
   ]
 } = Astro.props;
@@ -127,8 +140,8 @@ const bottomRowServices = services.slice(3, 6);
 
 <section id="services" class="relative w-full px-4 md:px-8 lg:px-20 py-20 md:py-32">
   <h2 class="text-3xl md:text-4xl lg:text-5xl font-normal text-center mb-6 [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
-    <span class="text-white">Our </span>
-    <span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">AI Services</span>
+    <span class="text-white">Which Problem </span>
+    <span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Do You Need Solved First?</span>
   </h2>
 
   <p class="max-w-3xl mx-auto [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#99a1ae] text-base md:text-lg text-center tracking-[0] leading-7 mb-12">
@@ -177,7 +190,7 @@ const bottomRowServices = services.slice(3, 6);
         <span
           class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-sm tracking-[0] leading-5 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent group-hover:opacity-80 transition-opacity"
         >
-          Learn More
+          {service.linkText || "Learn More"}
         </span>
 
         <img
@@ -230,7 +243,7 @@ const bottomRowServices = services.slice(3, 6);
         <span
           class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-sm tracking-[0] leading-5 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent group-hover:opacity-80 transition-opacity"
         >
-          Learn More
+          {service.linkText || "Learn More"}
         </span>
 
         <img

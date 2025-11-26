@@ -5,43 +5,35 @@ const cards = [
     imageAlt: 'Beauty and self-care icon',
     title: 'Beauty & Self-Care in Alexandria',
     description:
-      'AI Agents reply to Facebook DMs, confirm appointments, and even upsell with “Want to add a facial?” prompts.',
-    highlightLabel: 'Add-on idea:',
-    highlight:
-      'Let the AI also collect reviews after appointments. Simple texts like “How was your visit?” boost your local Google rating.'
+      'The Problem: \n\nMissing bookings from Facebook DMs that came in after hours\n\nTheir AI Agent now replies instantly to Facebook messages, confirms appointments, and upsells with "Want to add a facial?" prompts.\n\nBonus Result:\n\nThe AI also collects reviews automatically. "How was your visit?" texts increased their Google rating from 4.2 to 4.8 stars.'
   },
   {
     imageSrc: '/img/icon-clinic.jpg',
     imageAlt: 'Clinic and wellness icon',
-    title: 'Clinics & Wellness Centers in Springfield',
+    title: 'Med Spa in Springfield',
     description:
-      'We helped a med spa automate bookings, pre-screening forms, and even send post-treatment check-ins. The front desk no longer answers repeat questions.',
-    highlightLabel: 'Expanded benefit:',
-    highlight:
-      'Less admin means more patients seen. Also helps with HIPAA-safe reminders and private messaging.'
+      'The Problem: \n\nFront desk staff spent 70% of their time answering the same questions\n\nWe automated their bookings, pre-screening forms, and post-treatment check-ins. The front desk now focuses on in-person patients instead of repetitive questions.\n\nReal Result:\n\nLess admin work = 12 more patients seen per week = $18,000 more monthly revenue.'
   },
   {
     imageSrc: '/img/icon-contractor.jpg',
     imageAlt: 'Contractor and trades icon',
-    title: 'Contractors & Trades in Lorton',
+    title: 'HVAC Contractor in Lorton',
     description:
-      'Electricians, HVAC, painters – all of them are too busy for phone tag. Their AI Agent answers calls, sends text follow-ups, and can book site visits.',
-    highlightLabel: 'Real Quote:',
-    highlight: '“I used to miss 3-5 jobs a week. Now, I…”'
+      'The Problem: \n\nPlaying phone tag with customers while installing AC units\n\nHis AI Agent answers calls, sends instant follow-up texts, and books site visits – even when he\'s 20 feet up on a roof.\n\nIn His Words:\n\n"I used to miss 3-5 jobs a week. Now I don\'t miss any. My calendar\'s actually full for the first time in years."'
   },
   {
     imageSrc: '/img/icon-real-estate.jpg',
     imageAlt: 'Real estate icon',
-    title: 'Real Estate in Fairfax Station',
+    title: 'Real Estate Agent in Fairfax Station',
     description:
-      'Agents were losing deals after open house signups. Now, their AI Agent texts every guest immediately. It asks if they want to schedule a tour or get loan info – and logs everything.'
+      'The Problem: \n\nOpen house guests ghosted after showing interest\n\nNow her AI Agent texts every guest within 60 seconds. It asks if they want to schedule a private tour, get loan pre-approval info, or see comparable properties – and logs everything in her CRM.'
   },
   {
     imageSrc: '/img/icon-coaches.jpg',
     imageAlt: 'Coaches and course creators icon',
-    title: 'Coaches & Course Creators',
+    title: 'Online Course Creator in Woodbridge',
     description:
-      'A client in Woodbridge used her AI Agent to answer course FAQs, qualify prospects, and send payment reminders. Now her inbox is clean and her calendar full.'
+      'The Problem: \n\nSpending 10+ hours weekly answering the same course questions\n\nHer AI Agent handles FAQs, qualifies prospects, and sends payment reminders. Her inbox is finally clean and her calendar is full of qualified coaching calls – not tire-kickers.'
   }
 ];
 ---
@@ -71,21 +63,26 @@ const cards = [
               {card.title}
             </h3>
           </div>
-          <p class="text-sm md:text-base leading-relaxed text-[#d0d5db] [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
-            {card.description}
-          </p>
-          {card.highlight && (
-            <div class="rounded-2xl border border-[#fffefe1a] bg-[#1a2239]/60 p-4">
-              {card.highlightLabel && (
-                <strong class="block text-sm font-semibold text-white [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
-                  {card.highlightLabel}
-                </strong>
-              )}
-              <p class="mt-2 text-sm leading-relaxed text-[#d0d5db] [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
-                {card.highlight}
-              </p>
-            </div>
-          )}
+          <div class="space-y-3 text-sm md:text-base leading-relaxed text-[#d0d5db] [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
+            {card.description.split('\n\n').map((paragraph) => {
+              const trimmed = paragraph.trim();
+              if (!trimmed) return null;
+
+              const labelMatch = trimmed.match(/^\*\*(.+?)\*\*:(.*)$/);
+
+              return (
+                <p>
+                  {labelMatch ? (
+                    <>
+                      <strong>{labelMatch[1].trim()}:</strong> {labelMatch[2].trim()}
+                    </>
+                  ) : (
+                    trimmed.replace(/^\*\*|\*\*$/g, '')
+                  )}
+                </p>
+              );
+            })}
+          </div>
         </article>
       ))}
     </div>
@@ -104,9 +101,11 @@ const cards = [
               {card.title}
             </h3>
           </div>
-          <p class="text-sm md:text-base leading-relaxed text-[#d0d5db] [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
-            {card.description}
-          </p>
+          <div class="space-y-3 text-sm md:text-base leading-relaxed text-[#d0d5db] [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
+            {card.description.split('\n\n').map((paragraph) => (
+              <p set:html={paragraph}></p>
+            ))}
+          </div>
         </article>
       ))}
       <div class="hidden md:block md:col-span-1"></div>

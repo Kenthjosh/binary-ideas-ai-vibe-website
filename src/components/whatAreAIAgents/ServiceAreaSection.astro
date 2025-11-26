@@ -8,10 +8,24 @@ const {
 };
 
 const highlights = [
-  'A spa in Lorton cut response time from 2 hours to 10 seconds',
-  'A roofing company booked 17 jobs in one week through AI texting',
-  'A dental clinic in Burke now confirms 95% of its appointments with zero staff effort'
+  'A spa in Lorton stopped losing $6,000/month by cutting response time from 2 hours to 10 seconds',
+  'A roofing company booked 17 jobs in one week through AI texting (they usually averaged 8 per month)',
+  'A dental clinic in Burke now confirms 95% of appointments with zero staff time spent on reminder calls'
 ];
+
+const emphasisTargets = [
+  'stopped losing $6,000/month',
+  '17 jobs in one week',
+  '95% of appointments'
+];
+
+const formatHighlight = (text: string) => {
+  let formatted = text;
+  emphasisTargets.forEach((target) => {
+    formatted = formatted.replace(target, `<strong>${target}</strong>`);
+  });
+  return formatted;
+};
 ---
 
 <section class="relative w-full px-4 md:px-8 lg:px-20 py-16 lg:py-20">
@@ -24,7 +38,7 @@ const highlights = [
         </span>
       </h2>
       <p class="text-sm font-semibold uppercase tracking-[0.35em] text-[#8dc5ff] [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
-        REAL RESULTS FROM REAL LOCAL BUSINESSES
+        Real Results from Northern Virginia Businesses
       </p>
       <ul class="space-y-4 text-base md:text-lg leading-relaxed text-[#d0d5db] [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
         {highlights.map((highlight) => (
@@ -32,7 +46,7 @@ const highlights = [
             <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[linear-gradient(90deg,#3785ff_0%,#b020f5_100%)] text-sm font-semibold text-white">
               ✓
             </span>
-            <span>{highlight}</span>
+            <span set:html={formatHighlight(highlight)}></span>
           </li>
         ))}
       </ul>

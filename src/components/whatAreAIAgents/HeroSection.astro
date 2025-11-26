@@ -1,7 +1,7 @@
 ---
 const {
-  titleLeading = 'What are',
-  titleTrailing = 'AI Agents',
+  titleLeading = 'Stop Losing Money to ',
+  titleTrailing = 'Missed Leads',
   titleGradientClass = "bg-[linear-gradient(90deg,#2b7fff_0%,#ac46ff_50%,#f6329a_100%)]"
 } = Astro.props as {
   titleLeading?: string;
@@ -12,7 +12,7 @@ const {
 
 <section class="relative w-full px-4 md:px-8 lg:px-20 py-20 lg:py-24">
   <div class="mx-auto flex max-w-4xl flex-col items-center gap-8 text-center">
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-4 text-center items-center">
       <h1 class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-[46px] font-semibold leading-[68px] sm:text-[64px] sm:leading-[84px] md:text-[70px] md:leading-[94px]">
         <span class={`inline-block text-transparent bg-clip-text ${titleGradientClass}`}>
           {titleLeading}
@@ -25,11 +25,12 @@ const {
         )}
       </h1>
       <h2 class="text-xl md:text-2xl text-white [font-family:'Segoe_UI_Symbol-Regular',Helvetica] leading-relaxed">
-        Tired of chasing leads, missing messages, and juggling it all?
+        Every unanswered call is money walking out the door. <br>Every ignored message is a customer choosing your competitor.
       </h2>
-      <p class="text-base md:text-lg text-[#cbd4e6] leading-relaxed [font-family:'Segoe_UI_Symbol-Regular',Helvetica] max-w-2xl">
-        Let Binary Ideas in Lorton build you an AI agent that never takes a break – and never drops the ball.
-      </p>
+      <p class="text-base md:text-lg text-[#cbd4e6] leading-relaxed [font-family:'Segoe_UI_Symbol-Regular',Helvetica] max-w-2xl text-center">
+        You answer your phone during dinner. You lose leads on weekends. You're working 24/7, but your business can't respond when you're on a ladder, stuck in traffic, or finally getting some sleep.
+      <p class="text-base md:text-lg text-[#cbd4e6] leading-relaxed [font-family:'Segoe_UI_Symbol-Regular',Helvetica] max-w-2xl text-center">
+      <p class="text-base md:text-lg text-[#cbd4e6] leading-relaxed [font-family:'Segoe_UI_Symbol-Regular',Helvetica] max-w-2xl text-center">We know you're already wearing too many hats. You shouldn't need to be available 24/7 just to capture leads.</p>
     </div>
 
     <div class="flex flex-wrap items-center justify-center gap-4">
@@ -39,7 +40,7 @@ const {
         rel="noopener"
         class="inline-flex items-center justify-center rounded-[26px] bg-[linear-gradient(90deg,#3785ff_0%,#b020f5_100%)] px-10 py-4 text-base font-semibold tracking-wide text-white shadow-[0_22px_55px_rgba(94,117,255,0.45)] transition-transform duration-200 hover:scale-[1.04] focus:outline-none focus-visible:ring-4 focus-visible:ring-white/35 [font-family:'Segoe_UI_Symbol-Regular',Helvetica]"
       >
-        Book a Free Demo Today
+        Book Your Free 15-Minute Consultation
       </a>
     </div>
   </div>

@@ -7,6 +7,7 @@ import IntroductionSection from '../components/whatAreAIAgents/IntroductionSecti
 import DefinitionSection from '../components/whatAreAIAgents/DefinitionSection.astro';
 import HowItWorksSection from '../components/whatAreAIAgents/HowItWorksSection.astro';
 import UseCasesSection from '../components/whatAreAIAgents/UseCasesSection.astro';
+import WithOut247AISupport from '../components/whatAreAIAgents/withOut247AISupport.astro';
 import ComparisonSection from '../components/whatAreAIAgents/ComparisonSection.astro';
 import ServiceAreaSection from '../components/whatAreAIAgents/ServiceAreaSection.astro';
 import IndustriesSection from '../components/whatAreAIAgents/IndustriesSection.astro';
@@ -89,30 +90,34 @@ const pageDescription = 'Learn what AI agents are and how they transform busines
         <DefinitionSection />
         <HowItWorksSection />
         <UseCasesSection />
+        <WithOut247AISupport />
         <ComparisonSection />
         <ServiceAreaSection />
         <IndustriesSection />
         <FaqSection
           titleLeading="COMMON QUESTIONS"
           titleHighlight="ABOUT AI AGENTS"
-          subtitle="Answers for local business owners considering AI Agents"
+          subtitle="Answers for local business owners who are tired of losing money"
           faqItems={[
             {
               question: 'Do they work 24/7?',
-              answer: 'Yep. Even at 2am.'
-            },
-            {
-              question: 'Can I try before I pay?',
-              answer: 'Of course! Free demo calls are available.'
-            },
-            {
-              question: 'Are they expensive?',
               answer:
-                'No. It’s like hiring a super affordable assistant. We even offer flexible monthly pricing.'
+                "Yes. Even at 2 AM on Christmas. Your AI Agent never sleeps, never takes breaks, and never calls in sick. It captures leads while you're sleeping, on vacation, or serving other customers."
             },
             {
-              question: "What if I'm not techy?",
-              answer: 'No problem. We set everything up and train you.'
+              question: 'Can I try it before committing?',
+              answer:
+                "Absolutely. Book a free 15-minute consultation where we'll analyze your current lead flow and show you exactly what an AI Agent could do for your business. No sales pressure – just honest advice."
+            },
+            {
+              question: 'How much does it cost?',
+              answer:
+                'Less than hiring a part-time employee, with better results. Most clients recoup their investment in the first month from leads they would have otherwise lost. We offer flexible monthly pricing – no long-term contracts.'
+            },
+            {
+              question: "What if I'm not tech-savvy?",
+              answer:
+                "That's exactly who we built this for. We handle 100% of the setup, training, and integration. You don't need any technical knowledge – you just need to answer 5 questions about your business and we handle the rest."
             }
           ]}
         />
@@ -134,12 +139,12 @@ const pageDescription = 'Learn what AI agents are and how they transform busines
 
           <div class="relative mx-auto flex max-w-3xl flex-col items-center gap-8">
             <h2 class="text-3xl sm:text-4xl md:text-5xl font-semibold text-white [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
-              Let’s Make Business Easier
+              Stop Losing Money to Missed Leads
             </h2>
             <div class="space-y-4 text-base md:text-lg leading-relaxed text-[#cbd4e6] [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
-              <p>You didn’t start a business to answer 300 messages a week.</p>
-              <p>You started to serve people. Grow. Have more time.</p>
-              <p>Let us help. Your AI Agent is ready.</p>
+              <p>You didn't start a business to answer 300 messages a week.</p>
+              <p>You started to serve people. To grow. To have more time for what matters.</p>
+              <p>Your AI Agent is ready. Are you?</p>
             </div>
             <a
               href="https://api.3sixtycrm.com/widget/bookings/robert-sandiego"
@@ -147,9 +152,10 @@ const pageDescription = 'Learn what AI agents are and how they transform busines
               rel="noopener"
               class="inline-flex items-center justify-center rounded-[26px] bg-[linear-gradient(90deg,#3785ff_0%,#b020f5_100%)] px-12 py-5 text-lg font-semibold tracking-wide text-white shadow-[0_22px_55px_rgba(94,117,255,0.45)] transition-transform duration-200 hover:scale-[1.04] focus:outline-none focus-visible:ring-4 focus-visible:ring-white/35"
             >
-              BOOK A FREE DEMO HERE
+              Book Your Free Consultation Now
             </a>
-          </div>
+          </div><br>
+          <p>15 minutes. No sales pressure. Just honest advice on whether AI Agents can help your business.</p>
         </section>
       </div>
 

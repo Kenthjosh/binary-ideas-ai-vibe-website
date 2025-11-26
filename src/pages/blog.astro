@@ -1,8 +1,0 @@
----
-import BlogListingPage from '../components/Blog/BlogListingPage.astro';
-import { getBlogPagination } from '../data/blogs/content';
-
-const { posts, totalPages, currentPage } = getBlogPagination(1);
----
-
-<BlogListingPage posts={posts} currentPage={currentPage} totalPages={totalPages} />

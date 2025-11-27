@@ -14,8 +14,8 @@
       "Your sales team wastes hours chasing unqualified prospects while real opportunities slip away.",
       "You have no idea which marketing channels actually bring in quality leads versus just expensive clicks."
     ],
-    "ctaText": "Get Your Free Lead Audit",
-    "ctaAriaLabel": "Get Your Free Lead Audit",
+    "ctaText": "Get Your Free Lead Quality Audit",
+    "ctaAriaLabel": "Get Your Free Lead Quality Audit",
     "ctaIconSrc": "/img/vector-36.svg",
     "ctaIconAlt": "Arrow icon"
   },
@@ -147,30 +147,30 @@
     "titleHighlight": "Your Business",
     "items": [
       {
-        "id": "increase-lead-volume",
-        "title": "Increase Lead Volume by 300%",
-        "description": "Our AI works around the clock to identify and capture leads from multiple sources, dramatically increasing your pipeline while you focus on closing deals and growing your business.",
+        "id": "reduce-cost-per-qualified-lead",
+        "title": "Reduce Cost Per Qualified Lead by 60-80%",
+        "description": "With AI qualification, you stop paying for tire-kickers and only invest in high-potential leads. Your cost per qualified prospect drops from $150-200 to $50-80—a 60-80% reduction. If you're spending $5,000/month on lead generation and 60% are unqualified, you're wasting $3,000. With AI, you either generate the same qualified volume for $2,000 or 3X your qualified leads on the same $5,000 budget.",
         "iconGradient": "bg-[linear-gradient(145deg,rgba(59,130,246,1)_0%,rgba(96,165,250,1)_100%)]",
         "iconImages": []
       },
       {
-        "id": "improve-lead-quality",
-        "title": "Improve Lead Quality",
-        "description": "Advanced scoring algorithms ensure you only spend time on prospects who are genuinely interested and likely to convert, improving your sales team's efficiency and success rates.",
+        "id": "triple-sales-productivity",
+        "title": "3X Your Sales Team Productivity",
+        "description": "Your salespeople no longer waste 15-20 hours per week on dead-end calls. With AI qualification filtering out 60-70% of garbage leads, they spend 100% of their time talking to serious prospects. Same team, same hours, but now they're closing deals instead of leaving voicemails for people who were never going to buy. That's $15,000-$25,000 in monthly salary finally being used effectively.",
         "iconGradient": "bg-[linear-gradient(145deg,rgba(168,85,247,1)_0%,rgba(59,130,246,1)_100%)]",
         "iconImages": []
       },
       {
-        "id": "reduce-cost-per-lead",
-        "title": "Reduce Cost Per Lead",
-        "description": "Eliminate expensive advertising waste and manual lead generation efforts. Our AI finds qualified prospects at a fraction of the cost of traditional marketing methods.",
+        "id": "respond-to-hot-leads-fast",
+        "title": "Respond to Hot Leads in Minutes, Not Days",
+        "description": "High-score leads trigger instant notifications to your sales team via text, email, or CRM alert. Your team calls within 5-15 minutes while prospects are still hot, engaged, and researching solutions. Your close rate on these leads is 40-60% because you reached them first—versus the 10-20% close rate on leads you call 2-3 days later. Speed matters, and AI ensures you're always first to respond to qualified buyers.",
         "iconGradient": "bg-[linear-gradient(145deg,rgba(236,72,153,1)_0%,rgba(168,85,247,1)_100%)]",
         "iconImages": []
       },
       {
-        "id": "faster-sales-cycles",
-        "title": "Faster Sales Cycles",
-        "description": "By qualifying leads before they reach your sales team and providing detailed prospect insights, your sales process becomes more efficient, leading to quicker closes and higher conversion rates.",
+        "id": "data-driven-budget-allocation",
+        "title": "Finally Know Where to Invest Your Marketing Budget",
+        "description": "With AI tracking and scoring leads by source, you see exactly which channels drive revenue versus just clicks. Discover that 80% of your qualified leads come from LinkedIn while Facebook brings expensive tire-kickers. Now you can 3X your LinkedIn budget, cut Facebook entirely, and generate 140% more qualified leads on the same total budget. No more guessing—just data-driven decisions.",
         "iconGradient": "bg-[linear-gradient(145deg,rgba(59,130,246,1)_0%,rgba(12,10,25,1)_100%)]",
         "iconImages": []
       }

@@ -1,0 +1,11 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="phoneGradient" x1="12" y1="8" x2="44" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A855F7"/>
+      <stop offset="1" stop-color="#6366F1"/>
+    </linearGradient>
+  </defs>
+  <rect width="56" height="56" rx="16" fill="url(#phoneGradient)"/>
+  <path d="M20.2 17.8C21.7 16.3 24.2 16.3 25.7 17.8L28.6 20.7C29.9 22 30.1 24 29.1 25.5L27.9 27.2C27.6 27.7 27.7 28.3 28.1 28.7L31.8 32.4C32.2 32.8 32.8 32.9 33.3 32.6L35 31.4C36.5 30.4 38.5 30.6 39.8 31.9L42.7 34.8C44.2 36.3 44.2 38.8 42.7 40.3L41.1 41.9C39 44 35.5 44.2 32.9 42.6C28.6 39.9 24.5 36.5 21 33C17.5 29.5 14.1 25.4 11.4 21.1C9.8 18.5 10 15 12.1 12.9L13.7 11.3C15.2 9.8 17.7 9.8 19.2 11.3L22.1 14.2C23.4 15.5 23.6 17.5 22.6 19L21.4 20.7C21.1 21.2 21.2 21.8 21.6 22.2L23.8 24.4" stroke="white" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+

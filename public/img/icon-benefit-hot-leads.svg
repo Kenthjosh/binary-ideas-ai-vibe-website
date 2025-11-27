@@ -1,0 +1,13 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="benefitHotLeadsGradient" x1="12" y1="10" x2="44" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FB7185"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="56" height="56" rx="16" fill="url(#benefitHotLeadsGradient)"/>
+  <path d="M30 18C32 22 31 25 28 28C25 31 24 34 26 38C22 37 19 34 19 29C19 22 26 17 30 18Z" stroke="white" stroke-width="2.4" fill="none"/>
+  <path d="M30 18C32 20 34 22.5 34 26C34 30 31 32 30 36" stroke="white" stroke-width="2.4" fill="none"/>
+  <path d="M36 38L31 34" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+</svg>
+

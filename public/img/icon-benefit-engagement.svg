@@ -1,0 +1,13 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="benefitEngagementGradient" x1="12" y1="8" x2="44" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F472B6"/>
+      <stop offset="1" stop-color="#C084FC"/>
+    </linearGradient>
+  </defs>
+  <rect width="56" height="56" rx="16" fill="url(#benefitEngagementGradient)"/>
+  <path d="M18 22C18 19.7909 19.7909 18 22 18H34C36.2091 18 38 19.7909 38 22V29C38 31.2091 36.2091 33 34 33H27L22 38V33H22C19.7909 33 18 31.2091 18 29V22Z" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M25 23H33" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M25 27H31" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+</svg>
+

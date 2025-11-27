@@ -1,0 +1,15 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="realTimeGradient" x1="8" y1="12" x2="48" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FB7185"/>
+      <stop offset="1" stop-color="#F43F5E"/>
+    </linearGradient>
+  </defs>
+  <rect width="56" height="56" rx="16" fill="url(#realTimeGradient)"/>
+  <path d="M34 32V25C34 21.6863 31.3137 19 28 19C24.6863 19 22 21.6863 22 25V32" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M20 32H36V33C36 34.6569 34.6569 36 33 36H23C21.3431 36 20 34.6569 20 33V32Z" stroke="white" stroke-width="2.4" fill="none"/>
+  <path d="M28 38V40" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M37 23C38.1046 24.3431 38.7778 26.0224 38.7778 27.8333" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M19 23C17.8954 24.3431 17.2222 26.0224 17.2222 27.8333" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+</svg>
+

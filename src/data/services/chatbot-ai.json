@@ -114,13 +114,15 @@
         "id": "24-7-lead-capture",
         "icon": "globe",
         "title": "24/7 Lead Capture",
-        "description": "Never lose a lead to slow response times again. Your Chatbot AI works around the clock, qualifying prospects and booking appointments even when your office is closed."
+        "description": "Never lose a lead to slow response times again. Your Chatbot AI works around the clock, qualifying prospects and booking appointments even when your office is closed.",
+        "iconSrc": "/img/icon-feature-lead-capture.svg"
       },
       {
         "id": "smart-lead-qualification",
         "icon": "database",
         "title": "Smart Lead Qualification",
-        "description": "Ask the right questions to identify serious buyers and filter out tire-kickers. Your AI gathers budget, timeline, and project details before passing leads to your team."
+        "description": "Ask the right questions to identify serious buyers and filter out tire-kickers. Your AI gathers budget, timeline, and project details before passing leads to your team.",
+        "iconSrc": "/img/icon-feature-lead-scoring.svg"
       },
       {
         "id": "appointment-booking",
@@ -132,13 +134,15 @@
         "id": "multi-channel-integration",
         "icon": "analytics",
         "title": "Multi-Channel Integration",
-        "description": "Connect with visitors across your website, Facebook Messenger, and other platforms. Provide consistent service everywhere your customers are."
+        "description": "Connect with visitors across your website, Facebook Messenger, and other platforms. Provide consistent service everywhere your customers are.",
+        "iconSrc": "/img/icon-feature-multi-channel.svg"
       },
       {
         "id": "crm-and-calendar-sync",
         "icon": "calendar",
         "title": "CRM & Calendar Sync",
-        "description": "Automatically log all conversations, update lead records, and sync appointments with your existing CRM and calendar systems."
+        "description": "Automatically log all conversations, update lead records, and sync appointments with your existing CRM and calendar systems.",
+        "iconSrc": "/img/icon-feature-crm.svg"
       }
     ]
   },
@@ -150,29 +154,37 @@
         "id": "three-x-more-qualified-leads",
         "title": "3X More Qualified Leads",
         "description": "Capture every visitor's attention at the perfect moment. Instant engagement means more conversations, more qualified prospects, and more sales opportunities.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(56,189,248,1)_0%,rgba(168,85,247,1)_100%)]",
-        "iconImages": []
+        "iconGradient": "",
+        "iconImages": [],
+        "iconType": "image",
+        "iconSrc": "/img/icon-benefit-qualified-leads.svg"
       },
       {
         "id": "reduce-response-time-under-30-seconds",
         "title": "Reduce Response Time to Under 30 Seconds",
         "description": "Stop losing leads to competitors who answer faster. Your Chatbot AI responds instantly—day or night, weekday or weekend.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(59,130,246,1)_0%,rgba(37,99,235,1)_100%)]",
-        "iconImages": []
+        "iconGradient": "",
+        "iconImages": [],
+        "iconType": "image",
+        "iconSrc": "/img/icon-benefit-fast-response.svg"
       },
       {
         "id": "save-10-15-hours-weekly",
         "title": "Save 10-15 Hours Per Week",
         "description": "Eliminate time wasted on repetitive questions. Your team focuses on closing deals and serving customers while AI handles routine inquiries.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(147,197,253,1)_0%,rgba(99,102,241,1)_100%)]",
-        "iconImages": []
+        "iconGradient": "",
+        "iconImages": [],
+        "iconType": "image",
+        "iconSrc": "/img/icon-benefit-save-time.svg"
       },
       {
         "id": "increase-conversion-rates-40-plus",
         "title": "Increase Conversion Rates by 40%+",
         "description": "Guide visitors through your sales process with personalized conversations. Turn more website traffic into paying customers.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(217,70,239,1)_0%,rgba(236,72,153,1)_100%)]",
-        "iconImages": []
+        "iconGradient": "",
+        "iconImages": [],
+        "iconType": "image",
+        "iconSrc": "/img/icon-benefit-conversion.svg"
       }
     ]
   },

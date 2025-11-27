@@ -1,0 +1,12 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="benefitTrustGradient" x1="8" y1="12" x2="48" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDE047"/>
+      <stop offset="1" stop-color="#FB7185"/>
+    </linearGradient>
+  </defs>
+  <rect width="56" height="56" rx="16" fill="url(#benefitTrustGradient)"/>
+  <path d="M28 18L18 22V30C18 35.5228 22.4772 40 28 40C33.5228 40 38 35.5228 38 30V22L28 18Z" stroke="white" stroke-width="2.4" stroke-linejoin="round" fill="none"/>
+  <path d="M25 29L28 32L33 27" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+

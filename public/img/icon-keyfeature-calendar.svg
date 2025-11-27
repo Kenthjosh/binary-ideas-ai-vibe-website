@@ -1,0 +1,20 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="calendarGradient" x1="8" y1="10" x2="48" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F472B6"/>
+      <stop offset="1" stop-color="#FB7185"/>
+    </linearGradient>
+  </defs>
+  <rect width="56" height="56" rx="16" fill="url(#calendarGradient)"/>
+  <rect x="16" y="18" width="24" height="20" rx="4" stroke="white" stroke-width="2.4" fill="none"/>
+  <path d="M16 23H40" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M22 16V20" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M34 16V20" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="23.5" cy="27.5" r="1.5" fill="white"/>
+  <circle cx="28" cy="27.5" r="1.5" fill="white"/>
+  <circle cx="32.5" cy="27.5" r="1.5" fill="white"/>
+  <circle cx="23.5" cy="32.5" r="1.5" fill="white"/>
+  <circle cx="28" cy="32.5" r="1.5" fill="white"/>
+  <circle cx="32.5" cy="32.5" r="1.5" fill="white"/>
+</svg>
+

@@ -109,35 +109,40 @@
         "id": "automated-lead-scoring",
         "icon": "database",
         "title": "Automated Lead Scoring",
-        "description": "Our AI analyzes prospect behavior, demographics, and engagement patterns to automatically score leads based on their likelihood to convert, helping you focus on the most promising opportunities first."
+        "description": "Our AI analyzes prospect behavior, demographics, and engagement patterns to automatically score leads based on their likelihood to convert, helping you focus on the most promising opportunities first.",
+        "iconSrc": "/img/icon-feature-lead-scoring.svg"
       },
       {
         "id": "multi-channel-capture",
         "icon": "calendar",
         "title": "Multi-Channel Capture",
-        "description": "Capture leads from your website, social media, email campaigns, and other digital touchpoints simultaneously, ensuring no potential customer falls through the cracks regardless of how they discover your business."
+        "description": "Capture leads from your website, social media, email campaigns, and other digital touchpoints simultaneously, ensuring no potential customer falls through the cracks regardless of how they discover your business.",
+        "iconSrc": "/img/icon-feature-funnel.svg"
       },
       {
         "id": "real-time-notifications",
-        "icon": "phone",
+        "icon": "bell",
         "title": "Real-Time Notifications",
-        "description": "Get instant alerts when high-quality leads are identified, allowing you to respond immediately while the prospect is still engaged and most likely to convert."
+        "description": "Get instant alerts when high-quality leads are identified, allowing you to respond immediately while the prospect is still engaged and most likely to convert.",
+        "iconSrc": "/img/icon-feature-real-time.svg"
       },
       {
         "id": "crm-integration",
         "icon": "globe",
         "title": "CRM Integration",
-        "description": "Seamlessly sync all captured leads with your existing CRM system, automatically updating contact information, lead scores, and interaction history to keep your sales team informed."
+        "description": "Seamlessly sync all captured leads with your existing CRM system, automatically updating contact information, lead scores, and interaction history to keep your sales team informed.",
+        "iconSrc": "/img/icon-feature-crm.svg"
       },
       {
         "id": "follow-up-automation",
         "icon": "clock",
         "title": "Follow-Up Automation",
-        "description": "Intelligently nurture leads with personalized follow-up sequences that adapt based on prospect behavior, ensuring consistent engagement without overwhelming potential customers."
+        "description": "Intelligently nurture leads with personalized follow-up sequences that adapt based on prospect behavior, ensuring consistent engagement without overwhelming potential customers.",
+        "iconSrc": "/img/icon-feature-follow-up.svg"
       },
       {
         "id": "analytics-dashboard",
-        "icon": "message",
+        "icon": "analytics",
         "title": "Analytics Dashboard",
         "description": "Track lead generation performance with detailed analytics showing conversion rates, source performance, and ROI metrics to continuously optimize your lead generation strategy."
       }
@@ -151,29 +156,37 @@
         "id": "reduce-manual-labor-70-90",
         "title": "Reduce Manual Labor by 70-90%",
         "description": "Your team spends countless hours on repetitive, complex tasks that require intelligence but drain their time—data entry, document processing, quality checks, and multi-step workflows. Custom Training Agents handle these workflows automatically with the intelligence of your best employees, processing tasks 10-20X faster while working 24/7 without breaks. Free your team to focus on high-value work that actually grows your business instead of drowning in administrative overhead.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(56,189,248,1)_0%,rgba(96,165,250,1)_100%)]",
-        "iconImages": []
+        "iconGradient": "",
+        "iconImages": [],
+        "iconType": "image",
+        "iconSrc": "/img/icon-benefit-automation.svg"
       },
       {
         "id": "scale-without-adding-headcount",
         "title": "Scale Without Adding Headcount",
         "description": "Growing your business means choosing between hiring expensive employees (with recruitment costs, training time, benefits, and turnover) or staying stuck at your current capacity. Training Agents handle the workload of 3-5 additional employees at a fraction of the cost. As your business grows, your AI scales instantly—no hiring, no training, no turnover. Northern VA clients process 3-10X more volume without adding a single full-time position, saving $120,000-$300,000 annually in avoided hiring costs.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(168,85,247,1)_0%,rgba(59,130,246,1)_100%)]",
-        "iconImages": []
+        "iconGradient": "",
+        "iconImages": [],
+        "iconType": "image",
+        "iconSrc": "/img/icon-benefit-scale.svg"
       },
       {
         "id": "eliminate-costly-errors-rework",
         "title": "Eliminate Costly Errors & Rework",
         "description": "Human errors in complex workflows cost thousands in rework, compliance penalties, customer refunds, and damaged reputation. Even your best employees make mistakes on repetitive, detail-intensive tasks. Training Agents apply consistent logic across every transaction with near-zero error rates, catch anomalies humans miss, enforce compliance automatically, and eliminate costly mistakes. One prevented error can save $5,000-$50,000 in rework and penalties—paying for the entire system multiple times over.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(236,72,153,1)_0%,rgba(168,85,247,1)_100%)]",
-        "iconImages": []
+        "iconGradient": "",
+        "iconImages": [],
+        "iconType": "image",
+        "iconSrc": "/img/icon-benefit-accuracy.svg"
       },
       {
         "id": "gain-real-time-intelligence-insights",
         "title": "Gain Real-Time Intelligence & Insights",
         "description": "Your data sits trapped in multiple systems. Getting reports requires manual compilation taking days or weeks—by then, opportunities have passed or problems have worsened. Training Agents process and analyze data in real-time, providing instant visibility across your entire operation. Generate executive reports automatically, catch problems before they become crises, and make data-driven decisions 10X faster because insights appear automatically instead of requiring manual analysis requests.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(59,130,246,1)_0%,rgba(12,10,25,1)_100%)]",
-        "iconImages": []
+        "iconGradient": "",
+        "iconImages": [],
+        "iconType": "image",
+        "iconSrc": "/img/icon-benefit-insights.svg"
       }
     ]
   },

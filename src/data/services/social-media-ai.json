@@ -108,7 +108,8 @@
         "id": "content-generation",
         "icon": "message",
         "title": "Content Generation That Sounds Like YOU",
-        "description": "Our AI creates engaging posts, captions, stories, and videos tailored to each platform's format and your brand's unique voice. After training on your existing content and brand guidelines, it generates posts that your audience can't distinguish from your human-written content. Never stare at a blank screen again."
+        "description": "Our AI creates engaging posts, captions, stories, and videos tailored to each platform's format and your brand's unique voice. After training on your existing content and brand guidelines, it generates posts that your audience can't distinguish from your human-written content. Never stare at a blank screen again.",
+        "iconSrc": "/img/icon-feature-content-generation.svg"
       },
       {
         "id": "post-scheduling",
@@ -120,17 +121,19 @@
         "id": "engagement-automation",
         "icon": "phone",
         "title": "Automated Engagement That Builds Relationships",
-        "description": "AI responds to comments, messages, and mentions in real-time with contextually appropriate replies that maintain your brand voice. Simple questions get instant answers, qualified leads get escalated to you immediately, and negative comments are flagged for your personal attention. Never lose another lead because you didn't see a DM for 3 days."
+        "description": "AI responds to comments, messages, and mentions in real-time with contextually appropriate replies that maintain your brand voice. Simple questions get instant answers, qualified leads get escalated to you immediately, and negative comments are flagged for your personal attention. Never lose another lead because you didn't see a DM for 3 days.",
+        "iconSrc": "/img/icon-feature-automated-engagement.svg"
       },
       {
         "id": "hashtag-optimization",
         "icon": "globe",
         "title": "Intelligent Hashtag Optimization",
-        "description": "The AI researches and selects the most effective hashtags for each post based on your industry, target audience, and current trends. It avoids over-used hashtags that bury your content and finds high-potential tags that expand your reach to qualified prospects. Each post has 30-100% more reach than manually hashtagged content."
+        "description": "The AI researches and selects the most effective hashtags for each post based on your industry, target audience, and current trends. It avoids over-used hashtags that bury your content and finds high-potential tags that expand your reach to qualified prospects. Each post has 30-100% more reach than manually hashtagged content.",
+        "iconSrc": "/img/icon-feature-hashtag.svg"
       },
       {
         "id": "analytics-reporting",
-        "icon": "clock",
+        "icon": "analytics",
         "title": "Performance Analytics You Actually Understand",
         "description": "Track detailed metrics including reach, engagement, clicks, leads, and ROI across all platforms in one simple dashboard. See which content types perform best, which platforms drive the most business, and exactly how social media contributes to your bottom line. Finally understand what's working instead of guessing."
       },
@@ -138,7 +141,8 @@
         "id": "multi-platform-management",
         "icon": "database",
         "title": "Multi-Platform Management from One Dashboard",
-        "description": "Manage Facebook, Instagram, LinkedIn, TikTok, YouTube, Twitter, and more from a single centralized system. The AI optimizes content for each platform's unique algorithm, format, and audience while maintaining consistent messaging across all channels. Stop reformatting the same content for each platform."
+        "description": "Manage Facebook, Instagram, LinkedIn, TikTok, YouTube, Twitter, and more from a single centralized system. The AI optimizes content for each platform's unique algorithm, format, and audience while maintaining consistent messaging across all channels. Stop reformatting the same content for each platform.",
+        "iconSrc": "/img/icon-feature-multi-platform.svg"
       }
     ]
   },
@@ -150,30 +154,36 @@
         "id": "increase-engagement-reach-50-150",
         "title": "Increase Engagement & Reach by 50-150%",
         "description": "Our AI maintains consistent daily posting at optimal times, which dramatically improves algorithm visibility and organic reach. Northern VA clients see 50-150% increases in engagement (likes, comments, shares) and reach 3-5X more potential customers—resulting in 10-25 additional monthly leads worth $5,000-$15,000 in revenue.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(56,189,248,1)_0%,rgba(248,113,113,1)_100%)]",
-        "iconImages": []
+        "iconGradient": "",
+        "iconImages": [],
+        "iconType": "image",
+        "iconSrc": "/img/icon-benefit-engagement.svg"
       },
       {
         "id": "save-15-20-hours-per-week",
         "title": "Save 15-20 Hours Per Week",
         "description": "AI handles everything automatically—content creation, multi-platform posting, real-time engagement, and performance analytics. That's 60-80 hours per month freed up to focus on serving customers, growing your business, or spending time with family. Your social media runs on autopilot while you focus on what actually matters.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(236,72,153,1)_0%,rgba(59,130,246,1)_100%)]",
-        "iconImages": []
+        "iconGradient": "",
+        "iconImages": [],
+        "iconType": "image",
+        "iconSrc": "/img/icon-benefit-save-time.svg"
       },
       {
         "id": "never-miss-a-comment-or-dm",
         "title": "Never Miss a Comment or DM Again",
         "description": "AI responds to comments and messages in real-time, 24/7. Simple questions get instant, accurate answers. Qualified leads get immediate responses and are escalated to you instantly. You never lose business because you missed a notification or were too busy serving customers to check Instagram.",
         "iconType": "image",
-        "iconSrc": "/img/vector-20.svg",
+        "iconSrc": "/img/icon-benefit-always-on.svg",
         "iconImages": []
       },
       {
         "id": "build-trust-with-consistent-brand-presence",
         "title": "Build Trust Through Consistent Brand Presence",
         "description": "Active, consistent social media with on-brand content builds instant credibility. When prospects check your profiles, they see a thriving, professional business worth trusting. Your close rate increases 20-40% because social proof pre-sells your expertise before the first conversation. You look established, successful, and trustworthy—because your social media never goes dark.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(147,197,253,1)_0%,rgba(56,189,248,1)_100%)]",
-        "iconImages": []
+        "iconGradient": "",
+        "iconImages": [],
+        "iconType": "image",
+        "iconSrc": "/img/icon-benefit-trust.svg"
       }
     ]
   },

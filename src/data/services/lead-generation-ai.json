@@ -109,35 +109,40 @@
         "id": "automated-lead-scoring",
         "icon": "target",
         "title": "Automated Lead Scoring",
-        "description": "Our AI analyzes prospect behavior, demographics, and engagement patterns to automatically score leads based on their likelihood to convert, helping you focus on the most promising opportunities first."
+        "description": "Our AI analyzes prospect behavior, demographics, and engagement patterns to automatically score leads based on their likelihood to convert, helping you focus on the most promising opportunities first.",
+        "iconSrc": "/img/icon-feature-lead-scoring.svg"
       },
       {
         "id": "multi-channel-capture",
         "icon": "globe",
         "title": "Multi-Channel Capture",
-        "description": "Capture leads from your website, social media, email campaigns, and other digital touchpoints simultaneously, ensuring no potential customer falls through the cracks regardless of how they discover your business."
+        "description": "Capture leads from your website, social media, email campaigns, and other digital touchpoints simultaneously, ensuring no potential customer falls through the cracks regardless of how they discover your business.",
+        "iconSrc": "/img/icon-feature-funnel.svg"
       },
       {
         "id": "real-time-notifications",
         "icon": "bell",
         "title": "Real-Time Notifications",
-        "description": "Get instant alerts when high-quality leads are identified, allowing you to respond immediately while the prospect is still engaged and most likely to convert."
+        "description": "Get instant alerts when high-quality leads are identified, allowing you to respond immediately while the prospect is still engaged and most likely to convert.",
+        "iconSrc": "/img/icon-feature-real-time.svg"
       },
       {
         "id": "crm-integration",
         "icon": "database",
         "title": "CRM Integration",
-        "description": "Seamlessly sync all captured leads with your existing CRM system, automatically updating contact information, lead scores, and interaction history to keep your sales team informed."
+        "description": "Seamlessly sync all captured leads with your existing CRM system, automatically updating contact information, lead scores, and interaction history to keep your sales team informed.",
+        "iconSrc": "/img/icon-feature-crm.svg"
       },
       {
         "id": "follow-up-automation",
         "icon": "clock",
         "title": "Follow-Up Automation",
-        "description": "Intelligently nurture leads with personalized follow-up sequences that adapt based on prospect behavior, ensuring consistent engagement without overwhelming potential customers."
+        "description": "Intelligently nurture leads with personalized follow-up sequences that adapt based on prospect behavior, ensuring consistent engagement without overwhelming potential customers.",
+        "iconSrc": "/img/icon-feature-follow-up.svg"
       },
       {
         "id": "analytics-dashboard",
-        "icon": "chart-bar",
+        "icon": "analytics",
         "title": "Analytics Dashboard",
         "description": "Track lead generation performance with detailed analytics showing conversion rates, source performance, and ROI metrics to continuously optimize your lead generation strategy."
       }
@@ -151,29 +156,37 @@
         "id": "reduce-cost-per-qualified-lead",
         "title": "Reduce Cost Per Qualified Lead by 60-80%",
         "description": "With AI qualification, you stop paying for tire-kickers and only invest in high-potential leads. Your cost per qualified prospect drops from $150-200 to $50-80—a 60-80% reduction. If you're spending $5,000/month on lead generation and 60% are unqualified, you're wasting $3,000. With AI, you either generate the same qualified volume for $2,000 or 3X your qualified leads on the same $5,000 budget.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(59,130,246,1)_0%,rgba(96,165,250,1)_100%)]",
-        "iconImages": []
+        "iconGradient": "",
+        "iconImages": [],
+        "iconType": "image",
+        "iconSrc": "/img/icon-benefit-cost.svg"
       },
       {
         "id": "triple-sales-productivity",
         "title": "3X Your Sales Team Productivity",
         "description": "Your salespeople no longer waste 15-20 hours per week on dead-end calls. With AI qualification filtering out 60-70% of garbage leads, they spend 100% of their time talking to serious prospects. Same team, same hours, but now they're closing deals instead of leaving voicemails for people who were never going to buy. That's $15,000-$25,000 in monthly salary finally being used effectively.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(168,85,247,1)_0%,rgba(59,130,246,1)_100%)]",
-        "iconImages": []
+        "iconGradient": "",
+        "iconImages": [],
+        "iconType": "image",
+        "iconSrc": "/img/icon-benefit-productivity.svg"
       },
       {
         "id": "respond-to-hot-leads-fast",
         "title": "Respond to Hot Leads in Minutes, Not Days",
         "description": "High-score leads trigger instant notifications to your sales team via text, email, or CRM alert. Your team calls within 5-15 minutes while prospects are still hot, engaged, and researching solutions. Your close rate on these leads is 40-60% because you reached them first—versus the 10-20% close rate on leads you call 2-3 days later. Speed matters, and AI ensures you're always first to respond to qualified buyers.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(236,72,153,1)_0%,rgba(168,85,247,1)_100%)]",
-        "iconImages": []
+        "iconGradient": "",
+        "iconImages": [],
+        "iconType": "image",
+        "iconSrc": "/img/icon-benefit-hot-leads.svg"
       },
       {
         "id": "data-driven-budget-allocation",
         "title": "Finally Know Where to Invest Your Marketing Budget",
         "description": "With AI tracking and scoring leads by source, you see exactly which channels drive revenue versus just clicks. Discover that 80% of your qualified leads come from LinkedIn while Facebook brings expensive tire-kickers. Now you can 3X your LinkedIn budget, cut Facebook entirely, and generate 140% more qualified leads on the same total budget. No more guessing—just data-driven decisions.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(59,130,246,1)_0%,rgba(12,10,25,1)_100%)]",
-        "iconImages": []
+        "iconGradient": "",
+        "iconImages": [],
+        "iconType": "image",
+        "iconSrc": "/img/icon-benefit-insights.svg"
       }
     ]
   },

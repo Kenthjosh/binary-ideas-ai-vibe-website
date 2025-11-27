@@ -92,7 +92,8 @@
         "id": "personalized-content-for-every-subscriber",
         "icon": "message",
         "title": "Personalized Content for Every Subscriber",
-        "description": "Our AI analyzes each subscriber's past behavior, preferences, and engagement history to create unique email content that speaks directly to their interests. No more mass blasts—emails that feel like personal messages, not spam."
+        "description": "Our AI analyzes each subscriber's past behavior, preferences, and engagement history to create unique email content that speaks directly to their interests. No more mass blasts—emails that feel like personal messages, not spam.",
+        "iconSrc": "/img/icon-feature-personalized-content.svg"
       },
       {
         "id": "send-time-optimization-game-changer",
@@ -114,15 +115,16 @@
       },
       {
         "id": "performance-analytics-insights",
-        "icon": "database",
+        "icon": "analytics",
         "title": "Performance Analytics & Insights",
         "description": "Track open rates, click-through rates, conversion rates, revenue per email, and ROI—with clear, actionable insights showing you exactly what's working and what to do next. You'll finally know which campaigns drive revenue."
       },
       {
         "id": "mobile-responsive-templates",
-        "icon": "tool",
+        "icon": "mobile",
         "title": "Mobile-Responsive Templates",
-        "description": "AI-generated email templates that look beautiful on desktop, mobile, and tablet—automatically optimized for each device and email client. No more broken layouts or weird formatting."
+        "description": "AI-generated email templates that look beautiful on desktop, mobile, and tablet—automatically optimized for each device and email client. No more broken layouts or weird formatting.",
+        "iconSrc": "/img/icon-feature-mobile.svg"
       }
     ]
   },
@@ -134,30 +136,36 @@
         "id": "increase-open-rates-by-40",
         "title": "Increase Open Rates by 40%",
         "description": "35-50% open rates with personalized timing and content. If you're sending to 5,000 subscribers, that's 1,000-1,500 MORE people reading every email you send.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(249,115,22,1)_0%,rgba(139,92,246,1)_100%)]",
-        "iconImages": []
+        "iconGradient": "",
+        "iconImages": [],
+        "iconType": "image",
+        "iconSrc": "/img/icon-benefit-open-rate.svg"
       },
       {
         "id": "save-10-plus-hours-per-week",
         "title": "Save 10+ Hours Per Week",
         "description": "AI handles everything automatically while you focus on serving customers. That's 40+ hours per month you get back—time to grow your business, spend with family, or finally take a weekend off.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(251,191,36,1)_0%,rgba(124,58,237,1)_100%)]",
-        "iconImages": []
+        "iconGradient": "",
+        "iconImages": [],
+        "iconType": "image",
+        "iconSrc": "/img/icon-benefit-save-time.svg"
       },
       {
         "id": "improve-click-through-rates-50-plus",
         "title": "Improve Click-Through Rates by 50%+",
         "description": "Personalized content and AI-optimized CTAs drive 5-7% click-through rates. More website traffic, more conversions, more revenue from every campaign.",
         "iconType": "image",
-        "iconSrc": "/img/vector-25.svg",
+        "iconSrc": "/img/icon-benefit-click-through.svg",
         "iconImages": []
       },
       {
         "id": "three-to-five-x-better-roi",
         "title": "3-5x Better ROI on Email Campaigns",
         "description": "$10-20 return for every $1 spent with AI optimization. If you're spending $500/month on email marketing, you could go from $1,500 in revenue to $7,500+ from the same list.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(249,168,212,1)_0%,rgba(96,165,250,1)_100%)]",
-        "iconImages": []
+        "iconGradient": "",
+        "iconImages": [],
+        "iconType": "image",
+        "iconSrc": "/img/icon-benefit-roi.svg"
       }
     ]
   },
@@ -202,7 +210,8 @@
         "title": "Newsletter Campaigns",
         "description": "Perfect for Northern Virginia businesses who want to keep subscribers engaged without spending hours writing content every week. AI creates personalized newsletter content based on each subscriber's interests, sending at optimal times for maximum engagement.",
         "result": "40-50% open rates, higher engagement, and newsletters that actually drive traffic and sales.",
-        "gradient": "bg-[linear-gradient(135deg,rgba(251,146,60,0.92)_0%,rgba(99,102,241,0.95)_100%)]"
+        "gradient": "bg-[linear-gradient(135deg,rgba(251,146,60,0.92)_0%,rgba(99,102,241,0.95)_100%)]",
+        "iconSrc": "/img/icon-feature-newsletter.svg"
       },
       {
         "id": "drip-campaigns-lead-nurturing",
@@ -210,7 +219,8 @@
         "title": "Drip Campaigns & Lead Nurturing",
         "description": "Automate lead nurturing sequences that adapt based on subscriber behavior, ensuring prospects get the right message at the right time. AI adjusts the sequence based on opens, clicks, and engagement—speeding up for hot leads and slowing down for prospects who need more time.",
         "result": "Higher conversion rates and shorter sales cycles because every lead gets personalized nurturing.",
-        "gradient": "bg-[linear-gradient(135deg,rgba(234,88,12,0.92)_0%,rgba(59,130,246,0.95)_100%)]"
+        "gradient": "bg-[linear-gradient(135deg,rgba(234,88,12,0.92)_0%,rgba(59,130,246,0.95)_100%)]",
+        "iconSrc": "/img/icon-feature-drip.svg"
       },
       {
         "id": "product-launches",
@@ -218,7 +228,8 @@
         "title": "Product Launches",
         "description": "Build excitement and drive sales for new product launches with AI-optimized email sequences that maximize pre-orders and early adoption. AI sends launch emails at each subscriber's optimal time, personalizes content based on their interests, and follows up automatically with non-openers.",
         "result": "Higher participation, more pre-orders, and successful launches that hit revenue goals.",
-        "gradient": "bg-[linear-gradient(135deg,rgba(245,158,11,0.92)_0%,rgba(5,158,187,0.95)_100%)]"
+        "gradient": "bg-[linear-gradient(135deg,rgba(245,158,11,0.92)_0%,rgba(5,158,187,0.95)_100%)]",
+        "iconSrc": "/img/icon-feature-product-launch.svg"
       },
       {
         "id": "re-engagement-campaigns",
@@ -226,7 +237,8 @@
         "title": "Re-Engagement Campaigns",
         "description": "Win back inactive subscribers with personalized campaigns that identify the right message and timing to reactivate dormant customers. AI creates personalized re-engagement campaigns based on each subscriber's past behavior and interests, testing different approaches to find what works.",
         "result": "20-30% of inactive subscribers re-engage, saving you from losing valuable contacts.",
-        "gradient": "bg-[linear-gradient(135deg,rgba(249,115,22,0.92)_0%,rgba(124,58,237,0.95)_100%)]"
+        "gradient": "bg-[linear-gradient(135deg,rgba(249,115,22,0.92)_0%,rgba(124,58,237,0.95)_100%)]",
+        "iconSrc": "/img/icon-feature-reengagement.svg"
       }
     ]
   },

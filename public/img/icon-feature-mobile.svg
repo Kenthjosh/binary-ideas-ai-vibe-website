@@ -1,0 +1,17 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mobileGradient" x1="12" y1="8" x2="44" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+  <rect width="56" height="56" rx="16" fill="url(#mobileGradient)"/>
+  <rect x="20" y="14" width="16" height="28" rx="4" stroke="white" stroke-width="2.4" fill="none"/>
+  <path d="M24 14V12" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M32 14V12" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="28" cy="38" r="1.8" fill="white"/>
+  <path d="M24 20H32" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M24 25H32" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M24 30H30" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+</svg>
+

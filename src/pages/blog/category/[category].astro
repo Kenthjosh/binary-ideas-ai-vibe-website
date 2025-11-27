@@ -147,7 +147,7 @@ const getExcerpt = (rawText: string | undefined) => {
 
           <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
             {postsForCategory.map((post) => {
-              const href = `/blog/${post.slugSegments.join('/')}/`;
+              const href = `/${post.slugSegments.join('/')}/`;
               const heroSrc = post.meta.heroImage?.src ?? '/img/blog/default.jpg';
               const heroAlt = post.meta.heroImage?.alt ?? post.meta.title;
               const categories = post.categories ?? [];

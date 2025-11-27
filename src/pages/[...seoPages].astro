@@ -2,14 +2,37 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import BlogPostPage from '../components/Blog/PostPage.astro';
 import { seoPagesContent, seoPagesContentMap } from '../data/seo-pages/content';
+import { blogPostsContent, blogPostsContentMap } from '../data/blogs/content';
 
 export async function getStaticPaths() {
-  return seoPagesContent.map((page) => ({
-    params: {
-      seoPages: page.slugSegments.join('/')
-    }
-  }));
+  const seen = new Set<string>();
+  const paths: { params: { seoPages: string } }[] = [];
+
+  for (const post of blogPostsContent) {
+    const slug = post.slugSegments.join('/');
+    if (seen.has(slug)) continue;
+    paths.push({
+      params: {
+        seoPages: slug
+      }
+    });
+    seen.add(slug);
+  }
+
+  for (const page of seoPagesContent) {
+    const slug = page.slugSegments.join('/');
+    if (seen.has(slug)) continue;
+    paths.push({
+      params: {
+        seoPages: slug
+      }
+    });
+    seen.add(slug);
+  }
+
+  return paths;
 }
 
 const slugParam = Astro.params.seoPages;
@@ -19,106 +42,109 @@ const slugKey =
     : Array.isArray(slugParam)
       ? slugParam.join('/')
       : '';
+const blogEntry = blogPostsContentMap[slugKey];
 const pageEntry = seoPagesContentMap[slugKey];
 
-if (!pageEntry) {
-  throw new Error(`SEO page not found for slug: ${slugKey}`);
+if (!blogEntry && !pageEntry) {
+  throw new Error(`Page not found for slug: ${slugKey}`);
 }
 
-const {
-  meta,
-  pageTitle,
-  Page
-} = pageEntry;
+const meta = pageEntry?.meta ?? { title: '', description: '' };
+const pageTitle = pageEntry?.pageTitle ?? '';
+const Page = pageEntry?.Page;
 ---
 
-<BaseLayout title={meta.title} description={meta.description}>
-  <div class="bg-white w-full min-h-screen flex flex-col relative overflow-x-hidden">
-    <Header />
+{blogEntry ? (
+  <BlogPostPage postEntry={blogEntry} slugKey={slugKey} />
+) : (
+  <BaseLayout title={meta.title} description={meta.description}>
+    <div class="bg-white w-full min-h-screen flex flex-col relative overflow-x-hidden">
+      <Header />
 
-    <main class="z-[1] w-full flex-1 relative bg-[#0a0a0f] pt-[97px]">
-      <div class="absolute inset-0 pointer-events-none opacity-50 overflow-hidden">
-        <div class="absolute top-0 left-[25%] w-96 h-96">
-          <div class="glow-sphere glow-sphere--1 h-full w-full bg-[#2b7fff] rounded-[33554400px] blur-3xl pointer-events-none"></div>
-        </div>
-        <div class="absolute top-[8%] right-[25%] w-96 h-96">
-          <div class="glow-sphere glow-sphere--2 h-full w-full bg-[#ac46ff] rounded-[33554400px] blur-3xl pointer-events-none"></div>
-        </div>
-        <div class="absolute top-[22%] left-1/2 w-96 h-96 -translate-x-1/2">
-          <div class="glow-sphere glow-sphere--3 h-full w-full bg-[#f6329a] rounded-[33554400px] blur-3xl pointer-events-none"></div>
+      <main class="z-[1] w-full flex-1 relative bg-[#0a0a0f] pt-[97px]">
+        <div class="absolute inset-0 pointer-events-none opacity-50 overflow-hidden">
+          <div class="absolute top-0 left-[25%] w-96 h-96">
+            <div class="glow-sphere glow-sphere--1 h-full w-full bg-[#2b7fff] rounded-[33554400px] blur-3xl pointer-events-none"></div>
+          </div>
+          <div class="absolute top-[8%] right-[25%] w-96 h-96">
+            <div class="glow-sphere glow-sphere--2 h-full w-full bg-[#ac46ff] rounded-[33554400px] blur-3xl pointer-events-none"></div>
+          </div>
+          <div class="absolute top-[22%] left-1/2 w-96 h-96 -translate-x-1/2">
+            <div class="glow-sphere glow-sphere--3 h-full w-full bg-[#f6329a] rounded-[33554400px] blur-3xl pointer-events-none"></div>
+          </div>
+
+          <div class="absolute top-[45%] left-[20%] w-80 h-80 opacity-80">
+            <div class="glow-sphere glow-sphere--4 h-full w-full bg-[#ac46ff] rounded-[33554400px] blur-3xl pointer-events-none"></div>
+          </div>
+          <div class="absolute top-[50%] right-[22%] w-96 h-96 opacity-80">
+            <div class="glow-sphere glow-sphere--5 h-full w-full bg-[#2b7fff] rounded-[33554400px] blur-3xl pointer-events-none"></div>
+          </div>
+          <div class="absolute top-[58%] left-1/2 w-80 h-80 -translate-x-1/2 opacity-80">
+            <div class="glow-sphere glow-sphere--6 h-full w-full bg-[#f6329a] rounded-[33554400px] blur-3xl pointer-events-none"></div>
+          </div>
+
+          <div class="absolute bottom-[18%] left-[18%] w-72 h-72 opacity-70">
+            <div class="glow-sphere glow-sphere--7 h-full w-full bg-[#2b7fff] rounded-[33554400px] blur-3xl pointer-events-none"></div>
+          </div>
+          <div class="absolute bottom-[12%] right-[24%] w-80 h-80 opacity-70">
+            <div class="glow-sphere glow-sphere--8 h-full w-full bg-[#ac46ff] rounded-[33554400px] blur-3xl pointer-events-none"></div>
+          </div>
+          <div class="absolute bottom-[6%] left-[10%] w-72 h-72 opacity-70">
+            <div class="glow-sphere glow-sphere--9 h-full w-full bg-[#f6329a] rounded-[33554400px] blur-3xl pointer-events-none"></div>
+          </div>
         </div>
 
-        <div class="absolute top-[45%] left-[20%] w-80 h-80 opacity-80">
-          <div class="glow-sphere glow-sphere--4 h-full w-full bg-[#ac46ff] rounded-[33554400px] blur-3xl pointer-events-none"></div>
-        </div>
-        <div class="absolute top-[50%] right-[22%] w-96 h-96 opacity-80">
-          <div class="glow-sphere glow-sphere--5 h-full w-full bg-[#2b7fff] rounded-[33554400px] blur-3xl pointer-events-none"></div>
-        </div>
-        <div class="absolute top-[58%] left-1/2 w-80 h-80 -translate-x-1/2 opacity-80">
-          <div class="glow-sphere glow-sphere--6 h-full w-full bg-[#f6329a] rounded-[33554400px] blur-3xl pointer-events-none"></div>
+        <div class="relative z-[1] flex flex-col gap-16 py-20">
+          <section class="w-full px-4 md:px-8 lg:px-20">
+            <div class="max-w-4xl mx-auto text-center flex flex-col gap-6">
+              <h1 class="text-3xl sm:text-4xl md:text-5xl font-normal text-white [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
+                {pageTitle}
+              </h1>
+            </div>
+          </section>
+          <section class="w-full px-4 md:px-8 lg:px-20">
+            <div class="max-w-4xl mx-auto flex flex-col gap-8">
+              <article class="seo-content-body space-y-8 text-base md:text-lg text-[#d0d5db] leading-relaxed [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
+                {Page ? <Page /> : null}
+              </article>
+            </div>
+          </section>
         </div>
 
-        <div class="absolute bottom-[18%] left-[18%] w-72 h-72 opacity-70">
-          <div class="glow-sphere glow-sphere--7 h-full w-full bg-[#2b7fff] rounded-[33554400px] blur-3xl pointer-events-none"></div>
-        </div>
-        <div class="absolute bottom-[12%] right-[24%] w-80 h-80 opacity-70">
-          <div class="glow-sphere glow-sphere--8 h-full w-full bg-[#ac46ff] rounded-[33554400px] blur-3xl pointer-events-none"></div>
-        </div>
-        <div class="absolute bottom-[6%] left-[10%] w-72 h-72 opacity-70">
-          <div class="glow-sphere glow-sphere--9 h-full w-full bg-[#f6329a] rounded-[33554400px] blur-3xl pointer-events-none"></div>
-        </div>
-      </div>
+        <section class="relative isolate overflow-hidden px-6 py-24 text-center text-white bg-[linear-gradient(120deg,#06152d_0%,#1a021f_100%)]">
+          <div
+            class="pointer-events-none absolute left-1/2 top-[-240px] h-[620px] w-[620px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(124,58,237,0.45)_0%,rgba(124,58,237,0)_70%)] blur-[140px] opacity-70"
+            aria-hidden="true"
+          />
+          <div
+            class="pointer-events-none absolute right-[-220px] top-[160px] h-[540px] w-[540px] rounded-full bg-[radial-gradient(circle,rgba(59,130,246,0.35)_0%,rgba(59,130,246,0)_70%)] blur-[150px] opacity-65"
+            aria-hidden="true"
+          />
+          <div
+            class="pointer-events-none absolute left-[-260px] bottom-[-260px] h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle,rgba(168,85,247,0.3)_0%,rgba(168,85,247,0)_70%)] blur-[160px] opacity-60"
+            aria-hidden="true"
+          />
 
-      <div class="relative z-[1] flex flex-col gap-16 py-20">
-        <section class="w-full px-4 md:px-8 lg:px-20">
-          <div class="max-w-4xl mx-auto text-center flex flex-col gap-6">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-normal text-white [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
-              {pageTitle}
-            </h1>
+          <div class="relative mx-auto flex max-w-3xl flex-col items-center gap-8">
+            <p class="text-base leading-7 text-[#cbd4e6] sm:text-lg sm:leading-8 [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
+              Don't let inefficient processes hold your business back - discover how AI automation can transform your operations and boost productivity!
+            </p>
+            <a
+              href="https://api.3sixtycrm.com/widget/bookings/robert-sandiego"
+              target="_blank"
+              rel="noopener"
+              class="inline-flex items-center justify-center rounded-[26px] bg-[linear-gradient(90deg,#3785ff_0%,#b020f5_100%)] px-12 py-5 text-lg font-semibold tracking-wide text-white shadow-[0_22px_55px_rgba(94,117,255,0.45)] transition-transform duration-200 hover:scale-[1.04] focus:outline-none focus-visible:ring-4 focus-visible:ring-white/35"
+            >
+              Book a Complimentary AI Consultation
+            </a>
           </div>
         </section>
-        <section class="w-full px-4 md:px-8 lg:px-20">
-          <div class="max-w-4xl mx-auto flex flex-col gap-8">
-            <article class="seo-content-body space-y-8 text-base md:text-lg text-[#d0d5db] leading-relaxed [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
-              <Page />
-            </article>
-          </div>
-        </section>
-      </div>
 
-      <section class="relative isolate overflow-hidden px-6 py-24 text-center text-white bg-[linear-gradient(120deg,#06152d_0%,#1a021f_100%)]">
-        <div
-          class="pointer-events-none absolute left-1/2 top-[-240px] h-[620px] w-[620px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(124,58,237,0.45)_0%,rgba(124,58,237,0)_70%)] blur-[140px] opacity-70"
-          aria-hidden="true"
-        />
-        <div
-          class="pointer-events-none absolute right-[-220px] top-[160px] h-[540px] w-[540px] rounded-full bg-[radial-gradient(circle,rgba(59,130,246,0.35)_0%,rgba(59,130,246,0)_70%)] blur-[150px] opacity-65"
-          aria-hidden="true"
-        />
-        <div
-          class="pointer-events-none absolute left-[-260px] bottom-[-260px] h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle,rgba(168,85,247,0.3)_0%,rgba(168,85,247,0)_70%)] blur-[160px] opacity-60"
-          aria-hidden="true"
-        />
-
-        <div class="relative mx-auto flex max-w-3xl flex-col items-center gap-8">
-          <p class="text-base leading-7 text-[#cbd4e6] sm:text-lg sm:leading-8 [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
-            Don't let inefficient processes hold your business back - discover how AI automation can transform your operations and boost productivity!
-          </p>
-          <a
-            href="https://api.3sixtycrm.com/widget/bookings/robert-sandiego"
-            target="_blank"
-            rel="noopener"
-            class="inline-flex items-center justify-center rounded-[26px] bg-[linear-gradient(90deg,#3785ff_0%,#b020f5_100%)] px-12 py-5 text-lg font-semibold tracking-wide text-white shadow-[0_22px_55px_rgba(94,117,255,0.45)] transition-transform duration-200 hover:scale-[1.04] focus:outline-none focus-visible:ring-4 focus-visible:ring-white/35"
-          >
-            Book a Complimentary AI Consultation
-          </a>
-        </div>
-      </section>
-
-      <Footer />
-    </main>
-  </div>
-</BaseLayout>
+        <Footer />
+      </main>
+    </div>
+  </BaseLayout>
+)}
 
 <style is:inline>
   .glow-sphere {

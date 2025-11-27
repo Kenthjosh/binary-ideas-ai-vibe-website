@@ -8,11 +8,11 @@
     "titleLeading": "Your Business is Unique.",
     "titleTrailing": "Why Are You Using Cookie-Cutter AI?",
     "titleGradientClass": "bg-[linear-gradient(90deg,#c084fc_0%,#8b5cf6_50%,#60a5fa_100%)]",
-    "description": "You've got workflows that don't fit neatly into any software. You've tried off-the-shelf solutions that force you to change how you work just to use the technology. You're spending thousands on tools that solve 60% of your problem while creating new headaches for the other 40%.",
+    "description": "Every week you waste wrestling with generic software is another week your competitors with custom AI solutions are pulling ahead.",
     "problemList": [
-      "Every week you waste wrestling with generic software is another week your competitors with custom AI solutions are pulling ahead.",
-      "You answer the same questions manually that could be automated. You spend hours on repetitive tasks that AI could handle in seconds.",
-      "You're hiring more people to do work that intelligent systems should be doing—but you can't find software that understands YOUR specific process."
+      "You've got workflows that don't fit neatly into any software. ",
+      "You've tried off-the-shelf solutions that force you to change how you work just to use the technology. ",
+      "You're spending thousands on tools that solve 60% of your problem while creating new headaches for the other 40%."
     ],
     "ctaText": "Get Your Free AI Automation Audit",
     "ctaAriaLabel": "Get Your Free AI Automation Audit",
@@ -20,45 +20,45 @@
     "ctaIconAlt": "Arrow icon"
   },
   "painPoints": {
-    "titleLeading": "YOU'RE TRAPPED BETWEEN EXPENSIVE MANUAL WORK",
-    "titleHighlight": "AND USELESS GENERIC SOFTWARE",
-    "description": "Here's the frustrating reality: manual processes are killing your efficiency, but every software demo forces you to rebuild your workflow just to fit their system.",
+    "titleLeading": "YOU'RE TRAPPED BETWEEN EXPENSIVE ",
+    "titleHighlight": "MANUAL WORK AND USELESS GENERIC SOFTWARE",
+    "description": "Here's the frustrating reality: Your Northern Virginia business has grown to the point where manual processes are killing your efficiency. You KNOW automation would save thousands in labor costs and prevent costly errors—but every software demo you sit through requires you to completely rebuild your workflow just to fit THEIR system.",
     "cards": [
       {
         "title": "Off-the-Shelf Software Doesn't Fit Your Business",
         "icon": "💸",
-        "description": "You've tried Salesforce, HubSpot, Monday.com, and other \"industry solutions.\" Each one promises everything but delivers about 60% of what you need. The other 40% requires workarounds or process changes, so you end up paying for tools your team only half-uses.",
-        "pain": "You're forced to choose between doing things the wrong way (to fit the software) or doing them manually (defeating the purpose of automation). Either way, you're wasting money and frustrating your team."
+        "description": "You've tried Salesforce, HubSpot, Monday.com, and a dozen other \"industry solutions. \" Each one promises to solve everything but delivers about 60% of what you need. The other 40%? You're told to \"use workarounds \" or \"change your process \" to fit the software. So you end up paying $500-$2,000/month for tools your team only half-uses because they don't match how you actually work.",
+        "pain": "You're forced to choose between doing things the wrong way (to fit the software) or doing them manually (defeating the entire purpose of automation). Either way, you're wasting money and frustrating your team with tools that create more problems than they solve."
       },
       {
         "title": "Your Team Wastes 15-25 Hours Per Week on Repetitive Tasks",
         "icon": "⏰",
-        "description": "Your people are manually entering data, copying information between systems, answering the same customer questions, processing forms, and generating reports that follow the same pattern. That's $12,000-$30,000 per month in salary spent on work automation could handle.",
-        "pain": "You hired talented people to grow your business, not to be human copy-paste machines. They're bored, frustrated, and considering other opportunities while you pay professional salaries for clerical work."
+        "description": "Your people are manually entering data, copying information between systems, answering the same customer questions for the 500th time, processing forms that follow the same pattern, and generating reports that pull from the same sources. That's $12,000-$30,000 per month in salary spent on work that intelligent automation could handle in minutes.",
+        "pain": "You hired talented people to grow your business, not to be human copy-paste machines. They're bored, frustrated, and considering other opportunities. Meanwhile, you're paying professional salaries for clerical work that shouldn't require a human at all."
       },
       {
-        "title": "You Have No Idea How Much Inefficiencies Cost",
+        "title": "You Have No Idea How Much These Inefficiencies Actually Cost",
         "icon": "📊",
-        "description": "You know manual processes are expensive, but you've never calculated the true cost: wasted labor hours, costly errors, missed opportunities, frustrated customers, and competitive disadvantage.",
-        "pain": "Your instinct says you're losing a fortune, but without hard numbers it's impossible to justify the investment in custom automation. So you keep delaying, keep suffering, and keep watching margins shrink."
+        "description": "You know manual processes are expensive, but you've never calculated the true cost: labor hours wasted, errors that require expensive fixes, opportunities missed because people are buried in busywork, customer frustration from slow responses, and competitive disadvantage because nimbler companies with better systems move faster.",
+        "pain": "Your instinct says \"we're losing a fortune on this, \" but without hard numbers, it's impossible to justify the investment in custom automation. So you keep delaying, keep suffering, and keep watching margins shrink as operational costs creep up."
       },
       {
-        "title": "Generic AI Can't Handle Your Industry Requirements",
+        "title": "Generic AI Can't Handle Your Industry-Specific Requirements",
         "icon": "🔥",
-        "description": "You need AI that understands medical billing, construction sequencing, legal compliance, or specific manufacturing processes. ChatGPT and generic bots don't understand your terminology, regulations, or business logic.",
-        "pain": "You watch tech companies deploy impressive AI, but when you try to use it for your business, it falls flat because it doesn't understand your context. You're stuck choosing between dumb automation or smart AI that doesn't know your industry."
+        "description": "You need AI that understands medical billing codes, or construction project sequencing, or legal compliance workflows, or your specific manufacturing process. ChatGPT and generic chatbots have never heard of your industry's unique terminology, regulations, or business logic. They give you generic answers when you need specialized intelligence.",
+        "pain": "You watch tech companies and startups deploy impressive AI, but when you try to use it for YOUR business, it falls flat because it doesn't understand your context. You're stuck with either dumb automation (following rigid rules) or smart AI (that doesn't know your industry)—but you can't find both in one solution."
       },
       {
         "title": "You Can't Scale Without Drowning in Operational Costs",
         "icon": "😰",
-        "description": "To double revenue with your current manual processes, you'd need to hire 5-10 more people just to handle the increased volume of data entry, support, processing, and reporting. Growth becomes prohibitively expensive.",
-        "pain": "You're trapped at current revenue levels not because of market demand, but because your systems can't handle growth without massive headcount increases."
+        "description": "Want to double revenue? With your current manual processes, you'd need to hire 5-10 more people just to handle the increased volume of data entry, customer support, document processing, and reporting. Growth becomes prohibitively expensive because your operations don't scale efficiently.",
+        "pain": "You're trapped at current revenue levels not because of market demand, but because your operational systems can't handle growth without massive headcount increases. You watch competitors with better automation scale profitably while you're stuck adding overhead faster than revenue."
       },
       {
-        "title": "You're Tired of Consultants Selling Software That Doesn't Fit",
+        "title": "You're Tired of Consultants Selling You Software That Doesn't Fit",
         "icon": "💔",
-        "description": "You've paid for implementations that promised everything and delivered disappointment. Consultants demo beautiful dashboards but disappear when you need help adapting the system to your actual workflow.",
-        "pain": "You've been burned multiple times by agencies that oversold and underdelivered. Now you're skeptical of anyone claiming they can solve your automation challenges, even though you desperately need a solution that works."
+        "description": "You've paid for implementations that promised everything and delivered disappointment. Consultants who demo beautiful dashboards but disappear when you need help adapting the system to your actual workflow. Software that works great... for someone else's business model, but not yours.",
+        "pain": "You've been burned multiple times by agencies that oversold and underdelivered. Now you're skeptical of ANYONE claiming they can solve your automation challenges, even though you desperately need a solution that actually works."
       }
     ]
   },
@@ -69,7 +69,8 @@
       "You're excellent at what you do—whether that's healthcare, professional services, manufacturing, real estate, or any other industry. Your business model works. Your processes are proven. Your team knows what they're doing.",
       "But in 2025, businesses with custom AI systems specifically built for their workflows are operating at 3-5X the efficiency of companies still using generic software or manual processes.",
       "It's not fair that you have to choose between rebuilding your entire workflow (to fit generic software) or staying stuck with expensive manual processes. It's not fair that your competitors with custom automation are scaling profitably while you're hiring more people just to keep up. And it's definitely not fair that off-the-shelf solutions work great for simple businesses but fail for companies with unique, sophisticated processes like yours.",
-      "You shouldn't have to change how your business works just to use technology. Technology should adapt to you. You shouldn't need a computer science degree to automate your workflows. And you definitely shouldn't have to choose between expensive manual labor and useless generic software that doesn't fit."
+      "You shouldn't have to change how your business works just to use technology. Technology should adapt to YOU.",
+      "You shouldn't need a computer science degree to automate your workflows. And you definitely shouldn't have to choose between expensive manual labor and useless generic software that doesn't fit."
     ]
   },
   "probSolRes": {
@@ -105,40 +106,40 @@
     "subtitle": "",
     "features": [
       {
-        "id": "model-training",
+        "id": "automated-lead-scoring",
         "icon": "database",
-        "title": "Custom Model Training",
-        "description": "We train AI models specifically for your business processes, industry requirements, and unique challenges, ensuring the AI understands your specific context and can make intelligent decisions that align with your business goals."
+        "title": "Automated Lead Scoring",
+        "description": "Our AI analyzes prospect behavior, demographics, and engagement patterns to automatically score leads based on their likelihood to convert, helping you focus on the most promising opportunities first."
       },
       {
-        "id": "workflow",
+        "id": "multi-channel-capture",
         "icon": "calendar",
-        "title": "Process Automation",
-        "description": "Automate complex workflows and business processes with intelligent AI agents that can handle multi-step tasks, make decisions, and adapt to changing conditions without human intervention."
+        "title": "Multi-Channel Capture",
+        "description": "Capture leads from your website, social media, email campaigns, and other digital touchpoints simultaneously, ensuring no potential customer falls through the cracks regardless of how they discover your business."
       },
       {
-        "id": "integrations",
+        "id": "real-time-notifications",
         "icon": "phone",
-        "title": "Integration with Existing Systems",
-        "description": "Seamlessly integrate AI agents with your current software, databases, and workflows, ensuring smooth operation without disrupting your existing business processes or requiring major system changes."
+        "title": "Real-Time Notifications",
+        "description": "Get instant alerts when high-quality leads are identified, allowing you to respond immediately while the prospect is still engaged and most likely to convert."
       },
       {
-        "id": "optimization",
+        "id": "crm-integration",
         "icon": "globe",
-        "title": "Ongoing Optimization",
-        "description": "Continuously improve AI agent performance based on real-world usage data, user feedback, and changing business requirements, ensuring your AI solution evolves with your business needs."
+        "title": "CRM Integration",
+        "description": "Seamlessly sync all captured leads with your existing CRM system, automatically updating contact information, lead scores, and interaction history to keep your sales team informed."
       },
       {
-        "id": "monitoring",
+        "id": "follow-up-automation",
         "icon": "clock",
-        "title": "Performance Monitoring",
-        "description": "Track and analyze AI agent performance with detailed metrics, reporting, and analytics that help you understand how your AI is performing and identify opportunities for improvement."
+        "title": "Follow-Up Automation",
+        "description": "Intelligently nurture leads with personalized follow-up sequences that adapt based on prospect behavior, ensuring consistent engagement without overwhelming potential customers."
       },
       {
-        "id": "support",
+        "id": "analytics-dashboard",
         "icon": "message",
-        "title": "Documentation and Support",
-        "description": "Receive comprehensive documentation, training materials, and ongoing support to ensure your team can effectively use and maintain your custom AI agents long-term."
+        "title": "Analytics Dashboard",
+        "description": "Track lead generation performance with detailed analytics showing conversion rates, source performance, and ROI metrics to continuously optimize your lead generation strategy."
       }
     ]
   },
@@ -147,40 +148,39 @@
     "titleHighlight": "Your Business",
     "items": [
       {
-        "id": "efficiency",
-        "title": "Automate Unique Workflows",
-        "description": "Create AI solutions that are specifically designed for your business processes, not generic automation that forces you to change how you work to fit the technology.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(34,211,238,1)_0%,rgba(168,85,247,1)_100%)]",
+        "id": "reduce-manual-labor-70-90",
+        "title": "Reduce Manual Labor by 70-90%",
+        "description": "Your team spends countless hours on repetitive, complex tasks that require intelligence but drain their time—data entry, document processing, quality checks, and multi-step workflows. Custom Training Agents handle these workflows automatically with the intelligence of your best employees, processing tasks 10-20X faster while working 24/7 without breaks. Free your team to focus on high-value work that actually grows your business instead of drowning in administrative overhead.",
+        "iconGradient": "bg-[linear-gradient(145deg,rgba(56,189,248,1)_0%,rgba(96,165,250,1)_100%)]",
         "iconImages": []
       },
       {
-        "id": "advantage",
-        "title": "Competitive Advantage",
-        "description": "Gain a significant competitive edge with AI agents that are tailored to your specific industry and business model, providing capabilities that your competitors can't easily replicate.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(56,189,248,1)_0%,rgba(129,140,248,1)_100%)]",
+        "id": "scale-without-adding-headcount",
+        "title": "Scale Without Adding Headcount",
+        "description": "Growing your business means choosing between hiring expensive employees (with recruitment costs, training time, benefits, and turnover) or staying stuck at your current capacity. Training Agents handle the workload of 3-5 additional employees at a fraction of the cost. As your business grows, your AI scales instantly—no hiring, no training, no turnover. Northern VA clients process 3-10X more volume without adding a single full-time position, saving $120,000-$300,000 annually in avoided hiring costs.",
+        "iconGradient": "bg-[linear-gradient(145deg,rgba(168,85,247,1)_0%,rgba(59,130,246,1)_100%)]",
         "iconImages": []
       },
       {
-        "id": "scalable",
-        "title": "Scalable Solutions",
-        "description": "Build AI agents that can grow and adapt with your business, handling increased volume and complexity as your Northern Virginia business expands and evolves.",
-        "iconType": "image",
-        "iconSrc": "/img/vector-21.svg",
+        "id": "eliminate-costly-errors-rework",
+        "title": "Eliminate Costly Errors & Rework",
+        "description": "Human errors in complex workflows cost thousands in rework, compliance penalties, customer refunds, and damaged reputation. Even your best employees make mistakes on repetitive, detail-intensive tasks. Training Agents apply consistent logic across every transaction with near-zero error rates, catch anomalies humans miss, enforce compliance automatically, and eliminate costly mistakes. One prevented error can save $5,000-$50,000 in rework and penalties—paying for the entire system multiple times over.",
+        "iconGradient": "bg-[linear-gradient(145deg,rgba(236,72,153,1)_0%,rgba(168,85,247,1)_100%)]",
         "iconImages": []
       },
       {
-        "id": "improvement",
-        "title": "Continuous Improvement",
-        "description": "Benefit from AI agents that learn and improve over time, becoming more efficient and effective as they gain experience with your specific business processes and requirements.",
-        "iconGradient": "bg-[linear-gradient(145deg,rgba(125,211,252,1)_0%,rgba(56,189,248,1)_100%)]",
+        "id": "gain-real-time-intelligence-insights",
+        "title": "Gain Real-Time Intelligence & Insights",
+        "description": "Your data sits trapped in multiple systems. Getting reports requires manual compilation taking days or weeks—by then, opportunities have passed or problems have worsened. Training Agents process and analyze data in real-time, providing instant visibility across your entire operation. Generate executive reports automatically, catch problems before they become crises, and make data-driven decisions 10X faster because insights appear automatically instead of requiring manual analysis requests.",
+        "iconGradient": "bg-[linear-gradient(145deg,rgba(59,130,246,1)_0%,rgba(12,10,25,1)_100%)]",
         "iconImages": []
       }
     ]
   },
   "process": {
-    "titleLeading": "How It Works -",
-    "titleHighlight": "Three Simple Steps",
-    "subtitle": "<strong>How We Build Your Custom AI Agent in 3 Simple Steps</strong><br /><br />You're already buried in work. The last thing you need is another complicated technology project. That's why we've made this so simple that you'll barely know we're working.<br /><br /><strong>We Know You Don't Have Time for \"Projects\"</strong><br /><br />You're already juggling operations, sales, customer service, and everything else. Adding a complex AI implementation to your plate sounds exhausting, even if the end result is amazing.",
+    "titleLeading": "How We Build Your ",
+    "titleHighlight": "Custom AI Agent in Three Simple Steps",
+    "subtitle": "You're already buried in work. The last thing you need is another complicated technology project. That's why we've made this so simple that you'll barely know we're working:",
     "steps": [
       {
         "id": 1,
@@ -213,38 +213,42 @@
     "headingHighlight": "Cases",
     "items": [
       {
-        "id": "industry-automation",
+        "id": "industry-specific-automation",
         "icon": "stethoscope",
         "title": "Industry-Specific Automation",
-        "description": "Perfect for Northern Virginia businesses with unique industry requirements, our custom AI agents can handle specialized processes, compliance requirements, and industry-specific workflows that off-the-shelf solutions can't address.",
+        "description": "Perfect for Northern Virginia businesses with unique industry requirements, our custom AI agents can handle specialized processes, compliance requirements, and industry-specific workflows that off-the-shelf solutions can't address. Whether it's medical billing codes, legal document processing, construction sequencing, or manufacturing quality control—we build AI that understands YOUR industry.",
+        "result": "Reduce specialized task processing time by 60-80%. Eliminate compliance errors that cost thousands in penalties or rework. Handle 3-5X more volume without hiring additional specialized staff. Northern VA clients save $50,000-$150,000 annually by automating tasks that previously required expensive industry experts.",
         "gradient": "bg-[linear-gradient(135deg,rgba(59,130,246,0.92)_0%,rgba(45,212,191,0.95)_100%)]"
       },
       {
-        "id": "complex-workflows",
+        "id": "complex-workflow-automation",
         "icon": "headphones",
         "title": "Complex Workflow Automation",
-        "description": "Automate intricate multi-step processes that involve decision-making, data analysis, and coordination between multiple systems, reducing errors and improving efficiency in complex business operations.",
+        "description": "Automate intricate multi-step processes that involve decision-making, data analysis, and coordination between multiple systems. If your workflow includes \"it depends\" scenarios that require judgment, our intelligent agents can learn your decision logic and apply it consistently.",
+        "result": "Complete complex workflows 70-90% faster with zero human intervention. Eliminate bottlenecks where work sits waiting for someone to review and decide. Process 10-20X more transactions without adding headcount. One Fairfax client automated their 17-step approval process—reducing processing time from 4 days to 45 minutes while maintaining 100% accuracy.",
         "gradient": "bg-[linear-gradient(135deg,rgba(14,165,233,0.92)_0%,rgba(30,58,138,0.95)_100%)]"
       },
       {
-        "id": "data-processing",
+        "id": "data-processing-analysis",
         "icon": "target",
-        "title": "Data Processing",
-        "description": "Create AI agents that can process, analyze, and extract insights from large volumes of data specific to your business, helping you make better decisions and identify opportunities for improvement.",
+        "title": "Data Processing & Analysis",
+        "description": "Create AI agents that can process, analyze, and extract insights from large volumes of data specific to your business. Automatically identify patterns, flag anomalies, generate reports, and provide intelligence that helps you make better decisions faster.",
+        "result": "Analyze in minutes what used to take analysts days or weeks. Catch errors and anomalies in real-time instead of discovering them months later. Generate executive reports automatically instead of wasting 10-15 hours monthly on manual compilation. Make data-driven decisions 5-10X faster because insights appear automatically instead of requiring analysis requests.",
         "gradient": "bg-[linear-gradient(135deg,rgba(56,189,248,0.92)_0%,rgba(147,51,234,0.95)_100%)]"
       },
       {
-        "id": "custom-integrations",
+        "id": "custom-system-integration",
         "icon": "utensils",
-        "title": "Custom Integrations",
-        "description": "Build AI agents that work seamlessly with your existing software ecosystem, creating custom integrations that connect disparate systems and automate data flow between different business applications.",
+        "title": "Custom System Integration",
+        "description": "Build AI agents that work seamlessly with your existing software ecosystem, creating custom integrations that connect disparate systems and automate data flow between different business applications. No more manual copying, no more sync errors, no more data silos.",
+        "result": "Eliminate 15-30 hours per week spent on manual data entry and system coordination. Reduce data entry errors from 5-10% to near zero. Get real-time visibility across your entire operation instead of waiting for someone to compile reports from multiple systems. One Alexandria business eliminated 3 full-time positions worth of data reconciliation work—saving $120,000 annually while improving data accuracy.",
         "gradient": "bg-[linear-gradient(135deg,rgba(22,163,74,0.92)_0%,rgba(59,130,246,0.95)_100%)]"
       }
     ]
   },
   "whyChoose": {
-    "titleLeading": "Why Choose ",
-    "titleHighlight": "Binary Ideas AI",
+    "titleLeading": "Why Northern Virginia ",
+    "titleHighlight": "Businesses Trust Us",
     "location": {
       "basedIn": "Based in",
       "city": "Lorton",
@@ -252,8 +256,8 @@
     },
     "content": {
       "description": [
-        "As a local Northern Virginia agency based in Lorton, we understand the unique challenges and opportunities facing businesses in our region. We don't offer generic AI solutions – every custom agent we build is specifically designed for your industry, processes, and business goals.",
-        "Our ongoing support and optimization ensure your custom AI agents continue to improve over time, and our proven track record with local businesses means you can trust us to deliver measurable results that directly impact your operational efficiency and competitive position."
+        "We're Northern Virginia business owners based right here in Lorton who've personally experienced the frustration of choosing between expensive manual work and generic software that doesn't fit. We know what it's like to demo impressive automation tools that can't handle your complexity, pay for \"enterprise solutions \" that require expensive workarounds, hire people to do repetitive work because off-the-shelf automation fails, and be told by consultants to \"just change how you work \" instead of building tools that match YOUR proven workflow.",
+        "That's exactly why we build custom Training Agents from the ground up—because your business deserves automation that actually fits how you work, not software that forces you to adapt to its limitations. When you work with Binary Ideas AI, you get a local team who understands your market, speaks your language, and measures success by your bottom line—not by how technically impressive our AI looks in a demo."
       ]
     },
     "logo": {
@@ -301,9 +305,9 @@
     ]
   },
   "cta": {
-    "headlineLeading": "Ready to Build Your ",
-    "headlineHighlight": "Custom AI Agent?",
-    "introText": "Join the Northern Virginia businesses already slashing operational costs by 40–70% and reclaiming thousands of hours lost to repetitive work. \n\nGet a free 30-minute AI workflow audit — no pressure, no pitch. We’ll show you exactly where money is leaking and how AI can eliminate the manual work eating your time, payroll, and growth.",
+    "headlineLeading": "Ready to Stop Paying for ",
+    "headlineHighlight": "Work AI Should Be Doing?",
+    "introText": "Join the Northern Virginia businesses already slashing operational costs by 40–70% and reclaiming thousands of hours lost to repetitive work.<br /><br />Get a free 30-minute AI workflow audit — no pressure, no pitch. We’ll show you exactly where money is leaking and how AI can eliminate the manual work eating your time, payroll, and growth.",
     "features": [
       { "text": "Free consultation — no contracts, no pressure" },
       { "text": "We’ll tell you honestly if a Training AI Agent makes sense for your team" },

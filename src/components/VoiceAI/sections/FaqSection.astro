@@ -90,9 +90,10 @@ const sectionId =
             class="faq-answer-box mt-4 rounded-[16px] border border-[#ffffff12] bg-[linear-gradient(180deg,rgba(45,48,68,0.9)_0%,rgba(23,24,36,0.95)_100%)] p-6 text-[#d0d5db]"
             id={`${sectionId}-answer-${index}`}
           >
-            <p class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-base leading-7">
-              {item.answer}
-            </p>
+            <p
+              class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-base leading-7"
+              set:html={item.answer}
+            />
           </div>
         </div>
       </details>

@@ -102,13 +102,15 @@ const descriptionParagraphs = Array.isArray(content.description)
       <div class="pointer-events-none absolute inset-0 rounded-[34px] opacity-70 [background:radial-gradient(circle_at_top_right,rgba(120,64,255,0.25)_0%,rgba(19,20,37,0)_65%)]" aria-hidden="true" />
       <div class="relative space-y-5">
         {descriptionParagraphs.map((paragraph) => (
-          <p class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-base leading-8 text-[#d9deed] sm:text-lg">
-            {paragraph}
-          </p>
+          <p
+            class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-base leading-8 text-[#d9deed] sm:text-lg"
+            set:html={paragraph}
+          />
         ))}
-        <p class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-base leading-8 text-[#ffffffcc] sm:text-lg">
-          {content.additionalInfo}
-        </p>
+        <p
+          class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-base leading-8 text-[#ffffffcc] sm:text-lg"
+          set:html={content.additionalInfo}
+        />
       </div>
     </div>
   </div>

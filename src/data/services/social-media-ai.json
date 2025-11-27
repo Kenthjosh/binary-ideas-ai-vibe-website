@@ -43,22 +43,22 @@
         "pain": "Every unanswered comment is a lost opportunity that you don't even know happened. You post content hoping for engagement, then feel sick when you finally check and see questions from 3 days ago that you missed. You know you should be monitoring comments, messages, and mentions constantly—but you're not a social media manager, you're running a business. You can't be glued to your phone waiting for comments. But every time you miss one, you wonder: \"How much money did I just lose? How many other leads slipped away while I was actually working? \" It's maddening to lose business not because you can't do the work, but because you didn't see a comment fast enough."
       },
       {
-        "title": "Your Customers Are Asking Questions You Don't See for 3 Days",
-        "icon": "🔥",
-        "description": "Someone comments on your Facebook post: \"Do you serve the Alexandria area?\" It's a qualified lead, ready to buy, asking a simple question. You don't see it for 72 hours because you check social media twice a week. By the time you respond, they've already hired a competitor.",
-        "pain": "Every unanswered comment, ignored DM, and missed mention is a lost opportunity and a damaged reputation. People expect businesses to be responsive on social media—when you're not, they assume you don't care about customers."
+        "title": "Brand Inconsistency: You Look Amateur Compared to Competitors",
+        "icon": "🎭",
+        "description": "Your competitor posts daily with professional graphics, consistent branding, and engaging captions. You post whenever you remember, with iPhone photos and captions that feel rushed. Potential customers compare you side-by-side and assume your competitor is more established, more professional, and more trustworthy—even if your actual service is superior. You're losing business not because your work isn't good, but because your social media makes you look like you don't have your act together.",
+        "pain": "You've built an incredible business with real expertise and exceptional service—but none of that matters if potential customers judge you by your inconsistent Instagram feed. It's humiliating to know your competitor with mediocre work is winning clients simply because their social media looks polished while yours looks neglected. You want to present yourself professionally, but you don't have the design skills, the time, or the budget to create the kind of content that looks \"professional. \" So you do nothing, and that looks even worse. You're stuck between looking amateur or looking dead—and either way, you lose customers."
       },
       {
-        "title": "You're Losing Brand Awareness to Competitors Who Show Up Daily",
-        "icon": "😰",
-        "description": "Your competitor posts 3-5 times per week. Their audience sees them constantly, remembers their brand, and thinks of them first when they need the service. You post once every 2-3 weeks when you remember. When customers are ready to buy, guess whose brand they remember?",
-        "pain": "You're equally qualified, equally experienced, maybe even better—but you're losing business because your competitor has better top-of-mind awareness. They're not winning on quality; they're winning on consistency."
+        "title": "Algorithm Punishment: Lower Reach Because You Post Inconsistently",
+        "icon": "📉",
+        "description": "You finally create great content and post it. But because you've been inactive for weeks, the algorithm shows your post to only 50 people instead of your 2,000 followers. So your carefully crafted post gets 6 likes and disappears into the void. The next time you post (3 weeks later), the algorithm punishes you even more for inconsistency. You're trapped in a death spiral: posting irregularly leads to poor reach, which leads to discouragement, which leads to posting even less frequently.",
+        "pain": "You work for HOURS creating a post you're proud of, only to watch it get virtually zero engagement because the algorithm has decided you're not \"active enough \" to deserve reach. It feels rigged. Your competitors who post daily get thousands of impressions, while your occasional posts get buried. You're being punished for having an actual business to run instead of sitting on social media all day. And every time it happens, you get more discouraged about social media, which makes you post less, which makes the algorithm bury you more. It's a vicious cycle that makes you want to quit social media entirely—except you can't, because that's where your customers are."
       },
       {
-        "title": "You Feel Guilty Every Time You Neglect Social Media",
-        "icon": "💔",
-        "description": "You log into Instagram, see your last post was 21 days ago, and feel that familiar wave of guilt. \"I really need to post something.\" But you also need to handle 47 other urgent tasks, so social media gets pushed to tomorrow. Again. And the guilt compounds.",
-        "pain": "Social media becomes this constant source of stress hanging over you. You're not doing it, you know you should be doing it, you feel bad about not doing it—but you still don't do it because you're too overwhelmed with everything else."
+        "title": "Decision Fatigue: You're Paralyzed by What to Post",
+        "icon": "🤯",
+        "description": "You open Facebook to create a post and stare at the blank screen. \"Should I post about my latest project? Share a tip? Promote my services? Be funny or professional? Use emojis or not? \" Thirty minutes later, you've written and deleted three different captions, scrolled through competitors' posts for \"inspiration, \" and still haven't posted anything. That's 2-3 hours per week wasted on indecision and overthinking—hours that could be spent serving customers or spending time with family.",
+        "pain": "Every time you try to create content, you're paralyzed by second-guessing. Will people think this sounds too salesy? Too boring? Too casual? You rewrite captions five times, trying to strike the perfect tone. You scroll through competitors' posts and feel inadequate because theirs look better. You wonder if you should hire a copywriter, a designer, a social media manager—but you can't afford any of them. So you sit there, alone, staring at a blank screen, feeling the pressure to post SOMETHING but terrified of posting the WRONG thing. The mental burden of social media is exhausting, and you're carrying it alone while trying to run your entire business. It's not fair that something that's supposed to \"help your business \" causes this much stress and decision fatigue."
       }
     ]
   },
@@ -147,31 +147,31 @@
     "titleHighlight": "Your Business",
     "items": [
       {
-        "id": "save-time",
-        "title": "Save 15+ Hours Per Week",
-        "description": "Eliminate the time-consuming tasks of content creation, scheduling, and engagement management, freeing up your time to focus on other important aspects of growing your Northern Virginia business.",
+        "id": "increase-engagement-reach-50-150",
+        "title": "Increase Engagement & Reach by 50-150%",
+        "description": "Our AI maintains consistent daily posting at optimal times, which dramatically improves algorithm visibility and organic reach. Northern VA clients see 50-150% increases in engagement (likes, comments, shares) and reach 3-5X more potential customers—resulting in 10-25 additional monthly leads worth $5,000-$15,000 in revenue.",
         "iconGradient": "bg-[linear-gradient(145deg,rgba(56,189,248,1)_0%,rgba(248,113,113,1)_100%)]",
         "iconImages": []
       },
       {
-        "id": "consistent-posting",
-        "title": "Consistent Posting Schedule",
-        "description": "Maintain a regular posting schedule across all platforms without manual effort, ensuring your audience always has fresh content to engage with and your brand stays top-of-mind.",
+        "id": "save-15-20-hours-per-week",
+        "title": "Save 15-20 Hours Per Week",
+        "description": "AI handles everything automatically—content creation, multi-platform posting, real-time engagement, and performance analytics. That's 60-80 hours per month freed up to focus on serving customers, growing your business, or spending time with family. Your social media runs on autopilot while you focus on what actually matters.",
         "iconGradient": "bg-[linear-gradient(145deg,rgba(236,72,153,1)_0%,rgba(59,130,246,1)_100%)]",
         "iconImages": []
       },
       {
-        "id": "increase-engagement",
-        "title": "Increase Engagement by 50%",
-        "description": "AI-optimized content and posting times lead to significantly higher engagement rates, helping you build a more active and loyal social media following.",
+        "id": "never-miss-a-comment-or-dm",
+        "title": "Never Miss a Comment or DM Again",
+        "description": "AI responds to comments and messages in real-time, 24/7. Simple questions get instant, accurate answers. Qualified leads get immediate responses and are escalated to you instantly. You never lose business because you missed a notification or were too busy serving customers to check Instagram.",
         "iconType": "image",
         "iconSrc": "/img/vector-20.svg",
         "iconImages": []
       },
       {
-        "id": "better-content",
-        "title": "Better Content Performance",
-        "description": "Data-driven content creation and optimization lead to better performing posts, higher reach, and improved ROI from your social media marketing efforts.",
+        "id": "build-trust-with-consistent-brand-presence",
+        "title": "Build Trust Through Consistent Brand Presence",
+        "description": "Active, consistent social media with on-brand content builds instant credibility. When prospects check your profiles, they see a thriving, professional business worth trusting. Your close rate increases 20-40% because social proof pre-sells your expertise before the first conversation. You look established, successful, and trustworthy—because your social media never goes dark.",
         "iconGradient": "bg-[linear-gradient(145deg,rgba(147,197,253,1)_0%,rgba(56,189,248,1)_100%)]",
         "iconImages": []
       }
@@ -257,7 +257,7 @@
     "content": {
       "description": [
         "We know you've been burned by marketing tools that overpromise and underdeliver. We know you're skeptical that AI-generated content won't sound robotic and generic. We know you don't have time for another \"technology project. \"",
-        "We're not a faceless national company. We're Northern Virginia business owners based right here in Lorton who understand the unique social media landscape and customer behaviors in our region. When you call us, you talk to us—not a call center in another state."
+        "We're not a faceless national company. We're <strong>Northern Virginia business owners based right here in Lorton</strong> who understand the unique social media landscape and customer behaviors in our region. When you call <strong>us</strong>, you talk to <strong>us</strong>—not a call center in another state."
       ]
     },
     "logo": {

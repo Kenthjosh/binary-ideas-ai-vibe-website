@@ -23,20 +23,9 @@ const resolvedFeatureImageSrc = encodeURI(featureImage.src);
 
 <section class="relative mx-auto mt-16 w-full max-w-[1280px] px-6 sm:px-8 md:mt-24 lg:mt-32 lg:px-12 xl:px-16">
   <div class="relative flex flex-col items-center gap-12 lg:flex-row lg:items-center lg:justify-start lg:gap-16">
-    <div class="relative w-full max-w-[260px] sm:max-w-[300px] md:max-w-[340px] lg:max-w-[404px] lg:flex-shrink-0">
-      <div
-        class="pointer-events-none absolute inset-x-[6%] top-6 bottom-0 rounded-[500px] bg-[linear-gradient(154deg,rgba(43,127,255,0.2)_0%,rgba(173,70,255,0.2)_100%)] blur-[20px]"
-        aria-hidden="true"
-      />
+    <div class="relative w-full max-w-[260px] sm:max-w-[300px] md:max-w-[340px] lg:max-w-[404px] lg:flex-shrink-0"> 
 
-      <div
-        class="pointer-events-none absolute inset-x-[10%] top-8 bottom-6 rounded-[500px] border border-solid border-[#fffefe1a] bg-[linear-gradient(155deg,rgba(255,255,255,0.05)_0%,rgba(255,255,255,0.02)_100%)] backdrop-blur-sm backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4px)_brightness(100%)]"
-        aria-hidden="true"
-      />
-
-      <div class="relative aspect-[366/411]">
-        <img class="absolute inset-0 h-full w-full object-contain" alt={featureImage.alt} src={resolvedFeatureImageSrc} />
-      </div>
+      <img class="relative h-full w-full object-contain" alt={featureImage.alt} src={resolvedFeatureImageSrc} />
     </div>
     <div class="relative flex w-full flex-col items-center text-center lg:flex-1 lg:w-full lg:max-w-none lg:items-start lg:text-left">
       <div
@@ -52,9 +41,10 @@ const resolvedFeatureImageSrc = encodeURI(featureImage.src);
       </h2>
       <div class="mt-6 flex w-full flex-col gap-4 text-[#d0d5db] sm:gap-6">
         {descriptionParagraphs.map((paragraph) => (
-          <p class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-base leading-relaxed sm:text-lg">
-            {paragraph}
-          </p>
+          <div
+            class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-base leading-relaxed sm:text-lg"
+            set:html={paragraph}
+          />
         ))}
       </div>
     </div>

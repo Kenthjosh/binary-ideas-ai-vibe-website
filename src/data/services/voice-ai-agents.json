@@ -233,28 +233,32 @@
         "icon": "stethoscope",
         "title": "Medical Appointment Scheduling",
         "description": "Perfect for Northern Virginia medical practices, our Voice AI Agents can handle appointment scheduling, insurance verification, and patient inquiries while maintaining HIPAA compliance.",
-        "gradient": "bg-[linear-gradient(135deg,rgba(11,123,178,0.9)_0%,rgba(9,24,46,0.95)_100%)]"
+        "gradient": "bg-[linear-gradient(135deg,rgba(236,72,153,0.92)_0%,rgba(14,116,144,0.95)_100%)]",
+        "result": "Medical practices capture 30-40% more appointments within the first month, reduce missed appointment calls by 95%, and free up front desk staff to focus on in-person patient care instead of phone interruptions."
       },
       {
         "id": "restaurant",
         "icon": "utensils",
         "title": "Restaurant Reservations",
         "description": "Manage table reservations, special requests, and customer inquiries efficiently. Your AI agent can check availability, take reservations, and even handle cancellations or modifications.",
-        "gradient": "bg-[linear-gradient(135deg,rgba(107,29,147,0.9)_0%,rgba(46,12,60,0.95)_100%)]"
+        "gradient": "bg-[linear-gradient(135deg,rgba(29,78,216,0.92)_0%,rgba(76,29,149,0.95)_100%)]",
+        "result": "Restaurants reduce no-shows by 40%, capture every reservation call during peak hours, and increase table turnover by 20% through efficient reservation management without pulling staff from the kitchen."
       },
       {
         "id": "customer-service",
         "icon": "headphones",
         "title": "Customer Service Inquiries",
         "description": "Handle product questions, order status inquiries, and general customer service requests with intelligent responses that resolve issues quickly and professionally.",
-        "gradient": "bg-[linear-gradient(135deg,rgba(117,22,70,0.92)_0%,rgba(40,9,28,0.95)_100%)]"
+        "gradient": "bg-[linear-gradient(135deg,rgba(99,102,241,0.92)_0%,rgba(45,212,191,0.95)_100%)]",
+        "result": "Businesses reduce support costs by 60%, improve response time from 15 minutes to 30 seconds, increase customer satisfaction scores by 35%, and handle 5X more inquiries with the same team size"
       },
       {
         "id": "lead-qualification",
         "icon": "target",
         "title": "Lead Qualification Calls",
         "description": "Qualify potential customers by asking the right questions, gathering contact information, and determining their level of interest before transferring to your sales team.",
-        "gradient": "bg-[linear-gradient(135deg,rgba(69,36,144,0.92)_0%,rgba(22,33,68,0.95)_100%)]"
+        "gradient": "bg-[linear-gradient(135deg,rgba(59,130,246,0.92)_0%,rgba(236,72,153,0.95)_100%)]",
+        "result": "Sales teams save 15+ hours weekly, spend time on qualified leads only, increase close rates by 25-35%, and convert 3X more leads into paying customers by focusing on high-intent prospects."
       }
     ]
   },

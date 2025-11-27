@@ -8,11 +8,11 @@
     "titleLeading": "You're Sending Emails",
     "titleTrailing": "Into a Black Hole",
     "titleGradientClass": "bg-[linear-gradient(90deg,#c084fc_0%,#8b5cf6_50%,#60a5fa_100%)]",
-    "description": "Your Northern Virginia business is spending 10+ hours every week on email marketing that nobody opens. You're crafting newsletters, promotions, and campaigns—but your open rates are stuck at 15-20% and your emails feel like they're disappearing into thin air.\n\nWe know you're already wearing too many hats. You shouldn't have to be a copywriting expert AND a data scientist just to get people to read your emails.",
+    "description": "We know you're already wearing too many hats. You shouldn't have to be a copywriting expert AND a data scientist just to get people to read your emails.",
     "problemList": [
-      "You send the same email to everyone at the same time—and most of it lands in spam or gets ignored because it's not personalized or timed right.",
-      "You're guessing what subject lines work, what content resonates, and when to send—wasting hours on campaigns that deliver mediocre results.",
-      "Your competitors are getting 40-50% open rates because they're using AI—while you're stuck manually writing emails that get 18% opens and generate almost no revenue."
+      "You send the same email to everyone at the same time—and most of it lands in spam or gets ignored",
+      "You're guessing what subject lines work, wasting hours on campaigns that get 18% opens",
+      "Your competitors are getting 40-50% open rates with AI—while you're stuck manually writing emails"
     ],
     "ctaText": "Get Your Free Email Marketing Audit",
     "ctaAriaLabel": "Get Your Free Email Marketing Audit",
@@ -20,9 +20,9 @@
     "ctaIconAlt": "Arrow icon"
   },
   "painPoints": {
-    "titleLeading": "YOUR EMAIL MARKETING IS COSTING YOU $5,000 IN LOST REVENUE",
-    "titleHighlight": "EVERY MONTH",
-    "description": "Here's what's really happening: you're sending generic emails at generic times, and thousands in potential revenue vanish quietly with every send.",
+    "titleLeading": "YOUR EMAIL MARKETING IS COSTING YOU ",
+    "titleHighlight": "MONEY EVERY SINGLE DAY",
+    "description": "You're losing $5,000-$8,000 per month to ineffective email campaigns. Here's exactly how it's happening:",
     "cards": [
       {
         "title": "$5,000-$8,000 in Monthly Revenue",
@@ -48,25 +48,25 @@
     "titleLeading": "Here's What's Really ",
     "titleTrailing": "Unfair",
     "content": [
-      "You pour real expertise into your business. You know your customers, you deliver results, and you've earned their trust the hard way.",
-      "But in 2025, brands using AI-driven email platforms show up in every inbox at the perfect time with eerily personalized content—while your carefully written campaigns get buried under newsletters nobody reads.",
-      "It's not fair that you have to be a copywriter, data scientist, and deliverability expert just to compete. It's not fair that giant companies with automation suites get all the attention while your authentic voice gets filtered into Promotions.",
-      "You shouldn't have to sacrifice nights and weekends drafting emails that never get opened. You shouldn't have to guess which subject line might work. And you definitely shouldn't lose revenue just because you don't have an AI assistant doing the heavy lifting behind the scenes."
+      "Big companies with full marketing teams and $50,000 email automation software are winning while you're doing everything manually. They send perfectly-timed, hyper-personalized emails to microsegments while you're batch-and-blasting the same message to everyone and hoping for the best.",
+      "It's not fair that you need a marketing degree, a data science background, and 20 hours per week just to send emails that people actually read. It's not fair that your excellent products and services are being overshadowed by competitors who simply have better email systems.",
+      "You shouldn't have to choose between sending personalized emails and actually running your business. You shouldn't need to hire a full-time email marketing specialist just to compete. And you definitely shouldn't have to become an expert in deliverability, segmentation algorithms, and behavioral triggers just to stay relevant in your customers' inboxes.",
+      "It's not fair that your hard work, expertise, and dedication matter less than having a $50,000/year email automation system. You provide better service—you just need better tools."
     ]
   },
   "probSolRes": {
     "heading": "Email Marketing AI",
     "titleLeading": "THERE'S A BETTER WAY: ",
-    "titleTrailing": "SEND EMAILS PEOPLE CAN'T WAIT TO OPEN",
-    "problem": "Blasting the same email to everyone keeps your open rates stuck at 15-20% and quietly bleeds $6,000-$12,000 in repeat revenue every month as subscribers tune you out.",
-    "solution": "We layer Email Marketing AI on top of the platform you already use so it segments automatically, writes personalized copy in your voice, and times each send for maximum engagement—no migration or new software nightmares.",
-    "result": "You ship tailored campaigns every week, revive dormant leads, and drive 25-40% more bookings without spending late nights writing emails from scratch.",
+    "titleTrailing": "LET AI QUALIFY EVERY PROSPECT IN SECONDS",
+    "problem": "With spreadsheets, unscored form fills, and two-day response times, Northern Virginia service businesses watch 35% of warm leads go cold within 48 hours—wasting $8,000-$15,000 every month in ad spend and missed deals.",
+    "solution": "We embed Lead Generation AI into your existing funnels to capture every inquiry, score it in seconds, and route hot prospects to the right rep automatically—no new CRM or painful rebuild required.",
+    "result": "You respond in under 60 seconds, double the quality conversations your sales team has each week, and finally see which campaigns print money—without hiring extra coordinators.",
     "detail": {
-      "heading": "Email Marketing AI",
-      "intro": "Imagine having your best copywriter and data analyst fused into one assistant—crafting personalized emails for every segment, testing subject lines automatically, and sending campaigns the moment each subscriber is most likely to open.",
-      "body": "That's what Email Marketing AI delivers. It studies past performance, writes in your brand voice, and spins up tailored variations that feel one-to-one. Every send is optimized for inbox placement, CTA performance, and revenue impact—without you pulling another late night in your ESP.",
-      "highlight": "<strong>We know \"email automation\" has burned you before.</strong> We've been on those calls where agencies promised 40% open rates, then handed over generic templates. As Northern Virginia business owners, we built this because we needed smarter automation that still sounded like us.",
-      "outro": "You don't need to switch platforms or learn new software. Keep Mailchimp, Klaviyo, or whatever you're using now. Answer a few questions about your offers, and we handle the rest—from segmentation logic to ongoing optimization—so every campaign actually earns its keep."
+      "heading": "Lead Generation AI",
+      "intro": "Imagine having your sharpest SDR working 24/7—spotting buying signals the instant they happen, calling prospects back within seconds, and feeding your team conversations that are actually ready to close.",
+      "body": "That's exactly what Lead Generation AI delivers. It monitors every form, chat, phone call, and ad click, then uses advanced scoring to prioritize the prospects who match your ideal customer profile. High-intent leads get fast-tracked to your sales reps with the exact insights they need to win the deal, while low-quality tire-kickers are nurtured automatically.",
+      "highlight": "<strong>We know you're drowning in junk leads.</strong> We've sat in the same Northern Virginia offices hearing the phone ring with \"just curious\" shoppers while real opportunities slipped away. We're local too, and we were tired of tools that promised better leads but dumped more noise on already stretched teams.",
+      "outro": "You don't need to rip out your CRM or rebuild your funnel. You keep the tools you know, answer a few questions about your sales process, and we handle everything else—from setup to optimization—so your pipeline finally matches the effort you're putting into it."
     }
   },
   "introduction": {
@@ -77,8 +77,10 @@
     "titleLeading": "What is ",
     "titleHighlight": "Email Marketing AI?",
     "descriptionParagraphs": [
-      "Email Marketing AI is an intelligent system that uses artificial intelligence to automate and optimize your email marketing campaigns. Unlike traditional email marketing that requires constant manual effort and guesswork, our AI analyzes your audience behavior, personalizes content for each recipient, and automatically optimizes send times for maximum engagement.",
-      "This powerful solution is designed specifically for small and medium businesses in Northern Virginia who want to scale their email marketing efforts without scaling their marketing team. Whether you're sending newsletters, product promotions, or nurturing leads, Email Marketing AI ensures every email is optimized for the right person at the right time, dramatically improving your campaign performance and ROI."
+      "Email Marketing AI is your automated email marketing employee who works 24/7 to personalize every email, optimize every send time, and continuously test what works—without you lifting a finger.",
+      "Think of it this way: Traditional email marketing is like hiring a teenager to hand-deliver flyers to every house on the same street at the same time. Email Marketing AI is like having a personal assistant who knows exactly when each person checks their mail, what messages they care about, and how to write emails they'll actually open and click.",
+      "<div class=\"space-y-3\"><p><strong>The Result:</strong></p><ul class=\"space-y-3\"><li class=\"flex items-start gap-3\"><span class=\"mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-[linear-gradient(135deg,#60a5fa_0%,#c084fc_100%)] text-xs font-semibold text-white\">✓</span><span>40% higher open rates (from 18% to 35-45%)</span></li><li class=\"flex items-start gap-3\"><span class=\"mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-[linear-gradient(135deg,#60a5fa_0%,#c084fc_100%)] text-xs font-semibold text-white\">✓</span><span>3-5x better ROI from every campaign you send</span></li><li class=\"flex items-start gap-3\"><span class=\"mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-[linear-gradient(135deg,#60a5fa_0%,#c084fc_100%)] text-xs font-semibold text-white\">✓</span><span>10+ hours per week freed up to focus on customers</span></li><li class=\"flex items-start gap-3\"><span class=\"mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-[linear-gradient(135deg,#60a5fa_0%,#c084fc_100%)] text-xs font-semibold text-white\">✓</span><span>Automated A/B testing without manual work</span></li><li class=\"flex items-start gap-3\"><span class=\"mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-[linear-gradient(135deg,#60a5fa_0%,#c084fc_100%)] text-xs font-semibold text-white\">✓</span><span>Personalized emails that feel written specifically for each subscriber</span></li></ul></div>",
+      "You shouldn't have to choose between effective email marketing and having a life. Email Marketing AI lets you do both."
     ]
   },
   "keyFeatures": {
@@ -87,40 +89,40 @@
     "subtitle": "",
     "features": [
       {
-        "id": "personalized-content",
+        "id": "personalized-content-for-every-subscriber",
         "icon": "message",
-        "title": "Personalized Content",
-        "description": "Our AI creates unique, personalized email content for each recipient based on their preferences, past behavior, and engagement history, making every email feel like it was written specifically for them."
+        "title": "Personalized Content for Every Subscriber",
+        "description": "Our AI analyzes each subscriber's past behavior, preferences, and engagement history to create unique email content that speaks directly to their interests. No more mass blasts—emails that feel like personal messages, not spam."
       },
       {
-        "id": "send-time-optimization",
+        "id": "send-time-optimization-game-changer",
         "icon": "clock",
-        "title": "Send Time Optimization",
-        "description": "AI analyzes when each subscriber is most likely to open and engage with emails, automatically scheduling sends at the optimal time for maximum open rates and click-through rates."
+        "title": "Send Time Optimization (The Game-Changer)",
+        "description": "The AI analyzes when EACH subscriber is most likely to open emails and automatically schedules delivery for maximum engagement. Your subscriber in Lorton who checks email at 6am gets your message at 6am. Everyone sees your email at their perfect moment."
       },
       {
-        "id": "ab-testing-automation",
+        "id": "automated-ab-testing",
         "icon": "calendar",
-        "title": "A/B Testing Automation",
-        "description": "Continuously test different subject lines, content variations, and send times without manual effort, automatically implementing the winning combinations to improve performance over time."
+        "title": "Automated A/B Testing",
+        "description": "The AI continuously tests subject lines, content variations, CTAs, and send times—then automatically implements the winning combinations. Every campaign gets better than the last, without you spending hours analyzing data."
       },
       {
-        "id": "segmentation",
+        "id": "smart-segmentation-based-on-behavior",
         "icon": "globe",
-        "title": "Segmentation",
-        "description": "Intelligently segment your audience based on behavior patterns, preferences, and engagement levels, ensuring each subscriber receives the most relevant content for their interests and stage in the customer journey."
+        "title": "Smart Segmentation Based on Behavior",
+        "description": "The AI automatically segments your list based on engagement patterns, purchase history, interests, and behavior—ensuring each subscriber gets content relevant to where they are in the customer journey. No more manually creating segments."
       },
       {
-        "id": "performance-analytics",
+        "id": "performance-analytics-insights",
         "icon": "database",
-        "title": "Performance Analytics",
-        "description": "Track detailed performance metrics including open rates, click-through rates, conversion rates, and ROI with actionable insights to continuously improve your email marketing strategy."
+        "title": "Performance Analytics & Insights",
+        "description": "Track open rates, click-through rates, conversion rates, revenue per email, and ROI—with clear, actionable insights showing you exactly what's working and what to do next. You'll finally know which campaigns drive revenue."
       },
       {
-        "id": "template-generation",
+        "id": "mobile-responsive-templates",
         "icon": "tool",
-        "title": "Template Generation",
-        "description": "AI creates professional, mobile-responsive email templates optimized for different campaign types and audiences, ensuring consistent branding and maximum visual impact across all devices."
+        "title": "Mobile-Responsive Templates",
+        "description": "AI-generated email templates that look beautiful on desktop, mobile, and tablet—automatically optimized for each device and email client. No more broken layouts or weird formatting."
       }
     ]
   },
@@ -129,31 +131,31 @@
     "titleHighlight": "Your Business",
     "items": [
       {
-        "id": "increase-open-rates",
+        "id": "increase-open-rates-by-40",
         "title": "Increase Open Rates by 40%",
-        "description": "Personalized subject lines and optimized send times dramatically improve email open rates, ensuring more of your audience sees and engages with your content.",
+        "description": "35-50% open rates with personalized timing and content. If you're sending to 5,000 subscribers, that's 1,000-1,500 MORE people reading every email you send.",
         "iconGradient": "bg-[linear-gradient(145deg,rgba(249,115,22,1)_0%,rgba(139,92,246,1)_100%)]",
         "iconImages": []
       },
       {
-        "id": "improve-click-through",
-        "title": "Improve Click-Through Rates",
-        "description": "AI-optimized content and strategic placement of calls-to-action lead to higher click-through rates, driving more traffic to your website and increasing conversions.",
+        "id": "save-10-plus-hours-per-week",
+        "title": "Save 10+ Hours Per Week",
+        "description": "AI handles everything automatically while you focus on serving customers. That's 40+ hours per month you get back—time to grow your business, spend with family, or finally take a weekend off.",
         "iconGradient": "bg-[linear-gradient(145deg,rgba(251,191,36,1)_0%,rgba(124,58,237,1)_100%)]",
         "iconImages": []
       },
       {
-        "id": "save-time",
-        "title": "Save 10+ Hours Per Week",
-        "description": "Automate content creation, segmentation, testing, and optimization, freeing up your time to focus on other important aspects of growing your Northern Virginia business.",
+        "id": "improve-click-through-rates-50-plus",
+        "title": "Improve Click-Through Rates by 50%+",
+        "description": "Personalized content and AI-optimized CTAs drive 5-7% click-through rates. More website traffic, more conversions, more revenue from every campaign.",
         "iconType": "image",
         "iconSrc": "/img/vector-25.svg",
         "iconImages": []
       },
       {
-        "id": "better-roi",
-        "title": "Better ROI on Campaigns",
-        "description": "Higher engagement rates and improved targeting lead to better conversion rates and increased revenue from your email marketing efforts, maximizing your marketing investment.",
+        "id": "three-to-five-x-better-roi",
+        "title": "3-5x Better ROI on Email Campaigns",
+        "description": "$10-20 return for every $1 spent with AI optimization. If you're spending $500/month on email marketing, you could go from $1,500 in revenue to $7,500+ from the same list.",
         "iconGradient": "bg-[linear-gradient(145deg,rgba(249,168,212,1)_0%,rgba(96,165,250,1)_100%)]",
         "iconImages": []
       }
@@ -168,7 +170,7 @@
         "id": 1,
         "stepNumber": "STEP 1",
         "title": "Book a 15-Minute Email Marketing Audit",
-        "description": "<p>We analyze your current email campaigns, open rates, and subscriber behavior. We show you exactly where you're losing money and which improvements will have the biggest impact on your Northern Virginia business.</p><p><strong style=\"color:#fff;\">No sales pitch</strong>—just honest advice on whether Email Marketing AI is right for you and what results you can realistically expect based on your industry and list size.</p>",
+        "description": "<p>We analyze your current email campaigns, open rates, and subscriber behavior. We show you exactly where you're losing money and which improvements will have the biggest impact on your Northern Virginia business.</p><p><strong style=\"color:#fff;\">No sales pitch</strong>Just honest advice on whether Email Marketing AI is right for you and what results you can realistically expect based on your industry and list size.</p>",
         "icon": "phone",
         "gradient": "bg-[linear-gradient(135deg,rgba(249,115,22,1)_0%,rgba(234,179,8,1)_100%)]"
       },
@@ -176,7 +178,7 @@
         "id": 2,
         "stepNumber": "STEP 2",
         "title": "We Train Your AI on Your Brand Voice",
-        "description": "<p>We connect the AI to your email platform (Mailchimp, Constant Contact, HubSpot, etc.) and train it to write emails that sound like YOU—whether that's friendly and casual, professional and authoritative, or anything in between.</p><p><strong style=\"color:#fff;\">We handle everything:</strong> segmentation logic, personalization rules, send-time optimization, A/B test setup, and integration with your CRM. No website rebuild needed. No technical skills required on your end.</p>",
+        "description": "<p>We connect the AI to your email platform (Mailchimp, Constant Contact, HubSpot, etc.) and train it to write emails that sound like YOU—whether that's friendly and casual, professional and authoritative, or anything in between.</p><p><strong style=\"color:#fff;\">We handle everything:</strong> Segmentation logic, personalization rules, send-time optimization, A/B test setup, and integration with your CRM. No website rebuild needed. No technical skills required on your end.</p>",
         "icon": "tool",
         "gradient": "bg-[linear-gradient(135deg,rgba(245,158,11,1)_0%,rgba(99,102,241,1)_100%)]"
       },
@@ -198,35 +200,39 @@
         "id": "newsletter-campaigns",
         "icon": "target",
         "title": "Newsletter Campaigns",
-        "description": "Perfect for Northern Virginia businesses, our AI creates personalized newsletter content that adapts to each subscriber's interests and engagement patterns, keeping your audience engaged and informed.",
+        "description": "Perfect for Northern Virginia businesses who want to keep subscribers engaged without spending hours writing content every week. AI creates personalized newsletter content based on each subscriber's interests, sending at optimal times for maximum engagement.",
+        "result": "40-50% open rates, higher engagement, and newsletters that actually drive traffic and sales.",
         "gradient": "bg-[linear-gradient(135deg,rgba(251,146,60,0.92)_0%,rgba(99,102,241,0.95)_100%)]"
       },
       {
-        "id": "drip-sequences",
+        "id": "drip-campaigns-lead-nurturing",
         "icon": "stethoscope",
-        "title": "Drip Sequences",
-        "description": "Automate lead nurturing with intelligent drip campaigns that adapt based on subscriber behavior, ensuring each prospect receives the right message at the right time in their journey.",
+        "title": "Drip Campaigns & Lead Nurturing",
+        "description": "Automate lead nurturing sequences that adapt based on subscriber behavior, ensuring prospects get the right message at the right time. AI adjusts the sequence based on opens, clicks, and engagement—speeding up for hot leads and slowing down for prospects who need more time.",
+        "result": "Higher conversion rates and shorter sales cycles because every lead gets personalized nurturing.",
         "gradient": "bg-[linear-gradient(135deg,rgba(234,88,12,0.92)_0%,rgba(59,130,246,0.95)_100%)]"
       },
       {
         "id": "product-launches",
         "icon": "utensils",
         "title": "Product Launches",
-        "description": "Create excitement and anticipation for new products or services with AI-optimized launch sequences that build momentum and drive pre-orders or early adoption.",
+        "description": "Build excitement and drive sales for new product launches with AI-optimized email sequences that maximize pre-orders and early adoption. AI sends launch emails at each subscriber's optimal time, personalizes content based on their interests, and follows up automatically with non-openers.",
+        "result": "Higher participation, more pre-orders, and successful launches that hit revenue goals.",
         "gradient": "bg-[linear-gradient(135deg,rgba(245,158,11,0.92)_0%,rgba(5,158,187,0.95)_100%)]"
       },
       {
-        "id": "reengagement-campaigns",
+        "id": "re-engagement-campaigns",
         "icon": "headphones",
-        "title": "Re-engagement Campaigns",
-        "description": "Win back inactive subscribers with personalized re-engagement campaigns that identify the right message and timing to reactivate dormant customers and reduce churn.",
+        "title": "Re-Engagement Campaigns",
+        "description": "Win back inactive subscribers with personalized campaigns that identify the right message and timing to reactivate dormant customers. AI creates personalized re-engagement campaigns based on each subscriber's past behavior and interests, testing different approaches to find what works.",
+        "result": "20-30% of inactive subscribers re-engage, saving you from losing valuable contacts.",
         "gradient": "bg-[linear-gradient(135deg,rgba(249,115,22,0.92)_0%,rgba(124,58,237,0.95)_100%)]"
       }
     ]
   },
   "whyChoose": {
-    "titleLeading": "Why Choose ",
-    "titleHighlight": "Binary Ideas AI",
+    "titleLeading": "Why Northern Virginia ",
+    "titleHighlight": "Businesses Choose Us",
     "location": {
       "basedIn": "Based in",
       "city": "Lorton",
@@ -234,8 +240,8 @@
     },
     "content": {
       "description": [
-        "As a local Northern Virginia agency based in Lorton, we understand the unique marketing challenges and opportunities facing businesses in our region. We don't offer generic email marketing solutions – every AI system we build is customized for your specific industry, audience, and business goals.",
-        "Our ongoing support and optimization ensure your Email Marketing AI continues to improve over time, and our proven track record with local businesses means you can trust us to deliver measurable results that directly impact your marketing ROI and business growth."
+        "We know you've been burned by marketing tools that overpromise and underdeliver. We know you're skeptical of AI that sounds robotic. We know you don't have time to become a tech expert.",
+        "We're not a faceless national company. We're your Lorton neighbors who've helped dozens of Northern Virginia businesses increase email open rates by 40%+, save 10+ hours per week, and generate thousands in additional revenue. When you call us, you talk to us — not a call center in another state."
       ]
     },
     "logo": {
@@ -250,30 +256,34 @@
     "items": [
       {
         "question": "How quickly will we see improved email performance?",
-        "answer": "Most clients see improved open rates and engagement within the first week, with significant performance gains typically occurring within 2-3 weeks as the AI learns your audience preferences."
+        "answer": "Most clients see improved open rates within the first 1-2 campaigns (within the first week). Significant performance gains—40%+ increases in opens and clicks—typically occur within 2-3 weeks as the AI learns your audience's preferences and behavior patterns. The AI gets smarter with every email sent, so performance continues improving over time."
       },
       {
         "question": "What email platforms does it integrate with?",
-        "answer": "Our Email Marketing AI integrates with most major email marketing platforms including Mailchimp, Constant Contact, HubSpot, and others commonly used by Northern Virginia businesses."
+        "answer": "Our Email Marketing AI integrates with most major platforms including Mailchimp, Constant Contact, HubSpot, ActiveCampaign, ConvertKit, and others commonly used by Northern Virginia businesses. If you're using a less common platform, contact us and we'll let you know if integration is possible."
       },
       {
         "question": "Do we need to provide content or does the AI create everything?",
-        "answer": "The AI can create content from scratch or work with your existing content. We can also train it on your brand voice and style to ensure consistency with your existing marketing materials."
+        "answer": "The AI can create content from scratch, work with your existing email templates, or use a hybrid approach. During setup, we train the AI on your brand voice, style, and messaging so it creates emails that sound like you. You have full control: You can review and approve emails before they send, or let the AI handle everything automatically once you're comfortable with its performance."
       },
       {
         "question": "How does the AI ensure email deliverability?",
-        "answer": "Our AI optimizes for deliverability by managing send frequency, content quality, and engagement patterns to maintain high sender reputation and avoid spam filters."
+        "answer": "Our AI is built with deliverability in mind. It manages send frequency to avoid overwhelming subscribers, optimizes content to avoid spam filters, monitors engagement patterns to maintain high sender reputation, and automatically cleans your list of inactive emails that hurt deliverability. The result: Higher inbox placement rates and better overall email performance."
       },
       {
         "question": "What kind of ROI can we expect?",
-        "answer": "Most clients see 3-5x improvement in email marketing ROI within the first quarter, with continued improvements as the AI optimizes and learns from your specific audience behavior."
+        "answer": "Most clients see a 3-5x improvement in email marketing ROI within the first quarter. If you're currently getting $3 in revenue for every $1 spent on email marketing, you can expect that to increase to $10-15 per dollar with AI optimization. Specific results depend on your industry, list size, and current email performance—but the average client sees $5,000-$8,000 in additional monthly revenue from improved email campaigns."
+      },
+      {
+        "question": "What if we have a small email list?",
+        "answer": "Email Marketing AI works for lists of all sizes. Even if you only have 500-1,000 subscribers, personalization and send-time optimization can significantly improve engagement and revenue. The smaller your list, the more important each subscriber is—which makes AI optimization even more valuable for maximizing every opportunity."
       }
     ]
   },
   "cta": {
-    "headlineLeading": "Ready to Transform Your ",
-    "headlineHighlight": "Email Marketing?",
-    "introText": "Join other Northern Virginia businesses seeing 40% higher open rates and $5,000-$8,000 in additional monthly revenue.\n\nGet a free 15-minute email marketing audit. We'll show you exactly where you're losing money and how AI can fix it. No sales pitch — just honest advice.",
+    "headlineLeading": "Ready to Stop Wasting ",
+    "headlineHighlight": "10+ Hours a Week on Emails No One Reads?",
+    "introText": "Join other Northern Virginia businesses seeing 40% higher open rates and $5,000-$8,000 in additional monthly revenue.<br /><br />Get a free 15-minute email marketing audit. We'll show you exactly where you're losing money and how AI can fix it. No sales pitch — just honest advice.",
     "features": [
       { "text": "Free consultation with zero obligation" },
       { "text": "Most implementations complete in 2-4 weeks" },

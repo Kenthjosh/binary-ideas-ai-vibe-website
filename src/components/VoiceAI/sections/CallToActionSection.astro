@@ -107,9 +107,11 @@ const introParagraphs = Array.isArray(introText)
 
     <div class="max-w-[720px] space-y-4 text-base leading-7 text-[#b5bed0] sm:text-lg sm:leading-8 [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
       {introParagraphs.length > 0 ? (
-        introParagraphs.map((paragraph) => <p>{paragraph}</p>)
+        introParagraphs.map((paragraph) => (
+          <p set:html={paragraph} />
+        ))
       ) : (
-        <p>{introText}</p>
+        <p set:html={typeof introText === "string" ? introText : ""} />
       )}
     </div>
 

@@ -5,6 +5,7 @@ interface UseCase {
   title: string;
   description: string;
   gradient: string;
+  result?: string;
 }
 
 type IconName = "stethoscope" | "utensils" | "headphones" | "target";
@@ -105,6 +106,17 @@ const iconMarkup: Record<IconName, string> = {
         <p class="relative mt-4 [font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-base leading-7 text-[#d0d8e6]">
           {useCase.description}
         </p>
+
+        {useCase.result && (
+          <div class="relative mt-5 inline-flex flex-wrap items-center gap-3 bg-white/15 px-4 py-2 backdrop-blur-sm">
+            <span class="text-xs font-semibold uppercase tracking-[0.3em] text-transparent bg-clip-text bg-[linear-gradient(90deg,#f472b6_0%,#c084fc_100%)]">
+              Result
+            </span>
+            <span class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-sm leading-6 text-white">
+              {useCase.result}
+            </span>
+          </div>
+        )}
       </article>
     ))}
   </div>

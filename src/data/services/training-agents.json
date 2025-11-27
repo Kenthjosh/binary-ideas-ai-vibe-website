@@ -251,8 +251,10 @@
       "region": "Northern VA"
     },
     "content": {
-      "description": "As a local Northern Virginia agency based in Lorton, we understand the unique challenges and opportunities facing businesses in our region. We don't offer generic AI solutions – every custom agent we build is specifically designed for your industry, processes, and business goals.",
-      "additionalInfo": "Our ongoing support and optimization ensure your custom AI agents continue to improve over time, and our proven track record with local businesses means you can trust us to deliver measurable results that directly impact your operational efficiency and competitive position."
+      "description": [
+        "As a local Northern Virginia agency based in Lorton, we understand the unique challenges and opportunities facing businesses in our region. We don't offer generic AI solutions – every custom agent we build is specifically designed for your industry, processes, and business goals.",
+        "Our ongoing support and optimization ensure your custom AI agents continue to improve over time, and our proven track record with local businesses means you can trust us to deliver measurable results that directly impact your operational efficiency and competitive position."
+      ]
     },
     "logo": {
       "src": "/img/bi-ai-logo-portrait-white-2x-1-new.png",

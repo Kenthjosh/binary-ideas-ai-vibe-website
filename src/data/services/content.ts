@@ -169,7 +169,7 @@ export interface ServiceContent {
       region: string;
     };
     content: {
-      description: string;
+      description: string | string[];
       additionalInfo: string;
     };
     logo: FeatureImage;

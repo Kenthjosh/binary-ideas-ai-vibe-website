@@ -6,7 +6,7 @@ interface LocationData {
 }
 
 interface Props {
-  contentText?: string;
+  contentText?: string | string[];
   imageSrc?: string;
   locationData?: LocationData;
 }
@@ -20,7 +20,14 @@ const {
     city: "Lorton",
     region: "Northern VA",
   }
-} = Astro.props;
+} = Astro.props as Props;
+
+const contentParagraphs = Array.isArray(contentText)
+  ? contentText
+  : contentText
+      .split('\n\n')
+      .map((paragraph) => paragraph.trim())
+      .filter(Boolean);
 ---
 
 <section
@@ -79,7 +86,14 @@ const {
           aria-hidden="true"
         />
 
-        <p class="relative [font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#d0d5db] text-base md:text-lg tracking-[0] leading-relaxed" set:html={contentText.split('\n').join('<br />')} />
+        <div class="relative space-y-5">
+          {contentParagraphs.map((paragraph) => (
+            <p
+              class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] font-normal text-[#d0d5db] text-base md:text-lg tracking-[0] leading-relaxed"
+              set:html={paragraph}
+            />
+          ))}
+        </div>
       </div>
     </div>
   </div>

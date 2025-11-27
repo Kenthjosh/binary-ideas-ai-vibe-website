@@ -6,7 +6,7 @@ interface LocationData {
 }
 
 interface ContentData {
-  description: string;
+  description: string | string[];
   additionalInfo: string;
 }
 
@@ -30,8 +30,9 @@ const defaultLocation: LocationData = {
 };
 
 const defaultContent: ContentData = {
-  description:
-    "As a local Northern Virginia agency based in Lorton, we understand the unique needs of businesses in our region. We don't offer one-size-fits-all solutions – every Voice AI Agent we create is custom-built for your specific business requirements.",
+  description: [
+    "As a local Northern Virginia agency based in Lorton, we understand the unique needs of businesses in our region. We don't offer one-size-fits-all solutions – every Voice AI Agent we create is custom-built for your specific business requirements."
+  ],
   additionalInfo:
     "Our ongoing support and optimization ensure your system continues to improve over time, and our proven track record with local businesses means you can trust us to deliver results that matter to your bottom line."
 };
@@ -49,7 +50,9 @@ const {
   logo = defaultLogo
 } = Astro.props as Props;
 
-const contentHtml = `${content.description}<br /><br />${content.additionalInfo}`;
+const descriptionParagraphs = Array.isArray(content.description)
+  ? content.description
+  : [content.description];
 ---
 
 <section
@@ -97,10 +100,16 @@ const contentHtml = `${content.description}<br /><br />${content.additionalInfo}
 
     <div class="relative overflow-hidden rounded-[34px] border border-[#ffffff17] bg-[linear-gradient(145deg,rgba(25,27,45,0.92)_0%,rgba(16,17,33,0.95)_100%)] px-12 py-12 shadow-[0_38px_85px_rgba(10,10,20,0.55)]">
       <div class="pointer-events-none absolute inset-0 rounded-[34px] opacity-70 [background:radial-gradient(circle_at_top_right,rgba(120,64,255,0.25)_0%,rgba(19,20,37,0)_65%)]" aria-hidden="true" />
-      <p
-        class="relative [font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-base leading-8 text-[#d9deed] sm:text-lg"
-        set:html={contentHtml}
-      />
+      <div class="relative space-y-5">
+        {descriptionParagraphs.map((paragraph) => (
+          <p class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-base leading-8 text-[#d9deed] sm:text-lg">
+            {paragraph}
+          </p>
+        ))}
+        <p class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-base leading-8 text-[#ffffffcc] sm:text-lg">
+          {content.additionalInfo}
+        </p>
+      </div>
     </div>
   </div>
 </section>

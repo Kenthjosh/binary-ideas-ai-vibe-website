@@ -250,8 +250,10 @@
       "region": "Northern VA"
     },
     "content": {
-      "description": "As a local Northern Virginia agency based in Lorton, we understand the unique customer service challenges and opportunities facing businesses in our region. We don't offer generic chatbot solutions – every AI system we build is customized for your specific industry, customer base, and business goals.",
-      "additionalInfo": "Our ongoing support and optimization ensure your Chatbot AI continues to improve over time, and our proven track record with local businesses means you can trust us to deliver measurable results that directly impact your customer satisfaction and operational efficiency."
+      "description": [
+        "As a local Northern Virginia agency based in Lorton, we understand the unique customer service challenges and opportunities facing businesses in our region. We don't offer generic chatbot solutions – every AI system we build is customized for your specific industry, customer base, and business goals.",
+        "Our ongoing support and optimization ensure your Chatbot AI continues to improve over time, and our proven track record with local businesses means you can trust us to deliver measurable results that directly impact your customer satisfaction and operational efficiency."
+      ]
     },
     "logo": {
       "src": "/img/bi-ai-logo-portrait-white-2x-1-new.png",

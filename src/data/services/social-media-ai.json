@@ -8,11 +8,11 @@
     "titleLeading": "Stop Losing Customers Because",
     "titleTrailing": "Your Social Media Went Dark for 3 Days",
     "titleGradientClass": "bg-[linear-gradient(90deg,#c084fc_0%,#8b5cf6_50%,#60a5fa_100%)]",
-    "description": "Your Northern Virginia business is hemorrhaging opportunities because your social media presence is inconsistent. You post when you have time (which is never), your engagement is sporadic, and potential customers think you've gone out of business when they see your last post was 6 weeks ago.",
+    "description": "You shouldn't lose qualified leads because you were busy SERVING customers instead of posting on Instagram.",
     "problemList": [
       "You're losing 10-15 qualified leads every month because people check your social media before they buy, see crickets, and choose an active competitor instead.",
       "You spend 2-3 hours creating one post, it gets 12 likes, and you wonder if social media is even worth the effort.",
-      "You know you should be posting daily, engaging with followers, and building a community—but between running your business and serving customers, social media gets pushed to \"someday\" every single week."
+      "Your last post was 6 weeks ago, and potential customers think you've gone out of business when they see your inactive profiles."
     ],
     "ctaText": "Get Your Free Social Media Audit",
     "ctaAriaLabel": "Get Your Free Social Media Audit",
@@ -20,27 +20,27 @@
     "ctaIconAlt": "Arrow icon"
   },
   "painPoints": {
-    "titleLeading": "YOU'RE INVISIBLE ON THE PLATFORMS",
-    "titleHighlight": "WHERE YOUR CUSTOMERS ARE LOOKING",
+    "titleLeading": "YOUR INACTIVE SOCIAL MEDIAYour ",
+    "titleHighlight": "IS COSTING YOU $5,000-$15000 IN LOST REVENUE EVERY MONTH",
     "description": "Here's what's really happening: Your ideal customers are scrolling through Facebook, Instagram, and LinkedIn right now, looking for businesses like yours. But when they land on your profile, they see silence—and they move on.",
     "cards": [
       {
-        "title": "You're Spending Hours to Create Content Nobody Sees",
+        "title": "Lost Revenue: $5,000-$15,000 Monthly",
         "icon": "💸",
-        "description": "You sit down on Sunday night, spend 90 minutes trying to write something clever for Facebook, agonize over the caption, second-guess yourself, and finally hit \"post\" at 11 PM. Result: 8 likes (half from your mom and employees). Hours wasted for nearly zero engagement.",
-        "pain": "You know social media matters for your business, but you also know every hour spent on content is an hour not spent serving customers or actually making money. It feels like a necessary evil that never pays off, but you're afraid to stop entirely because your competitors are active and you don't want to fall further behind."
+        "description": "Every potential customer who checks your social media before buying sees your last post was 3 weeks ago and makes a split-second decision: \"This business is either closed, struggling, or doesn't care about customers.\" Then they click on your competitor who posted 4 hours ago, and you never even knew that lead existed. That's 10-15 lost leads monthly translating to thousands in missed sales.",
+        "pain": "Your ideal customers are scrolling RIGHT NOW, finding your competitors instead of you. You know social media matters—every marketing expert says so. But you're trapped: if you don't post, you look dead; if you do post inconsistently, you look unprofessional. Meanwhile, your competitors with consistent, engaging content are capturing the customers you worked so hard to attract with your other marketing. You're spending thousands on Google Ads and SEO to drive awareness, only to lose those prospects the moment they check your dormant Facebook page."
       },
       {
-        "title": "By the Time You Post, the Moment Has Passed",
+        "title": "Wasted Time: 15-20 Hours Per Week",
         "icon": "⏰",
-        "description": "You see a trending topic perfect for your business on Monday morning. \"I should post about this!\" you think. But you're in back-to-back meetings all day. By Tuesday evening when you finally sit down to create content, the trend is dead, the conversation has moved on, and your post lands with a thud because you're 36 hours late.",
-        "pain": "Social media rewards speed and consistency, but your business can't move at social media's pace. You watch competitors jump on trends, capitalize on viral moments, and build engagement while you're stuck juggling too many responsibilities to keep up."
+        "description": "You sit down on Sunday night, spend 90 minutes trying to write something clever for Facebook, agonize over the caption, second-guess yourself, and finally hit \"post \" at 11 PM. Result: 8 likes (half from your mom and employees). That's 15-20 hours per week—60-80 hours monthly—wasted creating content that gets buried because you posted at the wrong time, used the wrong hashtags, or the algorithm just decided nobody should see it.",
+        "pain": "Every hour spent on content is an hour NOT spent serving customers or making money. You resent social media because it feels like shouting into a void, but you can't abandon it because your competitors are there. Sunday evenings are ruined by the pressure to \"post something. \" Your family knows not to interrupt you when you're \"working on content. \" And the worst part? After all that effort, you have no idea if it even worked. Did that post bring in customers? Did anyone care? You're flying blind, burning time you don't have, on a platform that feels like it's designed to frustrate small business owners."
       },
       {
-        "title": "You Have No Idea What Works (So You Keep Doing What Doesn't)",
+        "title": "Missed Opportunities: Unanswered Questions Cost You $1,000-$5,000 Each",
         "icon": "📊",
-        "description": "Your post about your new service got 6 likes. Your behind-the-scenes photo got 47 likes and 12 comments. Your carefully crafted promotional post got 3 likes and zero engagement. What's working? What's wasting time? You have no clue because you don't have time to analyze metrics or optimize your strategy.",
-        "pain": "You're flying blind. Maybe video content performs 5X better than images for your audience—but you'll never know because you don't have time to experiment and measure. So you keep posting whatever you can throw together, hoping something sticks."
+        "description": "Someone comments on your Facebook post: \"Do you serve the Alexandria area? \" It's a qualified lead, ready to buy, asking a simple question. You don't see it for 72 hours because you check social media twice a week. By the time you respond with \"Yes! \", they've already hired a competitor who responded within 20 minutes. You just lost a $2,000-$5,000 job because you weren't monitoring comments.",
+        "pain": "Every unanswered comment is a lost opportunity that you don't even know happened. You post content hoping for engagement, then feel sick when you finally check and see questions from 3 days ago that you missed. You know you should be monitoring comments, messages, and mentions constantly—but you're not a social media manager, you're running a business. You can't be glued to your phone waiting for comments. But every time you miss one, you wonder: \"How much money did I just lose? How many other leads slipped away while I was actually working? \" It's maddening to lose business not because you can't do the work, but because you didn't see a comment fast enough."
       },
       {
         "title": "Your Customers Are Asking Questions You Don't See for 3 Days",
@@ -95,8 +95,8 @@
     "titleLeading": "What is ",
     "titleHighlight": "Social Media AI?",
     "descriptionParagraphs": [
-      "Social Media AI is an intelligent system that uses artificial intelligence to automate and optimize your social media marketing across all platforms. Unlike traditional social media management that requires constant manual effort and creative energy, our AI creates engaging content, schedules posts at optimal times, and manages audience engagement automatically while maintaining your brand voice and style.",
-      "This powerful solution is designed specifically for small and medium businesses in Northern Virginia who want to maintain a strong social media presence without dedicating hours each day to content creation and posting. Whether you're building brand awareness, promoting products, or engaging with your community, Social Media AI ensures your social media strategy runs smoothly and effectively, driving real business results."
+      "Imagine if you had a dedicated social media manager who worked 24/7, created engaging on-brand posts for every platform, knew the optimal time to post for maximum reach, responded to every comment and DM within minutes, analyzed what content performs best, never took a day off, and cost a fraction of a full-time employee.",
+      "That's exactly what Social Media AI does. Our intelligent system uses advanced AI to automate your entire social media presence across all platforms. Unlike traditional social media management where you're still doing most of the work (or paying $2,000-$5,000/month for an agency), our AI handles content creation, scheduling, posting, engagement, and optimization completely automatically."
     ]
   },
   "keyFeatures": {
@@ -107,38 +107,38 @@
       {
         "id": "content-generation",
         "icon": "message",
-        "title": "Content Generation",
-        "description": "Our AI creates engaging social media posts, captions, and content tailored to each platform's unique audience and format requirements, ensuring your content resonates with your followers and drives engagement."
+        "title": "Content Generation That Sounds Like YOU",
+        "description": "Our AI creates engaging posts, captions, stories, and videos tailored to each platform's format and your brand's unique voice. After training on your existing content and brand guidelines, it generates posts that your audience can't distinguish from your human-written content. Never stare at a blank screen again."
       },
       {
         "id": "post-scheduling",
         "icon": "calendar",
-        "title": "Post Scheduling",
-        "description": "Automatically schedule posts at optimal times for maximum engagement based on when your audience is most active, ensuring your content gets seen by the right people at the right time."
+        "title": "Smart Posting at Optimal Times",
+        "description": "The AI analyzes when YOUR specific audience is most active on each platform and automatically schedules posts for maximum reach and engagement. Same content, 3-5X more reach just by posting at the right times. Your posts get seen by more people, drive more engagement, and generate more leads—without any extra effort."
       },
       {
         "id": "engagement-automation",
         "icon": "phone",
-        "title": "Engagement Automation",
-        "description": "AI responds to comments, messages, and mentions in real-time to maintain active engagement with your audience, building stronger relationships and community around your brand."
+        "title": "Automated Engagement That Builds Relationships",
+        "description": "AI responds to comments, messages, and mentions in real-time with contextually appropriate replies that maintain your brand voice. Simple questions get instant answers, qualified leads get escalated to you immediately, and negative comments are flagged for your personal attention. Never lose another lead because you didn't see a DM for 3 days."
       },
       {
         "id": "hashtag-optimization",
         "icon": "globe",
-        "title": "Hashtag Optimization",
-        "description": "Intelligently select and optimize hashtags for maximum reach and engagement on each platform, helping your content reach new audiences and increase visibility."
+        "title": "Intelligent Hashtag Optimization",
+        "description": "The AI researches and selects the most effective hashtags for each post based on your industry, target audience, and current trends. It avoids over-used hashtags that bury your content and finds high-potential tags that expand your reach to qualified prospects. Each post has 30-100% more reach than manually hashtagged content."
       },
       {
         "id": "analytics-reporting",
         "icon": "clock",
-        "title": "Analytics Reporting",
-        "description": "Track detailed performance metrics including reach, engagement, clicks, and conversions across all platforms, providing actionable insights to continuously improve your social media strategy."
+        "title": "Performance Analytics You Actually Understand",
+        "description": "Track detailed metrics including reach, engagement, clicks, leads, and ROI across all platforms in one simple dashboard. See which content types perform best, which platforms drive the most business, and exactly how social media contributes to your bottom line. Finally understand what's working instead of guessing."
       },
       {
         "id": "multi-platform-management",
         "icon": "database",
-        "title": "Multi-Platform Management",
-        "description": "Manage all your social media accounts from one centralized dashboard with platform-specific optimization, ensuring consistent messaging while respecting each platform's unique characteristics."
+        "title": "Multi-Platform Management from One Dashboard",
+        "description": "Manage Facebook, Instagram, LinkedIn, TikTok, YouTube, Twitter, and more from a single centralized system. The AI optimizes content for each platform's unique algorithm, format, and audience while maintaining consistent messaging across all channels. Stop reformatting the same content for each platform."
       }
     ]
   },
@@ -213,38 +213,42 @@
     "headingHighlight": "Cases",
     "items": [
       {
-        "id": "brand-awareness",
+        "id": "real-estate-agents-showcase-listings",
         "icon": "stethoscope",
-        "title": "Brand Awareness Campaigns",
-        "description": "Perfect for Northern Virginia businesses, our AI creates and manages brand awareness campaigns that consistently promote your business and build recognition in your local market.",
-        "gradient": "bg-[linear-gradient(135deg,rgba(236,72,153,0.92)_0%,rgba(14,116,144,0.95)_100%)]"
+        "title": "Real Estate Agents: Showcase Listings Automatically",
+        "description": "Social Media AI automatically creates posts for new listings with professional property descriptions, generates market update content, schedules open house announcements, shares testimonials, and maintains your personal brand presence across all platforms—all while you're busy showing homes and closing deals.",
+        "gradient": "bg-[linear-gradient(135deg,rgba(236,72,153,0.92)_0%,rgba(14,116,144,0.95)_100%)]",
+        "result": "Listings get 3-5X more visibility, potential buyers see your active presence and trust you're successful, you generate 5-10 additional qualified leads monthly—all without spending an hour creating content."
       },
       {
-        "id": "product-promotions",
+        "id": "contractors-home-services-trust-updates",
         "icon": "headphones",
-        "title": "Product Promotions",
-        "description": "Automate product promotion campaigns with AI-generated content that highlights features, benefits, and special offers while maintaining consistent messaging across all platforms.",
-        "gradient": "bg-[linear-gradient(135deg,rgba(29,78,216,0.92)_0%,rgba(76,29,149,0.95)_100%)]"
+        "title": "Contractors & Home Services: Build Trust with Consistent Updates",
+        "description": "Homeowners want to see before-and-after photos, customer testimonials, and proof you're busy before they hire you. Social Media AI creates before-and-after project showcases, shares customer testimonials, posts seasonal home maintenance tips, highlights your expertise with educational content, and maintains active engagement with your local community.",
+        "gradient": "bg-[linear-gradient(135deg,rgba(29,78,216,0.92)_0%,rgba(76,29,149,0.95)_100%)]",
+        "result": "Your close rate increases by 20-40% because social proof builds trust before you even speak to prospects. You generate 8-12 additional monthly leads from people who found you through social media visibility."
       },
       {
-        "id": "community-management",
+        "id": "healthcare-practices-educate-patients",
         "icon": "target",
-        "title": "Community Management",
-        "description": "Maintain active community engagement by responding to comments, questions, and mentions automatically, building stronger relationships with your customers and followers.",
-        "gradient": "bg-[linear-gradient(135deg,rgba(99,102,241,0.92)_0%,rgba(45,212,191,0.95)_100%)]"
+        "title": "Healthcare Practices: Educate Patients & Fill Your Calendar",
+        "description": "Social Media AI creates patient education content, shares health tips, promotes new services, highlights staff expertise, manages appointment reminders, responds to inquiry messages instantly, and maintains HIPAA-compliant engagement with your community—all while you focus on patient care.",
+        "gradient": "bg-[linear-gradient(135deg,rgba(99,102,241,0.92)_0%,rgba(45,212,191,0.95)_100%)]",
+        "result": "Your calendar fills with new patients who discovered you through social media, existing patients engage more and refer friends, your practice appears modern and tech-savvy, and you establish thought leadership in your specialty."
       },
       {
-        "id": "influencer-outreach",
+        "id": "restaurants-hospitality-fill-tables",
         "icon": "utensils",
-        "title": "Influencer Outreach",
-        "description": "Identify and engage with potential influencers and partners in your industry, automating the initial outreach process while maintaining a personal touch in communications.",
-        "gradient": "bg-[linear-gradient(135deg,rgba(59,130,246,0.92)_0%,rgba(236,72,153,0.95)_100%)]"
+        "title": "Restaurants & Hospitality: Fill Tables with Mouth-Watering Content",
+        "description": "Social Media AI creates daily food showcases, promotes specials and events, shares customer reviews, highlights behind-the-scenes content, responds to reservation inquiries instantly, manages takeout/delivery promotions, and optimizes content for maximum local reach.",
+        "gradient": "bg-[linear-gradient(135deg,rgba(59,130,246,0.92)_0%,rgba(236,72,153,0.95)_100%)]",
+        "result": "Your Instagram drives 20-50 additional covers per week, special event promotions reach 5-10X more local diners, you fill weeknight reservations that used to sit empty, and your restaurant appears consistently in \"restaurants near me \" searches."
       }
     ]
   },
   "whyChoose": {
-    "titleLeading": "Why Choose ",
-    "titleHighlight": "Binary Ideas AI",
+    "titleLeading": "Why Northern Virginia Businesses ",
+    "titleHighlight": "Choose Us",
     "location": {
       "basedIn": "Based in",
       "city": "Lorton",
@@ -252,8 +256,8 @@
     },
     "content": {
       "description": [
-        "As a local Northern Virginia agency based in Lorton, we understand the unique social media challenges and opportunities facing businesses in our region. We don't offer generic social media solutions – every AI system we build is customized for your specific industry, audience, and brand goals.",
-        "Our ongoing support and optimization ensure your Social Media AI continues to improve over time, and our proven track record with local businesses means you can trust us to deliver measurable results that directly impact your brand awareness and customer engagement."
+        "We know you've been burned by marketing tools that overpromise and underdeliver. We know you're skeptical that AI-generated content won't sound robotic and generic. We know you don't have time for another \"technology project. \"",
+        "We're not a faceless national company. We're Northern Virginia business owners based right here in Lorton who understand the unique social media landscape and customer behaviors in our region. When you call us, you talk to us—not a call center in another state."
       ]
     },
     "logo": {

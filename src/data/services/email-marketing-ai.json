@@ -41,6 +41,24 @@
         "icon": "📉",
         "description": "Generic emails that don't match subscriber interests lead to unsubscribes and spam complaints—hurting your sender reputation and making future emails even less likely to reach inboxes.",
         "pain": "It's not fair that big companies with full marketing teams and expensive software are winning at email marketing while you're doing everything manually and getting crushed. You shouldn't need a marketing degree and 20 hours per week to send emails people actually read."
+      },
+      {
+        "title": "Leads Go Cold Before You Reply",
+        "icon": "💥",
+        "description": "Every minute you delay responding to replies from a fresh campaign, 30–50% of those buyers wander to competitors who answer first. That’s $5,000–$15,000 in monthly revenue evaporating while your nurture sequences queue up.",
+        "pain": "You see hot prospects sitting in your inbox overnight because autoresponders aren’t truly instant, and by the time you craft a personal reply they’ve already booked with someone else. It’s infuriating knowing the lead was yours—until slow follow-up lost it."
+      },
+      {
+        "title": "Your Team Burns Out Chasing Consistency",
+        "icon": "😓",
+        "description": "You train assistants to manage campaigns, but the manual revisions, list pulls, and re-sends fry their motivation. They quit just as they master your voice, forcing you back into late-night editing sessions. That churn costs payroll dollars and momentum every quarter.",
+        "pain": "Every time you finally trust someone to \"own\"  email, they hand in their notice. You’re stuck onboarding the next hire while the calendar fills with missed sends and half-finished automations."
+      },
+      {
+        "title": "Manual Ops Drain $30K+ a Year",
+        "icon": "📉",
+        "description": "Those 40+ hours a week moving CSVs, tagging audiences, and scheduling sequences equal $2,000–$4,000 in labor you could replace with a $200/month automation stack—over $30,000 annually vaporized on busywork.",
+        "pain": "You know automation would pay for itself in weeks, but every day you delay, your best people are stuck in spreadsheets instead of driving new campaigns or building partnerships. Growth projects keep slipping because the keyboard grind never ends."
       }
     ]
   },
@@ -129,8 +147,8 @@
     ]
   },
   "benefits": {
-    "titleLeading": "Benefits for ",
-    "titleHighlight": "Your Business",
+    "titleLeading": "What You Get: ",
+    "titleHighlight": "Real Results in Dollars and Time",
     "items": [
       {
         "id": "increase-open-rates-by-40",
@@ -264,7 +282,7 @@
   "faq": {
     "titleLeading": "Frequently Asked ",
     "titleHighlight": "Questions",
-    "subtitle": "Get answers to common questions about Email Marketing AI",
+    "subtitle": "Questions You're Probably Asking Right Now",
     "items": [
       {
         "question": "How quickly will we see improved email performance?",

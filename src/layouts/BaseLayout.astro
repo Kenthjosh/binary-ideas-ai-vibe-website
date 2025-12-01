@@ -96,8 +96,40 @@ const {
           });
         };
 
+        const loadGlobalChatbotEmbed = () => {
+          const existingScriptId = 'binary-ideas-chatbot-embed';
+          if (document.getElementById(existingScriptId)) {
+            return;
+          }
+
+          fetch('https://bots.aidrivenbot.com/api/get-chatbot', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              chatbotId: '67f95d609fdc31d6bfff4aa3',
+              url: window.location.href
+            })
+          })
+            .then((response) => {
+              if (response.status === 200) {
+                return response.text();
+              }
+              throw new Error(`Error fetching data, status code: ${response.status}`);
+            })
+            .then((scriptContent) => {
+              const scriptTag = document.createElement('script');
+              scriptTag.id = existingScriptId;
+              scriptTag.innerHTML = scriptContent;
+              document.body.appendChild(scriptTag);
+            })
+            .catch((error) => {
+              console.error('Chatbot embed fetch error:', error);
+            });
+        };
+
         ensureBookingLinksOpenInNewTab();
         autoLinkBlogPhoneNumbers();
+        loadGlobalChatbotEmbed();
       });
     </script>
   </body>

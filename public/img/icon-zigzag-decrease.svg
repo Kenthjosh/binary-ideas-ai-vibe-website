@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" role="img" aria-label="Lost revenue zigzag arrow icon">
+  <defs>
+    <!-- Soft glow -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feComponentTransfer in="blur" result="faded">
+        <feFuncA type="table" tableValues="0 0.7"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="faded"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#softGlow)">
+    <!-- Zigzag downward arrow -->
+    <polyline points="8 12, 24 24, 14 32, 32 44" />
+    <!-- Arrowhead -->
+    <polyline points="32 44, 32 33" />
+    <polyline points="32 44, 21 44" />
+  </g>
+</svg>

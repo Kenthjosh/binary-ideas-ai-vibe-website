@@ -25,25 +25,8 @@ const {
   services = [
     {
       icon: {
-        type: "gradient",
-        gradient: "linear-gradient(145deg,rgba(43,127,255,1)_0%,rgba(0,184,219,1)_100%)",
-        images: [
-          {
-            src: "/img/vector-7.svg",
-            alt: "Vector",
-            className: "absolute w-0 h-[12.50%] top-[79.17%] left-[50.00%]",
-          },
-          {
-            src: "/img/vector-8.svg",
-            alt: "Vector",
-            className: "absolute w-[58.33%] h-[37.50%] top-[41.67%] left-[20.83%]",
-          },
-          {
-            src: "/img/vector-9.svg",
-            alt: "Vector",
-            className: "absolute w-[25.00%] h-[54.17%] top-[8.33%] left-[37.50%]",
-          },
-        ],
+        type: "image",
+        imageSrc: "/img/icons-ai-voice-agent.png",
       },
       title: "Voice AI Agents",
       description:
@@ -55,7 +38,7 @@ const {
     {
       icon: {
         type: "image",
-        imageSrc: "/img/background-shadow-2.svg",
+        imageSrc: "/img/icons-lead-generation-ai.png",
       },
       title: "Lead Generation AI",
       description:
@@ -66,20 +49,8 @@ const {
     },
     {
       icon: {
-        type: "gradient",
-        gradient: "linear-gradient(145deg,rgba(246,51,154,1)_0%,rgba(255,32,86,1)_100%)",
-        images: [
-          {
-            src: "/img/vector-12.svg",
-            alt: "Vector",
-            className: "absolute w-[83.33%] h-[24.99%] top-[29.17%] left-[8.33%]",
-          },
-          {
-            src: "/img/vector-13.svg",
-            alt: "Vector",
-            className: "absolute w-[83.33%] h-[66.67%] top-[16.67%] left-[8.33%]",
-          },
-        ],
+        type: "image",
+        imageSrc: "/img/icons-email-marketing-ai.png",
       },
       title: "Email Marketing AI",
       description:
@@ -90,15 +61,8 @@ const {
     },
     {
       icon: {
-        type: "gradient",
-        gradient: "linear-gradient(145deg,rgba(0,184,219,1)_0%,rgba(43,127,255,1)_100%)",
-        images: [
-          {
-            src: "/img/vector-15.svg",
-            alt: "Vector",
-            className: "absolute w-[83.33%] h-[83.33%] top-[8.33%] left-[8.33%]",
-          },
-        ],
+        type: "image",
+        imageSrc: "/img/icons-chatbot-ai.png",
       },
       title: "Chatbot AI",
       description:
@@ -110,7 +74,7 @@ const {
     {
       icon: {
         type: "image",
-        imageSrc: "/img/background-shadow-3.svg",
+        imageSrc: "/img/icons-social-media-ai.png",
       },
       title: "Social Media AI",
       description:
@@ -122,7 +86,7 @@ const {
     {
       icon: {
         type: "image",
-        imageSrc: "/img/background-shadow-4.svg",
+        imageSrc: "/img/icons-custom-ai-agent.png",
       },
       title: "Custom Training Agents",
       description:
@@ -155,10 +119,10 @@ const bottomRowServices = services.slice(3, 6);
     >
       {service.icon.type === "gradient" ? (
         <div
-          class="w-14 h-14 mb-6 flex items-center justify-center rounded-[14px] overflow-hidden shadow-[0px_4px_6px_-4px_#0000001a,0px_10px_15px_-3px_#0000001a]"
+          class="relative w-16 h-16 flex items-center justify-center rounded-[14px] overflow-hidden shadow-[0px_4px_6px_-4px_#0000001a,0px_10px_15px_-3px_#0000001a] mb-4"
           style={`background: ${service.icon.gradient}`}
         >
-          <div class="h-8 w-8 relative">
+          <div class="relative w-10 h-10 md:w-12 md:h-12">
             {service.icon.images?.map((img) => (
               <img
                 class={img.className}
@@ -170,7 +134,7 @@ const bottomRowServices = services.slice(3, 6);
         </div>
       ) : (
         <img
-          class="w-14 h-14 mb-6"
+          class="w-16 h-16 mb-4"
           alt="Background shadow"
           src={service.icon.imageSrc}
         />
@@ -208,10 +172,10 @@ const bottomRowServices = services.slice(3, 6);
     >
       {service.icon.type === "gradient" ? (
         <div
-          class="w-14 h-14 mb-6 flex items-center justify-center rounded-[14px] overflow-hidden shadow-[0px_4px_6px_-4px_#0000001a,0px_10px_15px_-3px_#0000001a]"
+          class="relative w-16 h-16 flex items-center justify-center rounded-[14px] overflow-hidden shadow-[0px_4px_6px_-4px_#0000001a,0px_10px_15px_-3px_#0000001a] mb-4"
           style={`background: ${service.icon.gradient}`}
         >
-          <div class="h-8 w-8 relative">
+          <div class="relative w-10 h-10 md:w-12 md:h-12">
             {service.icon.images?.map((img) => (
               <img
                 class={img.className}
@@ -223,7 +187,7 @@ const bottomRowServices = services.slice(3, 6);
         </div>
       ) : (
         <img
-          class="w-14 h-14 mb-6"
+          class="w-16 h-16 mb-4"
           alt="Background shadow"
           src={service.icon.imageSrc}
         />

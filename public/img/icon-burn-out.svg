@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" role="img" aria-label="Team Burnout low battery icon">
+  <defs>
+    <!-- Soft glow -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feComponentTransfer in="blur" result="faded">
+        <feFuncA type="table" tableValues="0 0.7"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="faded"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#softGlow)">
+    
+    <!-- Battery outline -->
+    <rect x="10" y="16" width="30" height="24" rx="4" ry="4"/>
+
+    <!-- Battery terminal -->
+    <rect x="40" y="22" width="6" height="12" rx="2" ry="2"/>
+
+    <!-- Low battery "melting" fill line -->
+    <path d="M14 32 
+             Q18 34 20 30 
+             Q22 26 25 30
+             Q28 34 32 28" />
+
+  </g>
+</svg>

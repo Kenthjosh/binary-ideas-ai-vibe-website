@@ -200,32 +200,36 @@
         "stepNumber": "STEP 1",
         "title": "Free Lead Audit & Strategy Session (15 Minutes)",
         "description": "<p>We analyze your current lead sources, conversion rates, and cost per qualified lead. Then we show you exactly where you're wasting money and how much you could save with intelligent qualification. No sales pitch, no pressure—just honest analysis.</p><p><strong style=\"color:#fff;\">What you'll get:</strong> A detailed breakdown showing your cost per lead by channel, your qualification rate (% of leads actually worth calling), and your hidden costs (wasted sales time, lost opportunities). Even if you don't work with us, you'll know exactly where your money is going.</p>",
-        "icon": "phone",
-        "gradient": "bg-[linear-gradient(135deg,rgba(59,130,246,1)_0%,rgba(147,197,253,1)_100%)]"
+        "iconSrc": "/img/icons-magnifier-white.png",
+        "iconAlt": "Magnifying glass icon",
+        "gradient": "bg-[linear-gradient(135deg,rgba(43,127,255,1)_0%,rgba(152,16,250,1)_100%)]"
       },
       {
         "id": 2,
         "stepNumber": "STEP 2",
         "title": "We Build & Install Your Custom AI Qualifier",
         "description": "<p>We define your ideal customer profile together (budget, timeline, needs, authority), then train the AI to recognize those signals in incoming leads. We integrate with your existing CRM, marketing tools, and lead sources—Google Ads, Facebook, website forms, landing pages—no rebuild needed, no disruption to your current process.</p><p><strong style=\"color:#fff;\">What you'll do:</strong> Spend 30 minutes describing your ideal customer and how you currently qualify leads. That's it. We handle the AI training, the integration testing, and the launch. No technical skills required on your end.</p>",
-        "icon": "tool",
-        "gradient": "bg-[linear-gradient(135deg,rgba(167,139,250,1)_0%,rgba(59,130,246,1)_100%)]"
+        "iconSrc": "/img/icons-puzzle-piece-white.png",
+        "iconAlt": "Puzzle piece icon",
+        "gradient": "bg-[linear-gradient(135deg,rgba(173,70,255,1)_0%,rgba(246,51,154,1)_100%)]"
       },
       {
         "id": 3,
         "stepNumber": "STEP 3",
         "title": "Watch Lead Quality Soar & Costs Plummet",
         "description": "<p>Your AI starts qualifying every lead instantly—asking the right questions, scoring based on buying signals, routing hot prospects to sales in real-time, and filtering out time-wasters automatically. Your team only talks to ready-to-buy prospects while you track exactly which channels drive revenue versus just clicks.</p><p><strong style=\"color:#fff;\">What you'll experience:</strong> Within the first week, your sales team will notice they're talking to better prospects. Within 30 days, you'll see your cost per qualified lead drop by 50-70%. Within 90 days, you'll have clear data on which marketing channels to double down on and which to cut entirely.</p>",
-        "icon": "bolt",
-        "gradient": "bg-[linear-gradient(135deg,rgba(168,85,247,1)_0%,rgba(236,72,153,1)_100%)]"
+        "iconSrc": "/img/icons-holding-box-white.png",
+        "iconAlt": "Holding box icon",
+        "gradient": "bg-[linear-gradient(135deg,rgba(96,165,250,1)_0%,rgba(167,139,250,1)_100%)]"
       },
       {
         "id": 4,
         "stepNumber": "STEP 4",
         "title": "Continuous Optimization & Support",
         "description": "<p>We don't set it up and disappear. We monitor performance, analyze conversion data, and continuously refine your qualification criteria and scoring algorithms. As your business evolves, your Lead Generation AI evolves with you—getting smarter and more accurate every week.</p><p><strong style=\"color:#fff;\">What you'll get:</strong> Monthly performance reports, quarterly optimization sessions, and ongoing support to ensure your Lead Generation AI keeps delivering measurable results. You'll always know which improvements are driving the best ROI.</p>",
-        "icon": "headset",
-        "gradient": "bg-[linear-gradient(135deg,rgba(236,72,153,1)_0%,rgba(59,130,246,1)_100%)]"
+        "iconSrc": "/img/icons-genealogy-white.png",
+        "iconAlt": "Genealogy network icon",
+        "gradient": "bg-[linear-gradient(135deg,rgba(142,81,255,1)_0%,rgba(59,130,246,1)_100%)]"
       }
     ]
   },

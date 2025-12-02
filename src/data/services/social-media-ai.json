@@ -197,24 +197,27 @@
         "stepNumber": "STEP 1",
         "title": "Book a 15-Minute Social Media Audit",
         "description": "<p>We analyze your current social media presence across all platforms and show you exactly where you're losing visibility and engagement. We identify which content types work best for your audience, what posting frequency you need, and which platforms drive the most business results.</p><p><strong style=\"color:#fff;\">Reassurance:</strong> No sales pitch—just honest insights into what's working, what's not, and whether Social Media AI makes sense for your business. Even if you don't work with us, you'll walk away knowing exactly what's costing you leads.</p>",
-        "icon": "phone",
-        "gradient": "bg-[linear-gradient(135deg,rgba(56,189,248,1)_0%,rgba(236,72,153,1)_100%)]"
+        "iconSrc": "/img/icons-magnifier-white.png",
+        "iconAlt": "Magnifying glass icon",
+        "gradient": "bg-[linear-gradient(135deg,rgba(43,127,255,1)_0%,rgba(152,16,250,1)_100%)]"
       },
       {
         "id": 2,
         "stepNumber": "STEP 2",
         "title": "We Train Your AI and Connect Your Accounts",
         "description": "<p>We train the AI on your brand voice, industry knowledge, content preferences, and ideal customer. Then we connect it to your Facebook, Instagram, LinkedIn, TikTok, and other platforms. We set up automated posting schedules, engagement rules, and content guidelines specific to your business goals.</p><p><strong style=\"color:#fff;\">We handle everything:</strong> No website rebuild needed. No complex integrations. All technical setup completed within 7-10 business days. You just provide brand information and approval.</p>",
-        "icon": "tool",
-        "gradient": "bg-[linear-gradient(135deg,rgba(59,130,246,1)_0%,rgba(156,163,175,1)_100%)]"
+        "iconSrc": "/img/icons-puzzle-piece-white.png",
+        "iconAlt": "Puzzle piece icon",
+        "gradient": "bg-[linear-gradient(135deg,rgba(173,70,255,1)_0%,rgba(246,51,154,1)_100%)]"
       },
       {
         "id": 3,
         "stepNumber": "STEP 3",
         "title": "Watch Your Engagement Grow While You Focus on Customers",
         "description": "<p>Your AI creates and posts engaging content daily, responds to comments and messages automatically, tracks performance analytics, and continuously optimizes for better results. You review performance dashboards weekly, approve content if you want, or just let it run completely on autopilot.</p><p><strong style=\"color:#fff;\">What you'll experience:</strong> Your social media becomes consistent, engaging, and effective—without you touching it. You get more visibility, more engagement, and more customers while saving 15+ hours per week. Month 1: Good results. Month 3: Great results. Month 6: Exceptional results as the AI learns exactly what YOUR audience loves.</p>",
-        "icon": "bolt",
-        "gradient": "bg-[linear-gradient(135deg,rgba(96,165,250,1)_0%,rgba(190,24,93,1)_100%)]"
+        "iconSrc": "/img/icons-holding-box-white.png",
+        "iconAlt": "Holding box icon",
+        "gradient": "bg-[linear-gradient(135deg,rgba(96,165,250,1)_0%,rgba(167,139,250,1)_100%)]"
       }
     ]
   },

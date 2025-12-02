@@ -200,24 +200,27 @@
         "stepNumber": "STEP 1",
         "title": "Free AI Opportunity Audit (30 Minutes)",
         "description": "<p>We analyze your current workflows, identify the biggest automation opportunities, and calculate exactly how much time and money you're wasting on tasks AI could handle. Then we show you what custom automation would look like for YOUR specific process. No sales pitch, no pressure—just honest analysis.</p><p><strong style=\"color:#fff;\">What you'll get:</strong> A detailed breakdown showing which processes are automation candidates, estimated time savings, projected cost reduction, and realistic ROI projections. Even if you don't work with us, you'll know exactly where you're leaving money on the table.</p>",
-        "icon": "phone",
-        "gradient": "bg-[linear-gradient(135deg,rgba(45,212,191,1)_0%,rgba(59,130,246,1)_100%)]"
+        "iconSrc": "/img/icons-magnifier-white.png",
+        "iconAlt": "Magnifying glass icon",
+        "gradient": "bg-[linear-gradient(135deg,rgba(43,127,255,1)_0%,rgba(152,16,250,1)_100%)]"
       },
       {
         "id": 2,
         "stepNumber": "STEP 2",
         "title": "We Build & Train Your Custom AI Agent",
         "description": "<p>We document your processes together, define your business rules and requirements, then build AI models specifically trained for your industry and workflows. We integrate seamlessly with your existing systems (no rebuild needed), test thoroughly with real scenarios, and launch with your team's feedback built in.</p><p><strong style=\"color:#fff;\">What you'll do:</strong> Spend 2-3 hours over a few weeks describing how your process works and answering questions. That's it. We handle the AI development, the system integration, the testing, and the deployment. You don't touch any technology—you just explain your business and we translate that into intelligent automation.</p>",
-        "icon": "tool",
-        "gradient": "bg-[linear-gradient(135deg,rgba(29,180,194,1)_0%,rgba(30,64,175,1)_100%)]"
+        "iconSrc": "/img/icons-puzzle-piece-white.png",
+        "iconAlt": "Puzzle piece icon",
+        "gradient": "bg-[linear-gradient(135deg,rgba(173,70,255,1)_0%,rgba(246,51,154,1)_100%)]"
       },
       {
         "id": 3,
         "stepNumber": "STEP 3",
         "title": "Watch Efficiency Soar & Costs Plummet",
         "description": "<p>Your custom AI starts handling routine work automatically—making decisions based on your business logic, coordinating across multiple systems, and learning from every interaction. Your team focuses on strategic work while AI handles repetitive tasks, and you track the impact with detailed performance analytics.</p><p><strong style=\"color:#fff;\">What you'll experience:</strong> Within the first week, your team will notice they're spending less time on busywork. Within 30 days, you'll see measurable productivity gains and cost reductions. Within 90 days, you'll have clear data on ROI and opportunities for further optimization—plus your AI is getting smarter every week.</p>",
-        "icon": "bolt",
-        "gradient": "bg-[linear-gradient(135deg,rgba(59,130,246,1)_0%,rgba(139,92,246,1)_100%)]"
+        "iconSrc": "/img/icons-holding-box-white.png",
+        "iconAlt": "Holding box icon",
+        "gradient": "bg-[linear-gradient(135deg,rgba(96,165,250,1)_0%,rgba(167,139,250,1)_100%)]"
       }
     ]
   },

@@ -197,24 +197,27 @@
         "stepNumber": "STEP 1",
         "title": "Book a 15-Minute Email Marketing Audit",
         "description": "<p>We analyze your current email campaigns, open rates, and subscriber behavior. We show you exactly where you're losing money and which improvements will have the biggest impact on your Northern Virginia business.</p><p><strong style=\"color:#fff;\">No sales pitch</strong>Just honest advice on whether Email Marketing AI is right for you and what results you can realistically expect based on your industry and list size.</p>",
-        "icon": "phone",
-        "gradient": "bg-[linear-gradient(135deg,rgba(249,115,22,1)_0%,rgba(234,179,8,1)_100%)]"
+        "iconSrc": "/img/icons-magnifier-white.png",
+        "iconAlt": "Magnifying glass icon",
+        "gradient": "bg-[linear-gradient(135deg,rgba(43,127,255,1)_0%,rgba(152,16,250,1)_100%)]"
       },
       {
         "id": 2,
         "stepNumber": "STEP 2",
         "title": "We Train Your AI on Your Brand Voice",
         "description": "<p>We connect the AI to your email platform (Mailchimp, Constant Contact, HubSpot, etc.) and train it to write emails that sound like YOU—whether that's friendly and casual, professional and authoritative, or anything in between.</p><p><strong style=\"color:#fff;\">We handle everything:</strong> Segmentation logic, personalization rules, send-time optimization, A/B test setup, and integration with your CRM. No website rebuild needed. No technical skills required on your end.</p>",
-        "icon": "tool",
-        "gradient": "bg-[linear-gradient(135deg,rgba(245,158,11,1)_0%,rgba(99,102,241,1)_100%)]"
+        "iconSrc": "/img/icons-puzzle-piece-white.png",
+        "iconAlt": "Puzzle piece icon",
+        "gradient": "bg-[linear-gradient(135deg,rgba(173,70,255,1)_0%,rgba(246,51,154,1)_100%)]"
       },
       {
         "id": 3,
         "stepNumber": "STEP 3",
         "title": "Watch Your Open Rates and Revenue Climb",
         "description": "<p>Your Email Marketing AI launches campaigns at the perfect time for each subscriber, personalizes content based on their interests and behavior, and continuously tests different approaches to improve performance.</p><p><strong style=\"color:#fff;\">All automatically.</strong> While you focus on serving customers. You'll get weekly reports showing open rates, click-through rates, conversions, and ROI—with clear insights into what's working and why.</p>",
-        "icon": "bolt",
-        "gradient": "bg-[linear-gradient(135deg,rgba(251,191,36,1)_0%,rgba(138,75,252,1)_100%)]"
+        "iconSrc": "/img/icons-holding-box-white.png",
+        "iconAlt": "Holding box icon",
+        "gradient": "bg-[linear-gradient(135deg,rgba(96,165,250,1)_0%,rgba(167,139,250,1)_100%)]"
       }
     ]
   },

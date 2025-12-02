@@ -198,24 +198,27 @@
         "stepNumber": "STEP 1",
         "title": "Book a 15-Minute Consultation",
         "description": "<p>We analyze your current website traffic and show you exactly where you're losing leads and how much it's costing you each month. No sales pitch, no pressure—just a clear picture of what's happening and what's possible.</p><p><strong style=\"color:#fff;\">What you'll get:</strong> A free audit showing your monthly lead loss, the dollar value of those missed opportunities, and exactly which hours/days you're bleeding the most revenue. Even if you don't work with us, you'll walk away with valuable insights.</p>",
-        "icon": "phone",
-        "gradient": "bg-[linear-gradient(135deg,rgba(56,189,248,1)_0%,rgba(168,85,247,1)_100%)]"
+        "iconSrc": "/img/icons-magnifier-white.png",
+        "iconAlt": "Magnifying glass icon",
+        "gradient": "bg-[linear-gradient(135deg,rgba(43,127,255,1)_0%,rgba(152,16,250,1)_100%)]"
       },
       {
         "id": 2,
         "stepNumber": "STEP 2",
         "title": "We Install Your Customized AI Assistant",
         "description": "<p>We learn your business inside and out—your services, pricing, policies, and personality. Then we customize your chatbot to sound like YOU and install it directly on your existing website. No rebuild needed. No technical work on your end. We literally handle everything.</p><p><strong style=\"color:#fff;\">What you'll do:</strong> Spend 20 minutes answering questions about your business (the stuff you already know). That's it. We handle the technology, the installation, the testing, and the launch. You'll never touch a single line of code.</p>",
-        "icon": "tool",
-        "gradient": "bg-[linear-gradient(135deg,rgba(147,197,253,1)_0%,rgba(99,102,241,1)_100%)]"
+        "iconSrc": "/img/icons-puzzle-piece-white.png",
+        "iconAlt": "Puzzle piece icon",
+        "gradient": "bg-[linear-gradient(135deg,rgba(173,70,255,1)_0%,rgba(246,51,154,1)_100%)]"
       },
       {
         "id": 3,
         "stepNumber": "STEP 3",
         "title": "Watch Your Calendar Fill With Qualified Leads",
         "description": "<p>Your AI starts working immediately—24/7, 365 days a year. It answers questions, qualifies prospects, and books appointments while you sleep, serve customers, or actually enjoy your weekend. You get instant notifications only for hot leads that need your personal attention.</p><p><strong style=\"color:#fff;\">What you'll experience:</strong> Within 24-48 hours, you'll start seeing leads captured that would have been lost. Within 30 days, your team will wonder how they ever managed without it. Within 90 days, you'll look back at your old system and shake your head at all the money you used to leave on the table.</p>",
-        "icon": "bolt",
-        "gradient": "bg-[linear-gradient(135deg,rgba(59,130,246,1)_0%,rgba(129,140,248,1)_100%)]"
+        "iconSrc": "/img/icons-holding-box-white.png",
+        "iconAlt": "Holding box icon",
+        "gradient": "bg-[linear-gradient(135deg,rgba(96,165,250,1)_0%,rgba(167,139,250,1)_100%)]"
       }
     ]
   },

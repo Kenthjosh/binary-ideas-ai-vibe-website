@@ -6,7 +6,9 @@ interface Step {
   stepNumber: string;
   title: string;
   description: string;
-  icon: IconName;
+  icon?: IconName;
+  iconSrc?: string;
+  iconAlt?: string;
   gradient: string;
 }
 
@@ -56,6 +58,14 @@ const defaultSteps: Step[] = [
   }
 ];
 
+const DEFAULT_GRADIENT = "linear-gradient(135deg,rgba(43,127,255,1)_0%,rgba(152,16,250,1)_100%)";
+
+const getGradientBackground = (gradient?: string) => {
+  if (!gradient) return DEFAULT_GRADIENT;
+  const match = gradient.match(/bg-\[(.*)\]/);
+  return match ? match[1] : gradient;
+};
+
 const {
   titleLeading = "How It Works",
   titleHighlight = "Our Process",
@@ -64,10 +74,20 @@ const {
 } = Astro.props as Props;
 
 const iconMarkup: Record<IconName, string> = {
-  phone: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M22 16.92A16 16 0 0 1 7.08 2L5 4a2 2 0 0 0-.45 2.11l2.2 5.21a2 2 0 0 1-.57 2.22l-1.27 1.27a16 16 0 0 0 7.07 7.07l1.27-1.27a2 2 0 0 1 2.22-.57l5.21 2.2A2 2 0 0 0 20 19z"/></svg>`,
-  tool: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M14.7 6.3a4 4 0 0 0-5.6 5.6L5 16v3h3l4.1-4.1a4 4 0 0 0 5.6-5.6l1.8-1.8a3 3 0 0 0-4.2-4.2z"/><path d="m16 2 6 6"/></svg>`,
-  bolt: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>`,
-  headset: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/><path d="M18 22v-1a3 3 0 0 0-3-3H9a3 3 0 0 0-3 3v1"/></svg>`
+  phone: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-10 w-10 sm:h-12 sm:w-12"><path d="M22 16.92A16 16 0 0 1 7.08 2L5 4a2 2 0 0 0-.45 2.11l2.2 5.21a2 2 0 0 1-.57 2.22l-1.27 1.27a16 16 0 0 0 7.07 7.07l1.27-1.27a2 2 0 0 1 2.22-.57l5.21 2.2A2 2 0 0 0 20 19z"/></svg>`,
+  tool: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-10 w-10 sm:h-12 sm:w-12"><path d="M14.7 6.3a4 4 0 0 0-5.6 5.6L5 16v3h3l4.1-4.1a4 4 0 0 0 5.6-5.6l1.8-1.8a3 3 0 0 0-4.2-4.2z"/><path d="m16 2 6 6"/></svg>`,
+  bolt: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-10 w-10 sm:h-12 sm:w-12"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>`,
+  headset: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-10 w-10 sm:h-12 sm:w-12"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/><path d="M18 22v-1a3 3 0 0 0-3-3H9a3 3 0 0 0-3 3v1"/></svg>`
+};
+
+const getIconMarkup = (step: Step) => {
+  if (step.iconSrc) {
+    return `<img src="${step.iconSrc}" alt="${
+      step.iconAlt ?? `${step.title} icon`
+    }" class="h-10 w-10 sm:h-12 sm:w-12 object-contain" loading="lazy" decoding="async" />`;
+  }
+
+  return step.icon ? iconMarkup[step.icon] : iconMarkup.phone;
 };
 
 const splitDescription = (html?: string) => {
@@ -108,13 +128,17 @@ const splitDescription = (html?: string) => {
   <div class="relative mt-16 space-y-6">
     {steps.map((step) => {
       const { intro, rest } = splitDescription(step.description);
+      const gradientBackground = getGradientBackground(step.gradient);
 
       return (
         <article class="relative flex flex-col sm:flex-row rounded-[28px] border border-white/10 bg-[#0f172a]/60 p-6 shadow-[0_25px_80px_rgba(5,7,20,0.55)] backdrop-blur-lg">
           <div class="flex flex-col sm:flex-row items-start gap-6">
-            <div class={`flex h-16 w-16 items-center justify-center rounded-full text-white shadow-[0_18px_35px_rgba(11,76,140,0.45)] ${step.gradient}`}>
+            <div
+              class="flex h-20 w-20 md:h-24 md:w-24 items-center justify-center rounded-full text-white shadow-[0_18px_35px_rgba(11,76,140,0.45)] bg-[linear-gradient(155deg,rgba(43,127,255,0.1)_0%,rgba(43,127,255,0)_100%)]"
+              style={`background:${gradientBackground};`}
+            >
               <span class="sr-only">{step.title} icon</span>
-              <span class="flex items-center justify-center" set:html={iconMarkup[step.icon]} />
+              <span class="flex items-center justify-center" set:html={getIconMarkup(step)} />
             </div>
 
             <div class="flex-1 space-y-5 mt-4 sm:mt-0">

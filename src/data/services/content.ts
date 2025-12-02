@@ -40,7 +40,9 @@ interface ProcessStep {
   stepNumber: string;
   title: string;
   description: string;
-  icon: string;
+  icon?: string;
+  iconSrc?: string;
+  iconAlt?: string;
   gradient: string;
 }
 

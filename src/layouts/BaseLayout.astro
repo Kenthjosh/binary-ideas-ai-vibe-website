@@ -24,20 +24,56 @@ const {
     <slot />
     <script is:inline>
       document.addEventListener('DOMContentLoaded', () => {
+        const enforceNewTab = (link) => {
+          link.setAttribute('target', '_blank');
+          const relParts = new Set(
+            (link.getAttribute('rel') ?? '')
+              .split(/\s+/)
+              .map((value) => value.trim())
+              .filter(Boolean)
+          );
+          relParts.add('noopener');
+          relParts.add('noreferrer');
+          link.setAttribute('rel', Array.from(relParts).join(' '));
+        };
+
         const ensureBookingLinksOpenInNewTab = () => {
           const selector = 'a[href^="https://api.3sixtycrm.com/widget/bookings/robert-sandiego"]';
-          document.querySelectorAll(selector).forEach((link) => {
-            link.setAttribute('target', '_blank');
-            const currentRel = link.getAttribute('rel') ?? '';
-            const relParts = new Set(
-              currentRel
-                .split(/\s+/)
-                .map((value) => value.trim())
-                .filter(Boolean)
-            );
-            relParts.add('noopener');
-            relParts.add('noreferrer');
-            link.setAttribute('rel', Array.from(relParts).join(' '));
+          document.querySelectorAll(selector).forEach(enforceNewTab);
+        };
+
+        const ensureExternalLinksOpenInNewTab = () => {
+          const anchors = document.querySelectorAll('a[href]');
+          anchors.forEach((anchor) => {
+            const rawHref = anchor.getAttribute('href');
+            if (!rawHref) {
+              return;
+            }
+
+            const href = rawHref.trim();
+            if (
+              !href ||
+              href.startsWith('#') ||
+              /^(mailto:|tel:|sms:|javascript:)/i.test(href)
+            ) {
+              return;
+            }
+
+            let destination;
+            try {
+              destination = new URL(href, window.location.href);
+            } catch {
+              return;
+            }
+
+            if (
+              destination.origin === window.location.origin ||
+              !['http:', 'https:'].includes(destination.protocol)
+            ) {
+              return;
+            }
+
+            enforceNewTab(anchor);
           });
         };
 
@@ -97,6 +133,7 @@ const {
         };
 
         ensureBookingLinksOpenInNewTab();
+        ensureExternalLinksOpenInNewTab();
         autoLinkBlogPhoneNumbers();
       });
     </script>

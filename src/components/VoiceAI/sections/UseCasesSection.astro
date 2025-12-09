@@ -1,14 +1,17 @@
 ---
+type IconName = "stethoscope" | "utensils" | "headphones" | "target";
+
 interface UseCase {
   id: string;
-  icon: IconName;
+  icon?: IconName | string;
+  iconSrc?: string;
+  iconPath?: string;
+  iconAlt?: string;
   title: string;
   description: string;
   gradient: string;
   result?: string;
 }
-
-type IconName = "stethoscope" | "utensils" | "headphones" | "target";
 
 interface Props {
   headingLeading?: string;
@@ -67,6 +70,20 @@ const iconMarkup: Record<IconName, string> = {
   headphones: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>`,
   target: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m22 12-2 0"/><path d="m4 12-2 0"/></svg>`
 };
+
+const resolveIconSrc = (useCase: UseCase) => {
+  if (useCase.iconSrc) return useCase.iconSrc;
+  if (useCase.iconPath) return useCase.iconPath;
+  if (
+    typeof useCase.icon === "string" &&
+    /\.(svg|png|jpe?g|gif|webp)$/i.test(useCase.icon)
+  ) {
+    return useCase.icon;
+  }
+  return undefined;
+};
+
+const resolveIconAlt = (useCase: UseCase) => useCase.iconAlt ?? useCase.title;
 ---
 
 <section
@@ -96,7 +113,22 @@ const iconMarkup: Record<IconName, string> = {
 
         <div class="relative flex h-[58px] w-[58px] items-center justify-center rounded-2xl bg-[linear-gradient(135deg,rgba(102,126,234,1)_0%,rgba(152,68,255,1)_100%)] text-white shadow-[0_18px_40px_rgba(102,126,234,0.35)]">
           <span class="sr-only">{useCase.title} icon</span>
-          <span class="flex items-center justify-center" set:html={iconMarkup[useCase.icon]} />
+          {resolveIconSrc(useCase) ? (
+            <img
+              src={resolveIconSrc(useCase)}
+              alt={resolveIconAlt(useCase)}
+              class="h-8 w-8 object-contain"
+              loading="lazy"
+            />
+          ) : (
+            <span
+              class="flex items-center justify-center"
+              set:html={
+                iconMarkup[(useCase.icon as IconName) ?? "target"] ??
+                  iconMarkup.target
+              }
+            />
+          )}
         </div>
 
         <h3 class="relative mt-7 [font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-2xl font-semibold leading-9 text-white">

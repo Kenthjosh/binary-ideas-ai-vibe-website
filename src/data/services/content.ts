@@ -12,7 +12,9 @@ interface FeatureImage {
 
 interface FeatureItem {
   id: string;
-  icon: string;
+  icon?: string;
+  iconPath?: string;
+  iconGradient?: string;
   title: string;
   description: string;
   iconSrc?: string;
@@ -48,7 +50,10 @@ interface ProcessStep {
 
 interface UseCaseItem {
   id: string;
-  icon: string;
+  icon?: string;
+  iconSrc?: string;
+  iconPath?: string;
+  iconAlt?: string;
   title: string;
   description: string;
   gradient: string;
@@ -56,7 +61,10 @@ interface UseCaseItem {
 
 interface PainPointCard {
   title: string;
-  icon: string;
+  icon?: string;
+  iconSrc?: string;
+  iconPath?: string;
+  iconAlt?: string;
   description: string;
   pain: string;
 }

@@ -26,13 +26,14 @@
     "cards": [
       {
         "title": "Lost Revenue After Hours",
-        "icon": "💰",
+        "iconSrc": "/img/lost-revenue-after-hours.svg",
+        "iconAlt": "Lost revenue after hours",
         "description": "40% of your leads call you outside business hours. When they get voicemail, they move on to competitors who answer in 30 seconds or less. That's 15-20 leads per month choosing someone else—worth $200-500 each to your business.",
         "pain": "You know these calls are coming. You can see them in your missed call log. But you're powerless to stop them from going elsewhere because you're not a machine—you need sleep, family time, and weekends off."
       },
       {
         "title": "Buried in Repetitive Questions",
-        "icon": "😤",
+        "iconSrc": "/img/buried-in-repetitive-questions.svg",
         "description": "Your receptionist wastes 10+ hours every week answering the same questions: \"What are your hours?\" \"How much do you charge?\" \"Do you take my insurance?\" That's $3,500+ in monthly salary spent on work a $500 AI could handle.",
         "pain": "You hired talented people to grow your business, but they're stuck being human FAQs. They're answering \"What are your hours?\" 50+ times daily while important calls go to voicemail. Meanwhile, real opportunities are slipping through the cracks because everyone's too busy with routine questions."
       },
@@ -64,7 +65,7 @@
   },
   "whatsUnfair": {
     "titleLeading": "Here's What's Really ",
-    "titleTrailing": "Unfair:",
+    "titleTrailing": "Unfair",
     "content": [
       "You've spent years building expertise in your field. You're excellent at what you do. Your customers love you. You deserve to succeed.",
       "But in 2025, tech-savvy competitors with AI phone systems are stealing your customers—not because they're better at the actual work, but because they answer in 30 seconds while you're stuck on another line or serving existing clients.",
@@ -90,7 +91,7 @@
   },
   "introduction": {
     "featureImage": {
-      "src": "/img/Voice AI.png",
+      "src": "/img/voice-ai.png",
       "alt": "Voice AI"
     },
     "titleLeading": "What Are",
@@ -107,37 +108,37 @@
     "features": [
       {
         "id": "nlp",
-        "icon": "message",
+        "iconPath": "/img/natural-language-processing.svg",
         "title": "Natural Language Processing",
         "description": "Our AI understands context, tone, and intent, allowing for fluid conversations that feel completely natural. Customers won't realize they're speaking with an AI agent."
       },
       {
         "id": "availability",
-        "icon": "clock",
+        "iconPath": "/img/24-7-availability.svg",
         "title": "24/7 Availability",
         "description": "Never miss a call again. Your Voice AI Agent works around the clock, handling customer inquiries even when your office is closed, ensuring you capture every opportunity."
       },
       {
         "id": "scheduling",
-        "icon": "calendar",
+        "iconPath": "/img/appointment-scheduling.svg",
         "title": "Appointment Scheduling",
         "description": "Seamlessly schedule appointments by checking your calendar in real time, sending confirmations, and even handling rescheduling requests without human intervention."
       },
       {
         "id": "routing",
-        "icon": "phone",
+        "iconPath": "/img/call-routing-and-transfers.svg",
         "title": "Call Routing and Transfers",
         "description": "Intelligently route calls to the right department or person, and transfer complex inquiries to human staff when needed, ensuring customers always reach the right solution."
       },
       {
         "id": "multilang",
-        "icon": "globe",
+        "iconPath": "/img/multi-language-support.svg",
         "title": "Multi-Language Support",
         "description": "Serve your diverse Northern Virginia community with support for multiple languages, breaking down communication barriers and expanding your customer base."
       },
       {
         "id": "crm",
-        "icon": "database",
+        "iconPath": "/img/crm-integration.svg",
         "title": "CRM Integration",
         "description": "Automatically log all interactions, update customer records, and sync data with your existing CRM system, keeping your customer information organized and accessible."
       }
@@ -152,7 +153,7 @@
         "title": "Reduce Staffing Costs by 60%",
         "description": "Eliminate the need for additional phone staff while maintaining or improving customer service quality. One Voice AI Agent can handle hundreds of calls simultaneously.",
         "iconType": "image",
-        "iconSrc": "/img/voice-ai-benefit-reduce-costs.svg",
+        "iconSrc": "/img/reduce-staffing-costs-60.svg",
         "iconGradient": "",
         "iconImages": []
       },
@@ -161,7 +162,7 @@
         "title": "Never Miss a Customer Call",
         "description": "Every call is answered immediately, even during peak hours or after business hours. Capture every lead and opportunity that comes your way.",
         "iconType": "image",
-        "iconSrc": "/img/voice-ai-benefit-never-miss-call.svg",
+        "iconSrc": "/img/never-miss-a-customer-call.svg",
         "iconGradient": "",
         "iconImages": []
       },
@@ -172,14 +173,14 @@
         "iconGradient": "",
         "iconImages": [],
         "iconType": "image",
-        "iconSrc": "/img/voice-ai-benefit-multiple-calls.svg"
+        "iconSrc": "/img/handle-multiple-calls-simultaneously.svg"
       },
       {
         "id": "customer-satisfaction",
         "title": "Improve Customer Satisfaction",
         "description": "Provide instant, accurate responses to customer inquiries, leading to higher satisfaction scores and increased customer loyalty.",
         "iconType": "image",
-        "iconSrc": "/img/voice-ai-benefit-customer-satisfaction.svg",
+        "iconSrc": "/img/improve-customer-satisfaction.svg",
         "iconGradient": "",
         "iconImages": []
       }
@@ -195,7 +196,7 @@
         "stepNumber": "STEP 1",
         "title": "Free 30-Minute Call Analysis",
         "description": "<p>We analyze your current call volume, identify exactly where you're losing money from missed calls, and show you the ROI. No sales pitch, no pressure—just a clear picture of what's happening and what's possible.</p><p><strong style=\"color:#fff;\">What you'll get:</strong> A free audit showing your monthly call loss, the dollar value of those missed opportunities, and exactly which hours/days you're bleeding the most revenue. Even if you don't work with us, you'll walk away with valuable insights.</p><p><strong style=\"color:#fff;\">No commitment required.</strong> If we determine Voice AI isn't a fit for your call volume, we'll tell you honestly.</p>",
-        "iconSrc": "/img/icons-magnifier-white.png",
+        "iconSrc": "/img/Free 30-Minute Analysis1.svg",
         "iconAlt": "Magnifying glass icon",
         "gradient": "bg-[linear-gradient(135deg,rgba(43,127,255,1)_0%,rgba(152,16,250,1)_100%)]"
       },
@@ -204,7 +205,7 @@
         "stepNumber": "STEP 2",
         "title": "Custom Voice AI Design (Not Cookie-Cutter)",
         "description": "<p>We learn your business inside and out—your services, pricing, policies, FAQs, and personality. Then we train your AI to sound like YOUR business and handle YOUR specific call scenarios. No generic scripts. No robotic responses.</p><p><strong style=\"color:#fff;\">What you'll do:</strong> Spend 30 minutes answering questions about your business (the stuff you already know). That's it. We handle the technology, the training, the testing, and the launch. You'll never touch a single line of code.</p><p><strong style=\"color:#fff;\">No templates.</strong> Every word is customized for how YOU talk to customers. We train it on YOUR FAQs, YOUR booking system, YOUR policies.</p>",
-        "iconSrc": "/img/icons-puzzle-piece-white.png",
+        "iconSrc": "/img/Custom Solution Design.svg",
         "iconAlt": "Puzzle piece icon",
         "gradient": "bg-[linear-gradient(135deg,rgba(173,70,255,1)_0%,rgba(246,51,154,1)_100%)]"
       },
@@ -213,7 +214,7 @@
         "stepNumber": "STEP 3",
         "title": "We Handle All Technical Setup",
         "description": "<p>We integrate with your existing phone system, CRM, and calendar. We test everything. We ensure it sounds completely human. You don't need any technical knowledge—you just keep running your business.</p><p><strong style=\"color:#fff;\">What you'll experience:</strong> Zero technical work on your end. No \"figuring out\" complicated dashboards. No reading manuals. We handle 100% of the setup, and most implementations complete in 2-4 weeks.</p><p><strong style=\"color:#fff;\">Zero technical work on your end.</strong> Most implementations complete in 2-4 weeks.</p>",
-        "iconSrc": "/img/icons-holding-box-white.png",
+        "iconSrc": "/img/We Build & Train.svg",
         "iconAlt": "Holding box icon",
         "gradient": "bg-[linear-gradient(135deg,rgba(96,165,250,1)_0%,rgba(167,139,250,1)_100%)]"
       },
@@ -222,7 +223,7 @@
         "stepNumber": "STEP 4",
         "title": "Watch It Capture Every Call (While We Monitor)",
         "description": "<p>Your Voice AI starts answering 24/7. It schedules appointments, answers questions, qualifies leads, and routes urgent calls to you—all while you sleep, serve customers, or actually enjoy your weekend. You get instant notifications only for hot leads that need your personal attention.</p><p><strong style=\"color:#fff;\">What you'll experience:</strong> Within 24-48 hours, you'll start seeing calls captured that would have been lost. Within 30 days, your team will wonder how they ever managed without it. Within 90 days, you'll look back at your old system and shake your head at all the money you used to leave on the table.</p><p><strong style=\"color:#fff;\">Ongoing optimization included.</strong> We monitor performance, optimize responses, and continuously improve your AI. We don't just set it and forget it.</p>",
-        "iconSrc": "/img/icons-genealogy-white.png",
+        "iconSrc": "/img/Watch It Work.svg",
         "iconAlt": "genealogy",
         "gradient": "bg-[linear-gradient(135deg,rgba(142,81,255,1)_0%,rgba(59,130,246,1)_100%)]"
       }
@@ -234,7 +235,7 @@
     "items": [
       {
         "id": "medical",
-        "icon": "stethoscope",
+        "iconSrc": "/img/Medical Appointment Scheduling.svg",
         "title": "Medical Appointment Scheduling",
         "description": "Perfect for Northern Virginia medical practices, our Voice AI Agents can handle appointment scheduling, insurance verification, and patient inquiries while maintaining HIPAA compliance.",
         "gradient": "bg-[linear-gradient(135deg,rgba(236,72,153,0.92)_0%,rgba(14,116,144,0.95)_100%)]",
@@ -242,7 +243,7 @@
       },
       {
         "id": "restaurant",
-        "icon": "utensils",
+        "iconSrc": "/img/Restaurant Reservations.svg",
         "title": "Restaurant Reservations",
         "description": "Manage table reservations, special requests, and customer inquiries efficiently. Your AI agent can check availability, take reservations, and even handle cancellations or modifications.",
         "gradient": "bg-[linear-gradient(135deg,rgba(29,78,216,0.92)_0%,rgba(76,29,149,0.95)_100%)]",
@@ -250,7 +251,7 @@
       },
       {
         "id": "customer-service",
-        "icon": "headphones",
+        "iconSrc": "/img/Customer Service Inquiries.svg",
         "title": "Customer Service Inquiries",
         "description": "Handle product questions, order status inquiries, and general customer service requests with intelligent responses that resolve issues quickly and professionally.",
         "gradient": "bg-[linear-gradient(135deg,rgba(99,102,241,0.92)_0%,rgba(45,212,191,0.95)_100%)]",
@@ -258,7 +259,7 @@
       },
       {
         "id": "lead-qualification",
-        "icon": "target",
+        "iconSrc": "/img/Lead Qualification Calls.svg",
         "title": "Lead Qualification Calls",
         "description": "Qualify potential customers by asking the right questions, gathering contact information, and determining their level of interest before transferring to your sales team.",
         "gradient": "bg-[linear-gradient(135deg,rgba(59,130,246,0.92)_0%,rgba(236,72,153,0.95)_100%)]",

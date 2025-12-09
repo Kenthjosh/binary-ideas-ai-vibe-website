@@ -9,7 +9,7 @@ interface Benefit {
   id: string;
   title: string;
   description: string;
-  iconGradient: string;
+  iconGradient?: string;
   iconImages: BenefitIconImage[];
   iconType?: "svg" | "image";
   iconSrc?: string;
@@ -75,6 +75,20 @@ const {
   benefits = defaultBenefits
 } = Astro.props as Props;
 
+const gradientPalette = [
+  "bg-[linear-gradient(135deg,#60a5fa_0%,#8b5cf6_100%)]",
+  "bg-[linear-gradient(135deg,#34d399_0%,#10b981_100%)]",
+  "bg-[linear-gradient(135deg,#f472b6_0%,#ec4899_100%)]",
+  "bg-[linear-gradient(135deg,#f59e0b_0%,#f97316_100%)]",
+  "bg-[linear-gradient(135deg,#22d3ee_0%,#06b6d4_100%)]",
+  "bg-[linear-gradient(135deg,#a855f7_0%,#7c3aed_100%)]"
+];
+
+const resolveGradient = (benefit: Benefit, index: number) =>
+  benefit.iconGradient && benefit.iconGradient.trim() !== ""
+    ? benefit.iconGradient
+    : gradientPalette[index % gradientPalette.length];
+
 const processedBenefits: ProcessedBenefit[] = benefits.map((benefit) => ({
   ...benefit,
   descriptionHtml: benefit.description.replace(/\n/g, "<br />")
@@ -92,13 +106,13 @@ const processedBenefits: ProcessedBenefit[] = benefits.map((benefit) => ({
   </header>
 
   <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2">
-    {processedBenefits.map((benefit) => (
+    {processedBenefits.map((benefit, index) => (
       <article class="relative flex flex-col sm:flex-row rounded-[24px] border border-solid border-[#ffffff14] bg-[linear-gradient(180deg,rgba(31,32,45,0.9)_0%,rgba(16,17,26,0.9)_100%)] px-8 py-6 shadow-[0px_20px_45px_rgba(10,10,15,0.45)]">
-        <div class="flex h-[60px] w-[60px] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-[rgba(12,16,31,0.85)] shadow-[0_20px_45px_rgba(8,14,35,0.35)]">
+        <div class={`flex h-[60px] w-[60px] shrink-0 items-center justify-center overflow-hidden rounded-2xl ${resolveGradient(benefit, index)} p-2 shadow-[0_20px_45px_rgba(8,14,35,0.35)]`}>
           {benefit.iconType === "image" ? (
-            <img class="h-full w-full rounded-[20px] object-cover" alt={benefit.title} src={benefit.iconSrc} />
+            <img class="h-full w-full rounded-[18px] object-cover" alt={benefit.title} src={benefit.iconSrc} />
           ) : (
-            <div class={`flex h-full w-full items-center justify-center rounded-[20px] ${benefit.iconGradient}`}>
+            <div class={`flex h-full w-full items-center justify-center rounded-[18px] ${resolveGradient(benefit, index)}`}>
               <div class="relative h-8 w-8">
                 {benefit.iconImages.map((icon) => (
                   <img class={icon.className} alt={icon.alt} src={icon.src} />

@@ -1,7 +1,10 @@
 ---
 interface PainPointCard {
   title: string;
-  icon: string;
+  icon?: string;
+  iconSrc?: string;
+  iconPath?: string;
+  iconAlt?: string;
   description: string;
   pain: string;
 }
@@ -41,36 +44,56 @@ const {
       <div class="relative">
         <div class="overflow-hidden" data-pain-slider>
           <div class="flex" data-pain-slider-track>
-            {cards.map((card) => (
-              <article
-                class="flex w-full flex-shrink-0 px-0 sm:w-1/2 sm:px-2"
-                data-pain-slide
-              >
-                <div class="flex h-full w-full flex-col gap-4 rounded-[28px] border border-[#ffffff14] bg-[#fffefe08] p-6 shadow-[0_25px_60px_rgba(0,0,0,0.35)] [backdrop-filter:blur(22px)]">
-                  <div class="flex items-center gap-3">
-                    <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#ffffff12] text-3xl">
-                      {card.icon}
-                    </div>
-                    <h3 class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-2xl font-semibold text-white">
-                      {card.title}
-                    </h3>
-                  </div>
+            {cards.map((card) => {
+              const iconSrc =
+                card.iconSrc ??
+                card.iconPath ??
+                (typeof card.icon === "string" &&
+                /\.(svg|png|jpe?g|gif|webp)$/i.test(card.icon)
+                  ? card.icon
+                  : undefined);
+              const iconAlt = card.iconAlt ?? card.title;
 
-                  <p class="text-base leading-7 text-[#dfe3ef] sm:text-lg [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
-                    {card.description}
-                  </p>
-
-                  <div class="rounded-2xl border border-[#ff65844d] bg-[rgba(255,77,125,0.12)] px-5 py-4 shadow-[0_10px_30px_rgba(255,77,125,0.2)]">
-                    <div class="text-xs font-semibold tracking-[0.2em] text-[#ff98b1]">
-                      THE PAIN
+              return (
+                <article
+                  class="flex w-full flex-shrink-0 px-0 sm:w-1/2 sm:px-2"
+                  data-pain-slide
+                >
+                  <div class="flex h-full w-full flex-col gap-4 rounded-[28px] border border-[#ffffff14] bg-[#fffefe08] p-6 shadow-[0_25px_60px_rgba(0,0,0,0.35)] [backdrop-filter:blur(22px)]">
+                    <div class="flex items-center gap-3">
+                      <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#ffffff12] text-3xl">
+                        {iconSrc ? (
+                          <img
+                            src={iconSrc}
+                            alt={iconAlt}
+                            loading="lazy"
+                            class="h-10 w-10 object-contain"
+                          />
+                        ) : (
+                          <span>{card.icon}</span>
+                        )}
+                      </div>
+                      <h3 class="[font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-2xl font-semibold text-white">
+                        {card.title}
+                      </h3>
                     </div>
-                    <p class="mt-2 text-sm leading-6 text-[#ffe7ee] sm:text-base [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
-                      {card.pain}
+
+                    <p class="text-base leading-7 text-[#dfe3ef] sm:text-lg [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
+                      {card.description}
                     </p>
+
+                    <div class="rounded-2xl border border-[#ff65844d] bg-[rgba(255,77,125,0.12)] px-5 py-4 shadow-[0_10px_30px_rgba(255,77,125,0.2)]">
+                      <div class="text-xs font-semibold tracking-[0.2em] text-[#ff98b1]">
+                        THE PAIN
+                      </div>
+                      <p class="mt-2 text-sm leading-6 text-[#ffe7ee] sm:text-base [font-family:'Segoe_UI_Symbol-Regular',Helvetica]">
+                        {card.pain}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </article>
-            ))}
+                </article>
+              );
+            })}
           </div>
         </div>
 

@@ -12,8 +12,10 @@ interface Feature {
   id: string;
   title: string;
   description: string;
-  icon: IconName;
+  icon?: IconName | string;
   iconSrc?: string;
+  iconPath?: string;
+  iconGradient?: string;
   iconAlt?: string;
 }
 
@@ -85,6 +87,35 @@ const iconSources: Record<IconName, string> = {
   database: "/img/icon-keyfeature-database.svg",
   analytics: "/img/icon-keyfeature-analytics.svg"
 };
+
+const gradientPalette = [
+  "bg-[linear-gradient(135deg,#60a5fa_0%,#8b5cf6_100%)]",
+  "bg-[linear-gradient(135deg,#34d399_0%,#10b981_100%)]",
+  "bg-[linear-gradient(135deg,#f472b6_0%,#ec4899_100%)]",
+  "bg-[linear-gradient(135deg,#f59e0b_0%,#f97316_100%)]",
+  "bg-[linear-gradient(135deg,#22d3ee_0%,#06b6d4_100%)]",
+  "bg-[linear-gradient(135deg,#a855f7_0%,#7c3aed_100%)]"
+];
+
+const resolveIconSrc = (feature: Feature) => {
+  if (feature.iconSrc) return feature.iconSrc;
+  if (feature.iconPath) return feature.iconPath;
+  if (
+    typeof feature.icon === "string" &&
+    /\.(svg|png|jpe?g|gif|webp)$/i.test(feature.icon)
+  ) {
+    return feature.icon;
+  }
+  if (feature.icon && typeof feature.icon === "string") {
+    return iconSources[feature.icon as IconName];
+  }
+  return undefined;
+};
+
+const resolveIconAlt = (feature: Feature) => feature.iconAlt ?? feature.title;
+
+const resolveGradient = (feature: Feature, index: number) =>
+  feature.iconGradient ?? gradientPalette[index % gradientPalette.length];
 ---
 
 <section class="relative mx-auto mt-24 max-w-6xl px-6 py-24">
@@ -102,17 +133,23 @@ const iconSources: Record<IconName, string> = {
   </header>
 
   <div class="mt-16 grid gap-8 sm:grid-cols-2 xl:grid-cols-3">
-    {features.map((feature) => (
+    {features.map((feature, index) => (
       <article class="relative flex h-full flex-col rounded-[20px] border border-[#ffffff12] bg-[linear-gradient(180deg,rgba(32,34,51,0.95)_0%,rgba(16,17,26,0.95)_100%)] px-8 pt-10 pb-12 shadow-[0px_25px_55px_rgba(10,10,15,0.45)]">
-        <div class="flex h-[56px] w-[56px] items-center justify-center overflow-hidden rounded-2xl shadow-[0_20px_35px_rgba(59,130,246,0.35)]">
+        <div class={`flex h-[56px] w-[56px] items-center justify-center overflow-hidden rounded-2xl ${resolveGradient(feature, index)} p-2 shadow-[0_20px_35px_rgba(59,130,246,0.35)]`}>
           <span class="sr-only">{feature.title} icon</span>
-          <img
-            src={feature.iconSrc ?? iconSources[feature.icon]}
-            alt={feature.iconAlt ?? ""}
-            class="h-full w-full object-cover"
-            loading="lazy"
-            aria-hidden="true"
-          />
+          {resolveIconSrc(feature) ? (
+            <img
+              src={resolveIconSrc(feature)}
+              alt={resolveIconAlt(feature)}
+              class="h-full w-full object-cover"
+              loading="lazy"
+              aria-hidden="true"
+            />
+          ) : (
+            <span class="text-2xl text-white/80" aria-hidden="true">
+              {feature.icon}
+            </span>
+          )}
         </div>
 
         <h3 class="mt-6 [font-family:'Segoe_UI_Symbol-Regular',Helvetica] text-xl font-semibold leading-7 text-white">

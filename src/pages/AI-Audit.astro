@@ -20,6 +20,394 @@ import WhyChooseUs from '../components/AI-Consulting/WhyChooseUs.astro';
 import AIConsultingInvestment from '../components/AI-Consulting/AIConsultingInvestment.astro';
 import FAQSection from '../components/AI-Audit/FAQSection.astro';
 import CTASection from '../components/AI-Audit/CTASection.astro';
+
+const pageSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://binary-ideas-ai-vibe-website.netlify.app/#organization",
+      "name": "Binary Ideas AI",
+      "url": "https://binary-ideas-ai-vibe-website.netlify.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://binary-ideas-ai-vibe-website.netlify.app/logo.png"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-703-690-9726",
+        "contactType": "sales",
+        "email": "info@binaryideasai.com",
+        "areaServed": "US-VA",
+        "availableLanguage": "en"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lorton",
+        "addressRegion": "VA",
+        "addressCountry": "US"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "3",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://binary-ideas-ai-vibe-website.netlify.app/ai-audit/#service",
+      "serviceType": "AI Business Audit",
+      "name": "Comprehensive AI Audit",
+      "description": "Complete 2-week AI audit identifying $40,000-$100,000+ in annual savings opportunities through systematic analysis of business workflows, inefficiencies, and automation opportunities.",
+      "provider": {
+        "@id": "https://binary-ideas-ai-vibe-website.netlify.app/#organization"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Virginia"
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small to Medium Businesses"
+      },
+      "category": "Business Consulting",
+      "brand": {
+        "@id": "https://binary-ideas-ai-vibe-website.netlify.app/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "Comprehensive 2-Week AI Audit",
+        "description": "Complete business analysis with 5-10 strategic interviews, visual workflow mapping, AI opportunity matrix, 12-month implementation roadmap, and detailed ROI calculations",
+        "price": "7500",
+        "priceCurrency": "USD",
+        "priceValidUntil": "2025-12-31",
+        "availability": "https://schema.org/InStock",
+        "url": "https://binary-ideas-ai-vibe-website.netlify.app/ai-audit/",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AI Business Audit",
+          "serviceType": "Business Consulting"
+        },
+        "eligibleRegion": {
+          "@type": "State",
+          "name": "Virginia"
+        },
+        "validFrom": "2024-01-01",
+        "category": "AI Audit",
+        "warranty": {
+          "@type": "WarrantyPromise",
+          "warrantyScope": "If audit doesn't identify at least $40,000+ in annual savings opportunities (5X+ ROI), 100% money-back guarantee"
+        },
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Average Annual Savings",
+            "value": "$47,500"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Average Weekly Time Reclaimed",
+            "value": "62 hours"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Average ROI Timeline",
+            "value": "3-6 months"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Duration",
+            "value": "2 weeks"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Deliverables",
+            "value": "Discovery Interview Summary, Ops Canvas, AI Opportunity Matrix, 12-Month Implementation Roadmap, ROI Calculations, Executive Presentation, 2 Follow-up Sessions"
+          }
+        ]
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AI Audit Deliverables",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Discovery Interviews",
+              "description": "5-10 strategic interviews with leadership and frontline employees"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ops Canvas",
+              "description": "Visual flowchart mapping acquisition, delivery, and support engines with inefficiencies highlighted"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI Opportunity Matrix",
+              "description": "2x2 matrix prioritizing opportunities by business impact vs implementation effort"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Implementation Roadmap",
+              "description": "12-month phased plan showing what to implement and when"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "ROI Analysis",
+              "description": "Detailed financial projections with costs, savings, and payback periods"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Executive Presentation",
+              "description": "Comprehensive presentation with Money Slide showing line-item breakdown"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Follow-up Sessions",
+              "description": "2 strategic sessions (60 minutes each) for ongoing guidance"
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "3",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "Medical Practice",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Springfield",
+              "addressRegion": "VA"
+            }
+          },
+          "reviewBody": "We captured 45 additional monthly patients worth $18,000 in revenue within 6 weeks. The audit literally paid for itself in the first month and we're on track to exceed the projected savings.",
+          "itemReviewed": {
+            "@id": "https://binary-ideas-ai-vibe-website.netlify.app/ai-audit/#service"
+          }
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "Law Firm",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Alexandria",
+              "addressRegion": "VA"
+            }
+          },
+          "reviewBody": "The audit showed us we were leaving $180K on the table annually. We implemented all three Quick Wins and freed up 30 hours weekly of paralegal time. We took on 20% more cases without hiring. Best consulting investment we've ever made.",
+          "itemReviewed": {
+            "@id": "https://binary-ideas-ai-vibe-website.netlify.app/ai-audit/#service"
+          }
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "Contractor",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Lorton",
+              "addressRegion": "VA"
+            }
+          },
+          "reviewBody": "The audit mapped out exactly where we were bleeding leads. We captured 22 additional projects in the first 90 days—more than paying for the entire implementation. Lead volume increased 250% and we're finally converting evening/weekend traffic.",
+          "itemReviewed": {
+            "@id": "https://binary-ideas-ai-vibe-website.netlify.app/ai-audit/#service"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://binary-ideas-ai-vibe-website.netlify.app/ai-audit/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is this different from the free 30-minute consultation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The free consultation identifies 2-3 obvious opportunities and gives directional guidance. The comprehensive audit is a 2-week deep-dive with 5-10 interviews, complete process mapping, visual diagrams, detailed ROI calculations, and a prioritized 12-month roadmap. Think of the consultation as 'here's what might help' and the audit as 'here's exactly what to do, in what order, with precise ROI projections.'"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do we need to prepare anything before the audit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Minimal preparation. We'll need access to key team members for interviews (30-45 mins each) and rough data on things like: number of employees, average salaries, current tools/software used, and approximate time spent on key tasks. We can work with estimates—precision isn't required upfront."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if the audit reveals we're not ready for AI yet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We'll tell you honestly. Sometimes businesses need to fix foundational issues (unclear processes, missing data, team resistance) before AI makes sense. If that's you, we'll recommend what to fix first and revisit AI later. Our guarantee protects you: if we can't identify $40K+ in viable opportunities, you get a full refund."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will you try to sell us your implementation services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The audit is vendor-agnostic strategic analysis. If we recommend solutions we can build (Voice AI, Training Agents, etc.), we'll mention that as an option—but we'll also recommend third-party tools if they're better fits. Your audit results are yours to implement however you choose. Many clients implement with us because we already understand their business, but it's never required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does implementation take after the audit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depends on which opportunities you prioritize. Quick Wins typically take 2-6 weeks to implement. Medium complexity projects take 6-12 weeks. Big Swings can take 3-6 months. The audit roadmap includes realistic timelines for each recommendation so you know exactly what to expect."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you audit just one department instead of our whole business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. If you want to focus the audit on a specific area (sales, operations, customer support), we can scope it accordingly. The investment may be adjusted based on scope. Many clients start with one department, see results, then expand the audit to other areas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens after we receive the audit results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You'll have a complete roadmap and can choose your path: (1) Implement internally using our recommendations, (2) Hire us to implement the solutions, (3) Hire other vendors and use our audit to guide them, or (4) Do nothing (though why waste the audit investment?). The audit results are yours—no strings attached."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://binary-ideas-ai-vibe-website.netlify.app/ai-audit/#webpage",
+      "url": "https://binary-ideas-ai-vibe-website.netlify.app/ai-audit/",
+      "name": "Discover Exactly Where You're Losing $10,000-$30,000 Monthly | Elite AI Audit",
+      "description": "Get a complete 2-week AI audit showing every inefficiency costing you money and the exact ROI of fixing each one. Average clients discover $47,500 in annual savings.",
+      "isPartOf": {
+        "@id": "https://binary-ideas-ai-vibe-website.netlify.app/#website"
+      },
+      "about": {
+        "@id": "https://binary-ideas-ai-vibe-website.netlify.app/ai-audit/#service"
+      },
+      "breadcrumb": {
+        "@id": "https://binary-ideas-ai-vibe-website.netlify.app/ai-audit/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://binary-ideas-ai-vibe-website.netlify.app/ai-audit/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://binary-ideas-ai-vibe-website.netlify.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI Audit",
+          "item": "https://binary-ideas-ai-vibe-website.netlify.app/ai-audit/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://binary-ideas-ai-vibe-website.netlify.app/ai-audit/#casestudies",
+      "name": "AI Audit Case Studies",
+      "description": "Real results from Northern Virginia businesses",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Article",
+            "name": "Medical Practice AI Audit Success - Springfield, VA",
+            "description": "Medical practice discovers $156,000 in annual savings through AI automation of intake, scheduling, and data entry",
+            "articleBody": "Discovered in audit: 25 hours/week on intake paperwork, 40% of web inquiries never converted to appointments, manual EMR data entry costing $3,000/week. Implemented Voice AI for intake, lead generation AI for website visitors, automated EMR population. Result: Captured 45 additional monthly patients worth $18,000 in revenue within 6 weeks with 1,200% ROI within 12 months.",
+            "publisher": {
+              "@id": "https://binary-ideas-ai-vibe-website.netlify.app/#organization"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Article",
+            "name": "Law Firm AI Audit Success - Alexandria, VA",
+            "description": "Law firm uncovers $182,000 in annual savings by automating document review and client intake",
+            "articleBody": "Discovered in audit: Paralegals spending 35 hours/week on document review = $3,500/week in billable time lost, 90+ minute client intake process, manual contract review missing 15% of key clauses. Implemented Custom Training Agent for document analysis, lead qualification chatbot, automated contract review. Result: Freed up 30 hours weekly of paralegal time, took on 20% more cases without hiring, achieved 464% ROI within 12 months.",
+            "publisher": {
+              "@id": "https://binary-ideas-ai-vibe-website.netlify.app/#organization"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Article",
+            "name": "Contractor AI Audit Success - Lorton, VA",
+            "description": "Contractor captures $96,000 in annual savings by automating lead capture and follow-up",
+            "articleBody": "Discovered in audit: Missing 70% of website inquiries outside business hours = 20-25 lost leads/month, estimator spending 12 hours/week creating quotes manually, zero follow-up system for unconverted leads. Implemented website chatbot for 24/7 quote requests, Voice AI for after-hours calls, automated lead follow-up. Result: Captured 22 additional projects in first 90 days, lead volume increased 250%, achieved 967% ROI within 12 months.",
+            "publisher": {
+              "@id": "https://binary-ideas-ai-vibe-website.netlify.app/#organization"
+            }
+          }
+        }
+      ]
+    }
+  ]
+};
 ---
 
 <BaseLayout
@@ -28,6 +416,11 @@ import CTASection from '../components/AI-Audit/CTASection.astro';
 >
   <div class="bg-white w-full min-h-screen flex flex-col relative overflow-x-hidden">
     <Header />
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(pageSchema, null, 2)}
+    ></script>
 
     <main class="z-[1] w-full flex-1 relative bg-[#0a0a0f] pt-[97px] overflow-hidden">
       <div class="absolute inset-0 pointer-events-none">
